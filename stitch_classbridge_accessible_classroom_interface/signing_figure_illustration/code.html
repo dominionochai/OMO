@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fcd34d"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="hoodie" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0284c7" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="600" height="540" rx="36" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle decorative sound/motion waves -->
+  <g stroke="#38bdf8" stroke-width="4" fill="none" opacity="0.4" stroke-linecap="round">
+    <path d="M60 180 Q 80 200 60 220"/>
+    <path d="M40 160 Q 70 200 40 240"/>
+    <path d="M540 180 Q 520 200 540 220"/>
+    <path d="M560 160 Q 530 200 560 240"/>
+  </g>
+
+  <!-- Signing Character -->
+  <g filter="url(#softShadow)">
+    <!-- Body / Hoodie -->
+    <path d="M170 540 C 170 410, 230 360, 300 360 C 370 360, 430 410, 430 540 Z" fill="url(#hoodie)"/>
+    <!-- Collar / Zipper -->
+    <path d="M285 360 L 300 420 L 315 360" fill="none" stroke="#38bdf8" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Neck -->
+    <rect x="275" y="300" width="50" height="70" rx="20" fill="#f59e0b"/>
+
+    <!-- Head -->
+    <circle cx="300" cy="230" r="95" fill="url(#skin)"/>
+
+    <!-- Hair -->
+    <path d="M205 220 C 205 130, 250 110, 300 110 C 350 110, 395 130, 395 220 C 375 190, 350 180, 330 190 C 300 170, 260 170, 230 195 Z" fill="#0f172a"/>
+    
+    <!-- Face elements -->
+    <!-- Eyes (Smiling curves) -->
+    <path d="M255 220 Q 270 205 285 220" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M315 220 Q 330 205 345 220" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+    <!-- Rosy Cheeks -->
+    <circle cx="245" cy="245" r="16" fill="#f43f5e" opacity="0.4"/>
+    <circle cx="355" cy="245" r="16" fill="#f43f5e" opacity="0.4"/>
+    <!-- Cheerful Big Smile -->
+    <path d="M275 250 Q 300 280 325 250" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Signing Hands in Action (ASL "Friend" / "Learn" gesture) -->
+    <!-- Left Hand -->
+    <g transform="translate(190, 320)">
+      <circle cx="25" cy="25" r="32" fill="#fbbf24" stroke="#f59e0b" stroke-width="4"/>
+      <!-- Fingers signing -->
+      <rect x="15" y="-15" width="14" height="35" rx="7" fill="#fcd34d" stroke="#f59e0b" stroke-width="3"/>
+      <rect x="32" y="-10" width="13" height="32" rx="6.5" fill="#fcd34d" stroke="#f59e0b" stroke-width="3"/>
+      <!-- Motion arc -->
+      <path d="M-10 10 Q -25 35 -5 50" fill="none" stroke="#0284c7" stroke-width="4" stroke-linecap="round" stroke-dasharray="6,6"/>
+    </g>
+
+    <!-- Right Hand -->
+    <g transform="translate(360, 310)">
+      <circle cx="25" cy="25" r="32" fill="#fbbf24" stroke="#f59e0b" stroke-width="4"/>
+      <!-- Fingers signing open palm toward viewer -->
+      <rect x="5" y="-20" width="14" height="38" rx="7" fill="#fcd34d" stroke="#f59e0b" stroke-width="3"/>
+      <rect x="22" y="-25" width="14" height="42" rx="7" fill="#fcd34d" stroke="#f59e0b" stroke-width="3"/>
+      <rect x="39" y="-18" width="13" height="35" rx="6.5" fill="#fcd34d" stroke="#f59e0b" stroke-width="3"/>
+      <!-- Motion arc -->
+      <path d="M55 10 Q 75 35 55 55" fill="none" stroke="#0284c7" stroke-width="4" stroke-linecap="round" stroke-dasharray="6,6"/>
+    </g>
+  </g>
+
+  <!-- Friendly Status Tag in bottom corner -->
+  <g transform="translate(30, 470)">
+    <rect width="210" height="48" rx="24" fill="#ffffff" opacity="0.95"/>
+    <circle cx="26" cy="24" r="8" fill="#10b981"/>
+    <text x="44" y="30" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="16" fill="#0f172a">Signing Live</text>
+  </g>
+</svg>
