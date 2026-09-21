@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ClassBridge</title>
+<link rel="stylesheet" href="assets/app.css"/>
+</head>
+<body class="bg-background font-body-lg text-on-surface antialiased min-h-screen">
+<section id="screen-deaf" hidden>
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="ClassBridge Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W465o8Gxz-tRdUh3SogUqx9Zu45AYviAQIFJnjyHS6xkz8EmmWRz-iX-YawcJGLKl2kj29GLl_MGaNPPIuj8Sq-YOqur5BHIsmKWzlBvWgg1jTRs8kx246guAAI9Ma5CSnaWQn2RXbpzh5IR-qL-qMNLAf9zsZCML_UDpdf3Fi3pblKhLgvPAGCdXmI1G7tQiZ4awvkZVV-riV47zhnY-rS5RG6qkGNJs4JKy21I0eXEGFMu7G_LEotFf0"/><span class="font-headline-md text-headline-md text-primary font-bold tracking-tight select-none">ClassBridge</span></div><nav class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded-xl" data-active-classes="bg-primary-container text-on-primary-container"><a aria-current="page" class="px-space-md py-space-xs rounded-lg font-label-lg transition-colors select-none bg-primary-container text-on-primary-container" data-path="talk-space" href="#">Talk Space</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="stories-and-play" href="#">Stories & Play</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="my-feelings" href="#">My Feelings</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="together-time" href="#">Together Time</a></nav><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 px-margin bg-background min-h-screen"><div class="flex flex-col w-full pb-space-xl">
+<!-- Status & Lesson Banner -->
+<div class="w-full flex flex-col md:flex-row md:items-center justify-between gap-space-sm bg-surface-container-lowest rounded-lg p-space-md shadow-sm mb-space-md">
+<div class="flex items-center flex-wrap gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-tertiary-fixed text-on-tertiary-fixed rounded-full font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">sign_language</span>
+<span>Deaf View</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-full">
+<span class="w-3 h-3 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Science Class: How Plants Make Food</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-tertiary text-[22px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span>Unit 3 • Photosynthesis Today</span>
+</div>
+</div>
+<!-- Main Body: Split Layout -->
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-space-md mb-space-lg">
+<!-- Left Column: ASL Signing Video Area -->
+<div class="lg:col-span-6 xl:col-span-5 flex flex-col">
+<div class="relative w-full bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col items-center justify-between min-h-[460px] overflow-hidden">
+<!-- Ambient decorative halo behind avatar -->
+<div class="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-primary-fixed opacity-40 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -left-16 w-56 h-56 rounded-full bg-secondary-fixed opacity-40 blur-3xl pointer-events-none"></div>
+<!-- Signing Header Chips -->
+<div class="w-full flex items-center justify-between z-10 mb-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[20px]">waving_hand</span>
+<span>ASL Translator • Live 🌿</span>
+</div>
+<button aria-label="Toggle visual zoom" class="w-12 h-12 rounded-full bg-surface-container hover:bg-surface-container-high text-primary flex items-center justify-center transition-transform hover:scale-105 active:scale-95 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[24px]">fit_screen</span>
+</button>
+</div>
+<!-- Center Stage: The Warm Illustrated ASL Avatar -->
+<div class="relative z-10 flex flex-col items-center justify-center my-auto w-full">
+<div class="w-56 h-56 md:w-64 md:h-64 rounded-xl bg-surface-container flex items-center justify-center p-space-md shadow-sm relative">
+<img alt="Friendly signing figure teaching in American Sign Language" class="w-full h-full object-contain drop-shadow-md select-none pointer-events-none" src="https://lh3.googleusercontent.com/aida/AEtjO1VhFquL_QN5SZ8qI8P5lHDiSTHK5eXnSt8HlCa2iuuiSLFwFIeECylOFef-wyUOBOa3ZQuHKQwa5f1ziDngkpNVWoRH-TSMUN1cjd4DJ7HdWG3xdPYS4MiofolbYY26PtrlnX97yuzRypbhVaMSkwo8HuQtF9qCxa03_88kIYbx_4W_b5gCrON7iuKq1_kJjVOMApcslZVK2sTlVJ-Yse7Jrvx0rfV6nKdAZlDIpNk2b0Q2PgcHm6jAqI5C"/>
+<!-- Soft active translation indicator pill -->
+<div class="absolute bottom-2 left-1/2 -translate-x-1/2 px-space-sm py-1 bg-surface-container-lowest text-primary rounded-full shadow-sm font-label-md text-[14px] flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">record_voice_over</span>
+<span>Visual Signing</span>
+</div>
+</div>
+</div>
+<!-- Quick Visual Context Tags -->
+<div class="w-full grid grid-cols-3 gap-space-xs z-10 mt-space-sm">
+<div class="bg-surface-container-low rounded-lg p-space-xs text-center">
+<span class="block text-[20px]">☀️</span>
+<span class="font-label-md text-label-md text-on-surface">Sunlight</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-xs text-center">
+<span class="block text-[20px]">💧</span>
+<span class="font-label-md text-label-md text-on-surface">Water</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-xs text-center">
+<span class="block text-[20px]">🍃</span>
+<span class="font-label-md text-label-md text-on-surface">Oxygen</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Flowing Music-App Style Captions -->
+<div class="lg:col-span-6 xl:col-span-7 flex flex-col">
+<div class="w-full h-full bg-surface-container-lowest rounded-xl p-space-lg shadow-md flex flex-col justify-between">
+<!-- Caption Card Header -->
+<div class="flex items-center justify-between mb-space-sm pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[28px]">subtitles</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">Classroom Captions</span>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-ping"></span>
+            Sync Active
+          </span>
+</div>
+<!-- Lyrics Flow Stream -->
+<div class="flex flex-col gap-space-md my-auto py-space-xs" id="caption-stream">
+<!-- Prior line 1 (Faded) -->
+<p class="font-body-lg text-body-lg text-outline transition-opacity duration-300 hover:text-on-surface-variant select-none">
+            Water travels up from the deep roots into the tall stem.
+          </p>
+<!-- Prior line 2 (Slightly softer) -->
+<p class="font-body-xl text-body-xl text-on-surface-variant transition-opacity duration-300 select-none">
+            Leaves take in fresh carbon dioxide directly from the gentle air.
+          </p>
+<!-- CURRENT LINE: Vibrant Lyric Spotlight -->
+<div class="p-space-md rounded-lg bg-secondary-container text-on-secondary-container shadow-md transform hover:scale-[1.01] transition-transform">
+<div class="flex items-start gap-space-xs">
+<span class="text-3xl leading-none select-none">🌱</span>
+<p class="font-headline-md text-headline-md font-extrabold leading-snug">
+                Chlorophyll in the leaves traps sunlight energy to make sweet food!
+              </p>
+</div>
+<div class="mt-space-xs flex items-center gap-2 text-on-secondary-container/80 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">translate</span>
+<span>Currently being signed on screen</span>
+</div>
+</div>
+<!-- Upcoming line (Soft preview) -->
+<p class="font-body-xl text-body-xl text-outline-variant select-none">
+            Next: Then the plant releases cool oxygen for all of us to breathe!
+          </p>
+</div>
+<!-- Caption Assistance Pill -->
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">speed</span>
+<span>Sign Speed: Normal (1.0x)</span>
+</div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+<span>Vocabulary Saved</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Lesson Controls & Big Touch / Gaze Buttons -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-md">
+<!-- Lesson Progress Bar -->
+<div class="w-full flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-md text-label-md text-on-surface">
+<div class="flex items-center gap-space-xs text-primary font-bold">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span>Lesson Progress: Photosynthesis Part 1</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-bold">
+<span class="material-symbols-outlined text-secondary text-[20px]">wb_sunny</span>
+<span>14:20 / 25:00</span>
+</div>
+</div>
+<!-- Chunky Progress Track -->
+<div class="w-full h-5 bg-surface-container rounded-full overflow-hidden p-1 flex items-center">
+<div class="h-full bg-primary rounded-full transition-all duration-300 relative" style="width: 58%;">
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-secondary-fixed shadow-sm"></div>
+</div>
+</div>
+</div>
+<!-- 4 High-Contrast Tactile Classroom Buttons -->
+<div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm">
+<!-- 1. Play Lesson Button -->
+<button class="group h-20 px-space-md rounded-lg bg-primary hover:bg-primary-container text-on-primary flex items-center justify-center gap-space-sm shadow-md transition-all active:translate-y-1 hover:scale-[1.02]" type="button">
+<div class="w-12 h-12 rounded-full bg-on-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px] text-on-primary" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+<span class="font-label-xl text-label-xl font-bold">Play lesson</span>
+</button>
+<!-- 2. Wait Button -->
+<button class="group h-20 px-space-md rounded-lg bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container flex items-center justify-center gap-space-sm shadow-md transition-all active:translate-y-1 hover:scale-[1.02]" type="button">
+<div class="w-12 h-12 rounded-full bg-on-secondary-container/15 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px] text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">pause</span>
+</div>
+<span class="font-label-xl text-label-xl font-bold">Wait</span>
+</button>
+<!-- 3. Continue Button -->
+<button class="group h-20 px-space-md rounded-lg bg-tertiary hover:bg-tertiary-container text-on-tertiary flex items-center justify-center gap-space-sm shadow-md transition-all active:translate-y-1 hover:scale-[1.02]" type="button">
+<div class="w-12 h-12 rounded-full bg-on-tertiary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px] text-on-tertiary" style="font-variation-settings: 'FILL' 1;">fast_forward</span>
+</div>
+<span class="font-label-xl text-label-xl font-bold">Continue</span>
+</button>
+<!-- 4. I Have a Question Button -->
+<button class="group h-20 px-space-md rounded-lg bg-error hover:bg-error-container hover:text-on-error-container text-on-error flex items-center justify-center gap-space-sm shadow-md transition-all active:translate-y-1 hover:scale-[1.02]" type="button">
+<div class="w-12 h-12 rounded-full bg-on-error/25 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px] text-on-error" style="font-variation-settings: 'FILL' 1;">front_hand</span>
+</div>
+<span class="font-label-xl text-label-xl font-bold">I have a question</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple cheerful micro-interactions for demonstration in the classroom
+  document.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Gentle tactile feedback pulse
+      btn.classList.add('scale-95');
+      setTimeout(() => {
+        btn.classList.remove('scale-95');
+      }, 150);
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low py-space-md"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-sm text-center"><p class="font-body-md text-body-md text-on-surface-variant">Ready to share your voice with ClassBridge</p><p class="font-body-md text-body-md text-on-surface-variant">All Voices Welcome Here</p></div></footer>
+</section>
+<section id="screen-question" hidden>
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="ClassBridge Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W465o8Gxz-tRdUh3SogUqx9Zu45AYviAQIFJnjyHS6xkz8EmmWRz-iX-YawcJGLKl2kj29GLl_MGaNPPIuj8Sq-YOqur5BHIsmKWzlBvWgg1jTRs8kx246guAAI9Ma5CSnaWQn2RXbpzh5IR-qL-qMNLAf9zsZCML_UDpdf3Fi3pblKhLgvPAGCdXmI1G7tQiZ4awvkZVV-riV47zhnY-rS5RG6qkGNJs4JKy21I0eXEGFMu7G_LEotFf0"/><span class="font-headline-md text-headline-md text-primary font-bold tracking-tight select-none">ClassBridge</span></div><nav class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded-xl" data-active-classes="bg-primary-container text-on-primary-container"><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="talk-space" href="#">Talk Space</a><a aria-current="page" class="px-space-md py-space-xs rounded-lg font-label-lg transition-colors select-none bg-primary-container text-on-primary-container" data-path="stories-and-play" href="#">Stories & Play</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="my-feelings" href="#">My Feelings</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="together-time" href="#">Together Time</a></nav><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 px-margin bg-background min-h-screen"><div class="flex flex-col w-full max-w-6xl mx-auto pb-space-xl">
+<!-- Interactive Feedback Overlay Container (Triggered by thank-you tap) -->
+<div class="hidden fixed inset-0 z-50 pointer-events-none flex items-center justify-center bg-inverse-surface/30 backdrop-blur-sm transition-opacity duration-300" id="celebration-toast">
+<div class="bg-surface-container-lowest rounded-xl shadow-2xl p-space-lg flex flex-col items-center gap-space-sm text-center max-w-md mx-space-md transform scale-95 transition-transform duration-300">
+<div class="w-20 h-20 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary shadow-md">
+<span class="material-symbols-outlined text-headline-xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<p class="font-headline-md text-headline-md text-on-surface">You sent a warm thank-you to Ms. Sarah!</p>
+<span class="font-body-lg text-body-lg text-tertiary font-bold">✨ Classroom connection made!</span>
+</div>
+</div>
+<!-- Top Context Ribbon -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-sm mb-space-md">
+<div class="inline-flex items-center gap-space-xs bg-secondary-container text-on-secondary-container px-space-md py-space-xs rounded-full shadow-sm">
+<span class="material-symbols-outlined text-label-lg" style="font-variation-settings: 'FILL' 1;">sign_language</span>
+<span class="font-label-lg text-label-lg">Deaf / Sign Language View</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-high px-space-md py-space-xs rounded-full">
+<span class="w-3 h-3 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface-variant">Live Discussion • Grade 3 Science</span>
+</div>
+</div>
+<!-- Main Celebratory Header Banner -->
+<div class="w-full relative overflow-hidden bg-gradient-to-r from-secondary-fixed via-secondary-container to-secondary-fixed-dim rounded-xl p-space-md md:p-space-lg shadow-md mb-space-lg">
+<div class="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-space-sm text-center sm:text-left">
+<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-lg text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-headline-xl" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="flex flex-col">
+<h1 class="font-headline-xl text-headline-xl text-on-secondary-container font-extrabold tracking-tight">
+          🌟 Question for the Teacher
+        </h1>
+<p class="font-body-lg text-body-lg text-secondary font-bold">
+          Your signed question was shared with the whole room in real-time!
+        </p>
+</div>
+</div>
+<!-- Cheerful Ambient Shapes inside Banner -->
+<div class="absolute -right-8 -top-8 w-36 h-36 bg-surface-container-lowest/30 rounded-full blur-xl pointer-events-none"></div>
+<div class="absolute -left-8 -bottom-8 w-40 h-40 bg-surface-container-lowest/40 rounded-full blur-xl pointer-events-none"></div>
+</div>
+<!-- Center Interaction Stage: Visual Dialogue Flow -->
+<div class="grid grid-cols-1 gap-space-lg mb-space-xl">
+<!-- Bubble 1: Student Question (ASL Signed) -->
+<div class="flex flex-col md:flex-row items-start gap-space-md group">
+<!-- Student Avatar & Label Pill -->
+<div class="flex md:flex-col items-center md:items-start gap-space-xs flex-shrink-0">
+<div class="relative">
+<div class="w-20 h-20 rounded-full overflow-hidden shadow-md bg-primary-fixed flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Warm and cheerful 8-year-old boy student named Leo smiling warmly at the camera with bright eyes, wearing a colorful casual yellow tee, soft natural classroom lighting, highly friendly and inviting educational portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9UjiEDoTMI3aFJk_tD2qCsi-40Q-iJR0Od7dqihQg9j_qD5s_sdbefsnd3cTMPp0yItUdcd-dLHyxmvqf9vT4xIryhYfqHVutf5JqQH6_3wVWxmfADzst9roHmAOsG9KZABXTRax_W2NiFvauTzVb3S0FnN7wslOvonV8YQWt-d1OSpFr0ZD2yYF4_l_oBQQwLKP6SmxwfFuk_sVw01hEkpXYnkGVuqxzhsFiGhFcadlRrecsEGxxgQ"/>
+</div>
+<div class="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">sign_language</span>
+</div>
+</div>
+<div class="bg-primary-fixed px-space-sm py-1 rounded-full shadow-xs">
+<span class="font-label-md text-label-md text-on-primary-fixed">Leo (You)</span>
+</div>
+</div>
+<!-- Dialogue Bubble Content -->
+<div class="flex-1 w-full bg-primary-fixed text-on-primary-fixed rounded-xl p-space-md sm:p-space-lg shadow-md transition-transform duration-200">
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<div class="inline-flex items-center gap-space-xs bg-primary-fixed-dim/60 px-space-sm py-1 rounded-full">
+<span class="material-symbols-outlined text-[18px] text-primary">videocam</span>
+<span class="font-label-md text-label-md text-primary font-bold">You asked (signed in ASL):</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">Just now</span>
+</div>
+<p class="font-body-xl text-body-xl text-on-primary-fixed font-bold leading-relaxed mt-space-xs">
+          ❓ “Can plants still make food on rainy days without bright sunshine?”
+        </p>
+<!-- Visual Sign Confirmation Tag -->
+<div class="mt-space-md pt-space-xs flex items-center gap-space-xs text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Camera detected clear signs: <span class="underline">PLANT</span> • <span class="underline">FOOD</span> • <span class="underline">RAIN</span> • <span class="underline">SUN</span></span>
+</div>
+</div>
+</div>
+<!-- Connector Indicator -->
+<div class="flex justify-center -my-space-xs md:pl-28">
+<div class="inline-flex items-center gap-space-xs bg-surface-container-highest px-space-md py-1 rounded-full shadow-xs">
+<span class="material-symbols-outlined text-primary text-label-md animate-bounce">arrow_downward</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Ms. Sarah replied with a big smile</span>
+</div>
+</div>
+<!-- Bubble 2: Teacher Reply -->
+<div class="flex flex-col md:flex-row items-start gap-space-md">
+<!-- Teacher Avatar & Label Pill -->
+<div class="flex md:flex-col items-center md:items-start gap-space-xs flex-shrink-0">
+<div class="relative">
+<div class="w-20 h-20 rounded-full overflow-hidden shadow-md bg-secondary-fixed flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="A warm, enthusiastic elementary school science teacher named Ms. Sarah, smiling joyfully, with gentle hazel eyes and kind expression, wearing a cozy forest green cardigan in a bright sunlit classroom with chalkboard and potted plants in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-czDjUbWbxsjYo0nJ15Kk_wyScPMr0vF9VOmzf6l3Wmtk1CEYJXCr8CSFqQZnf4ltCy2BlEbjiX8SVKPuB6i_54FTxLqREtldMYEttssshJffBzHaACSzNN4enHhuZ0gxIkzO3nr-oIvZSSWkbn2vDhhnGEWsyruG6xTSfo-wo_BYOkWCxA07eUXM2VVw5U8LU6F8iLor3pWfiCr1qKW3b8sbZ5SHuTI9Xs514KmMqAMNTMi6dAwccw"/>
+</div>
+<div class="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">record_voice_over</span>
+</div>
+</div>
+<div class="bg-secondary-fixed px-space-sm py-1 rounded-full shadow-xs">
+<span class="font-label-md text-label-md text-on-secondary-fixed">Ms. Sarah (Teacher)</span>
+</div>
+</div>
+<!-- Dialogue Bubble Content -->
+<div class="flex-1 w-full bg-secondary-fixed text-on-secondary-fixed rounded-xl p-space-md sm:p-space-lg shadow-md relative overflow-hidden">
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<div class="inline-flex items-center gap-space-xs bg-secondary-container/40 px-space-sm py-1 rounded-full">
+<span class="material-symbols-outlined text-[18px] text-secondary">sentiment_satisfied</span>
+<span class="font-label-md text-label-md text-secondary font-bold">Ms. Sarah (Teacher spoken & captioned):</span>
+</div>
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest/80 text-secondary px-space-sm py-1 rounded-full text-label-md font-bold shadow-xs">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">thumb_up</span>
+            Great Question Badge!
+          </span>
+</div>
+<p class="font-body-xl text-body-xl text-on-secondary-fixed font-bold leading-relaxed mt-space-xs">
+          💡 “Great question, Leo! Yes! Even through rainclouds, daylight filters through so leaves can still make food, just a little bit slower!”
+        </p>
+<!-- Extra Friendly Sensory Feedback / Visual Reinforcement -->
+<div class="mt-space-md flex flex-wrap items-center gap-space-xs">
+<div class="flex items-center gap-1 bg-surface-container-lowest/90 px-space-sm py-1.5 rounded-xl shadow-xs text-on-surface">
+<span class="text-label-xl">🌱</span>
+<span class="font-label-md text-label-md">Leaves still work!</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest/90 px-space-sm py-1.5 rounded-xl shadow-xs text-on-surface">
+<span class="text-label-xl">⛅</span>
+<span class="font-label-md text-label-md">Cloud light is enough</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest/90 px-space-sm py-1.5 rounded-xl shadow-xs text-on-surface">
+<span class="text-label-xl">⭐</span>
+<span class="font-label-md text-label-md">+5 Curiosity Stars</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Clear Joyful Action Stage -->
+<div class="flex flex-col items-center justify-center pt-space-md pb-space-lg">
+<button aria-label="Send thank you and acknowledge question answered" class="group relative inline-flex items-center justify-center gap-space-md bg-tertiary hover:bg-tertiary-container active:scale-95 text-on-tertiary px-space-xl py-space-md rounded-xl shadow-xl transition-all duration-200 cursor-pointer min-h-[84px] w-full sm:w-auto" id="thank-you-btn" type="button">
+<span class="material-symbols-outlined text-headline-lg group-hover:scale-125 transition-transform" style="font-variation-settings: 'FILL' 1;">
+        volunteer_activism
+      </span>
+<span class="font-label-xl text-label-xl font-extrabold tracking-wide">
+        🙌 Thank you! Got it!
+      </span>
+<span class="material-symbols-outlined text-headline-md group-hover:translate-x-1 transition-transform">
+        check
+      </span>
+</button>
+<p class="font-body-md text-body-md text-on-surface-variant text-center mt-space-sm">
+      Tap anytime to let Ms. Sarah know you are ready to keep learning!
+    </p>
+</div>
+</div>
+<script>
+  (function() {
+    const thankYouBtn = document.getElementById('thank-you-btn');
+    const toast = document.getElementById('celebration-toast');
+
+    if (thankYouBtn && toast) {
+      thankYouBtn.addEventListener('click', function() {
+        // Pop feedback toast
+        toast.classList.remove('hidden');
+        const card = toast.querySelector('div');
+        setTimeout(() => {
+          card.classList.remove('scale-95');
+          card.classList.add('scale-100');
+        }, 10);
+
+        // Hide smoothly after 2.2s
+        setTimeout(() => {
+          card.classList.remove('scale-100');
+          card.classList.add('scale-95');
+          setTimeout(() => {
+            toast.classList.add('hidden');
+          }, 200);
+        }, 2200);
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low py-space-md"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-sm text-center"><p class="font-body-md text-body-md text-on-surface-variant">Ready to share your voice with ClassBridge</p><p class="font-body-md text-body-md text-on-surface-variant">All Voices Welcome Here</p></div></footer>
+</section>
+<section id="screen-copilot" hidden>
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="ClassBridge Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W465o8Gxz-tRdUh3SogUqx9Zu45AYviAQIFJnjyHS6xkz8EmmWRz-iX-YawcJGLKl2kj29GLl_MGaNPPIuj8Sq-YOqur5BHIsmKWzlBvWgg1jTRs8kx246guAAI9Ma5CSnaWQn2RXbpzh5IR-qL-qMNLAf9zsZCML_UDpdf3Fi3pblKhLgvPAGCdXmI1G7tQiZ4awvkZVV-riV47zhnY-rS5RG6qkGNJs4JKy21I0eXEGFMu7G_LEotFf0"/><span class="font-headline-md text-headline-md text-primary font-bold tracking-tight select-none">ClassBridge</span></div><nav class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded-xl" data-active-classes="bg-primary-container text-on-primary-container"><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="talk-space" href="#">Talk Space</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="stories-and-play" href="#">Stories &amp; Play</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="my-feelings" href="#">My Feelings</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="together-time" href="#">Together Time</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="learning-tools" href="#">Learning Tools</a></nav><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 px-margin bg-background min-h-screen"><div class="flex flex-col w-full pb-space-xl">
+<div class="w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md py-space-md">
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high shadow-sm">
+<span class="material-symbols-outlined text-primary text-[22px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-label-md text-label-md text-on-primary-fixed-variant">Lecture Copilot</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container shadow-sm">
+<span class="w-3.5 h-3.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-body-md text-body-md text-on-surface font-bold">Grade 4 Science: How Animals Adapt</span>
+<span class="font-body-md text-body-md text-on-surface-variant">• Class is in session</span>
+</div>
+</div>
+<button class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-xs rounded-xl bg-primary text-on-primary shadow-md hover:scale-[1.02] active:translate-y-1 transition-all select-none" id="voiceBankBtn">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">mic</span>
+<span class="font-label-lg text-label-lg font-extrabold tracking-wide">Voice Bank</span>
+</button>
+</div>
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter mt-space-sm items-start">
+<div class="lg:col-span-7 flex flex-col gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-md">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">edit_note</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-tight">Live Classroom Notes</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Listening to Ms. Sarah in real time</p>
+</div>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px] animate-bounce">draw</span>
+<span class="font-label-md text-label-md text-primary">Writing now...</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-md mt-space-xs">
+<div class="flex items-start gap-space-md p-space-md rounded-lg bg-surface-container-low transition-all hover:bg-surface-container">
+<div class="w-9 h-9 mt-0.5 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">bubble_chart</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-body-xl text-body-xl text-on-surface leading-snug">
+              Animals have special body parts called <span class="font-extrabold text-primary underline decoration-secondary-container decoration-4">adaptations</span> to survive.
+            </p>
+</div>
+</div>
+<div class="relative overflow-hidden flex flex-col md:flex-row items-stretch gap-space-md p-space-lg rounded-lg bg-secondary-fixed text-on-secondary-fixed shadow-sm">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-on-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Key Classroom Takeaway</span>
+</div>
+<p class="font-body-xl text-body-xl font-bold text-on-secondary-fixed leading-snug">
+              Polar bears have thick hollow fur that traps body heat like a puffy winter jacket!
+            </p>
+</div>
+<div class="hidden sm:block w-28 h-28 rounded-lg overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A gentle, fluffy polar bear in a bright snowy sunny Arctic landscape, warm storybook art style, soft lighting, vibrant sky blue and white colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArKtBThr6frmg8IxeMn2BQWGyGcn--MM1SKA7jl1Krl1-ARDfqCXuUc-Am-Gskb_-cFZWpFvzpra1s67X7XBzvgBm7OuOj-wLJjN0n7RD5VnSjSEp0Nbyu274PCJHU4ejjefRHg9BxLMWzqUnY6Rdd4g0oa2yHeunJCirMqonNB754zA6tcl_P4OMt04JKxKXiSrHZEvd4upNd-pkVoEExsQ-CmR3Myp9iS5zTi5AdGp_v09FkvTjwbA"/>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-lg bg-surface-container-low transition-all hover:bg-surface-container">
+<div class="w-9 h-9 mt-0.5 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[20px]" style="font-variation-settings: 'FILL' 1;">nature</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-body-xl text-body-xl text-on-surface leading-snug">
+              Camouflage helps animals hide from predators by blending with snow or leaves.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-lg bg-surface-container">
+<div class="w-9 h-9 mt-0.5 rounded-full bg-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">lightbulb</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-body-xl text-body-xl text-on-surface font-bold leading-snug">
+              Key Idea: Form follows function in nature!
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              Every wing, claw, and beak has an important daytime job.
+            </p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-tertiary">check_circle</span>
+<span class="font-body-md text-body-md">Saved automatically to your Daily Backpack</span>
+</div>
+<button class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container hover:bg-surface text-primary font-label-md text-label-md transition-all" id="readNotesBtn">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+          Read out loud
+        </button>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[26px]" style="font-variation-settings: 'FILL' 1;">tips_and_updates</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Need help? Tap a quick question:</h3>
+</div>
+<div class="flex flex-col gap-space-sm">
+<button class="question-btn w-full text-left p-space-md rounded-lg bg-surface-container-high hover:scale-[1.02] active:translate-y-1 transition-all flex items-center justify-between group shadow-sm" data-answer="mean">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">help</span>
+</div>
+<span class="font-body-xl text-body-xl font-bold text-on-surface leading-tight">What does that mean?</span>
+</div>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">touch_app</span>
+</button>
+<button class="question-btn w-full text-left p-space-md rounded-lg bg-tertiary-fixed hover:scale-[1.02] active:translate-y-1 transition-all flex items-center justify-between group shadow-sm" data-answer="simple">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">eco</span>
+</div>
+<span class="font-body-xl text-body-xl font-bold text-on-tertiary-fixed leading-tight">Can you explain it simply?</span>
+</div>
+<span class="material-symbols-outlined text-tertiary group-hover:translate-x-1 transition-transform">touch_app</span>
+</button>
+<button class="question-btn w-full text-left p-space-md rounded-lg bg-secondary-fixed hover:scale-[1.02] active:translate-y-1 transition-all flex items-center justify-between group shadow-sm" data-answer="example">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">pets</span>
+</div>
+<span class="font-body-xl text-body-xl font-bold text-on-secondary-fixed leading-tight">Can you give another example?</span>
+</div>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">touch_app</span>
+</button>
+<button class="question-btn w-full text-left p-space-md rounded-lg bg-surface-variant hover:scale-[1.02] active:translate-y-1 transition-all flex items-center justify-between group shadow-sm" data-answer="save">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">bookmark_add</span>
+</div>
+<span class="font-body-xl text-body-xl font-bold text-on-surface leading-tight">Add this to my review cards</span>
+</div>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="relative bg-secondary-fixed/50 p-space-lg rounded-xl shadow-md flex flex-col gap-space-sm transition-all duration-300" id="privateBubble">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-secondary-fixed">Just for you (Private Answer):</span>
+</div>
+<span class="text-xs px-2 py-1 rounded-full bg-surface-container font-label-md text-on-surface-variant">Classroom Quiet Mode</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<p class="font-body-xl text-body-xl text-on-surface leading-relaxed" id="privateText">
+            Adaptation just means having tools built into your body! Like how ducks have webbed feet that work like swimming flippers. You don't need to speak out loud—Ms. Sarah can also see you requested an extra example!
+          </p>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">visibility</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Only on your screen &amp; teacher's tablet</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-tertiary-container text-on-tertiary-container shadow-sm hover:scale-105 active:translate-y-1 transition-all" id="gotItBtn">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">thumb_up</span>
+<span class="font-label-md text-label-md font-bold">Got it, thank you!</span>
+</button>
+<button class="w-11 h-11 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center shadow-sm hover:bg-surface-container transition-all" id="speakerBubbleBtn" title="Listen to private answer">
+<span class="material-symbols-outlined text-[24px]">volume_up</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    (function() {
+      const bubble = document.getElementById('privateBubble');
+      const text = document.getElementById('privateText');
+      const gotIt = document.getElementById('gotItBtn');
+      const voiceBank = document.getElementById('voiceBankBtn');
+      const readBtn = document.getElementById('readNotesBtn');
+
+      const answers = {
+        mean: "Adaptation just means having tools built into your body! Like how ducks have webbed feet that work like swimming flippers. You don't need to speak out loud—Ms. Sarah can also see you requested an extra example!",
+        simple: "Simple version: It is any trick, body shape, or superpower an animal has to stay safe, find food, and feel cozy in its home!",
+        example: "Here is another: A chameleon can shift its skin colors to match tree branches so hungry birds pass right by!",
+        save: "Awesome! We saved 'Polar Bear Fur & Camouflage' into your Study Cards so you can play memory games with them later!"
+      };
+
+      document.querySelectorAll('.question-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const type = btn.getAttribute('data-answer');
+          if (answers[type]) {
+            text.innerText = answers[type];
+            bubble.classList.remove('scale-100');
+            bubble.classList.add('scale-[1.02]');
+            setTimeout(() => bubble.classList.remove('scale-[1.02]'), 200);
+          }
+        });
+      });
+
+      gotIt.addEventListener('click', () => {
+        gotIt.innerHTML = '<span class="material-symbols-outlined text-[20px]">check</span><span class="font-label-md text-label-md font-bold">Shared with Ms. Sarah!</span>';
+        gotIt.classList.remove('bg-tertiary-container');
+        gotIt.classList.add('bg-primary-container');
+        setTimeout(() => {
+          gotIt.innerHTML = '<span class="material-symbols-outlined text-[20px]">thumb_up</span><span class="font-label-md text-label-md font-bold">Got it, thank you!</span>';
+          gotIt.classList.remove('bg-primary-container');
+          gotIt.classList.add('bg-tertiary-container');
+        }, 2200);
+      });
+
+      voiceBank.addEventListener('click', () => {
+        voiceBank.classList.toggle('bg-tertiary');
+      });
+
+      readBtn.addEventListener('click', () => {
+        readBtn.classList.toggle('bg-primary-fixed');
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-md"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-sm text-center"><p class="font-body-md text-body-md text-on-surface-variant">Ready to share your voice with ClassBridge</p><p class="font-body-md text-body-md text-on-surface-variant">All Voices Welcome Here</p></div></footer>
+</section>
+<section id="screen-blind" hidden>
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="ClassBridge Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W465o8Gxz-tRdUh3SogUqx9Zu45AYviAQIFJnjyHS6xkz8EmmWRz-iX-YawcJGLKl2kj29GLl_MGaNPPIuj8Sq-YOqur5BHIsmKWzlBvWgg1jTRs8kx246guAAI9Ma5CSnaWQn2RXbpzh5IR-qL-qMNLAf9zsZCML_UDpdf3Fi3pblKhLgvPAGCdXmI1G7tQiZ4awvkZVV-riV47zhnY-rS5RG6qkGNJs4JKy21I0eXEGFMu7G_LEotFf0"/><span class="font-headline-md text-headline-md text-primary font-bold tracking-tight select-none">ClassBridge</span></div><nav class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded-xl" data-active-classes="bg-primary-container text-on-primary-container"><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="talk-space" href="#">Talk Space</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="stories-and-play" href="#">Stories &amp; Play</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="my-feelings" href="#">My Feelings</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="together-time" href="#">Together Time</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="learning-tools" href="#">Learning Tools</a></nav><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 px-margin bg-background min-h-screen"><div class="flex flex-col w-full pb-16">
+<section class="w-full flex flex-col gap-space-sm pt-4 pb-6">
+<div class="flex flex-wrap items-center gap-space-xs md:gap-space-sm">
+<div class="inline-flex items-center gap-2 px-space-md py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed shadow-sm select-none">
+<span class="text-2xl leading-none">🎧</span>
+<span class="font-label-lg text-label-lg font-bold tracking-wide">Audio &amp; High-Contrast View</span>
+</div>
+<div class="inline-flex items-center gap-2 px-space-md py-space-xs rounded-full bg-surface-container-highest text-on-surface shadow-sm">
+<span class="inline-block w-3.5 h-3.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Grade 4 Math: Fractions &amp; Shapes • Live Audio Connected</span>
+</div>
+<div class="inline-flex items-center gap-2 px-space-md py-space-xs rounded-full bg-primary-fixed text-on-primary-fixed-variant shadow-sm ml-auto">
+<span class="material-symbols-outlined text-[22px] leading-none" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+<span class="font-label-md text-label-md font-bold">Screen Reader Active • Audio Description On</span>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter w-full">
+<div class="lg:col-span-6 flex flex-col justify-between bg-inverse-surface text-inverse-on-surface rounded-xl p-space-lg shadow-xl relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-primary-container/20 blur-2xl pointer-events-none"></div>
+<div class="absolute -left-12 -bottom-12 w-48 h-48 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<div class="flex items-center justify-between flex-wrap gap-space-xs">
+<span class="inline-flex items-center gap-2 px-space-md py-space-xs rounded-full bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-md font-bold">
+<span class="text-2xl leading-none">👂</span>
+<span>Currently Hearing:</span>
+</span>
+<span class="inline-flex items-center gap-2 px-space-sm py-1 rounded-full bg-tertiary/30 text-tertiary-fixed font-label-md text-label-md">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-tertiary-fixed"></span>
+            Speech-to-Text synced
+          </span>
+</div>
+<div class="py-space-sm">
+<p class="font-headline-lg text-headline-lg font-bold text-surface-bright leading-tight tracking-tight">
+            Ms. Sarah says: <span class="text-secondary-fixed-dim">“If we take one whole pizza and cut it into four equal slices, each slice is one-fourth!”</span>
+</p>
+</div>
+</div>
+<div class="relative z-10 pt-space-md mt-space-sm flex items-center justify-between gap-space-md">
+<div aria-hidden="true" class="flex items-center gap-1.5 h-12 flex-1 max-w-xs">
+<span class="w-2.5 bg-primary-fixed rounded-full animate-bounce h-5" style="animation-delay: 0.1s"></span>
+<span class="w-2.5 bg-secondary-fixed rounded-full animate-bounce h-10" style="animation-delay: 0.25s"></span>
+<span class="w-2.5 bg-tertiary-fixed rounded-full animate-bounce h-7" style="animation-delay: 0.4s"></span>
+<span class="w-2.5 bg-primary-fixed rounded-full animate-bounce h-12" style="animation-delay: 0.15s"></span>
+<span class="w-2.5 bg-secondary-fixed rounded-full animate-bounce h-6" style="animation-delay: 0.3s"></span>
+<span class="w-2.5 bg-tertiary-fixed rounded-full animate-bounce h-11" style="animation-delay: 0.05s"></span>
+<span class="w-2.5 bg-primary-fixed rounded-full animate-bounce h-4" style="animation-delay: 0.35s"></span>
+</div>
+<button aria-label="Play Ms. Sarah audio again" class="inline-flex items-center gap-2 px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-transform active:scale-95 shadow-md select-none" id="voice-replay-btn" type="button">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span class="font-label-lg text-label-lg font-bold">Hear Again</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-6 flex flex-col justify-between bg-surface-container-lowest text-on-surface rounded-xl p-space-lg shadow-xl relative overflow-hidden">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between flex-wrap gap-space-xs">
+<span class="inline-flex items-center gap-2 px-space-md py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-lg text-label-lg font-bold shadow-sm">
+<span class="text-2xl leading-none">📐</span>
+<span>Teacher’s Board in Real-Time</span>
+</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">Updated 5 seconds ago</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col items-center justify-center text-center shadow-inner">
+<p class="font-headline-xl text-headline-xl font-extrabold text-primary tracking-tight select-all">
+            ¼ + ¼ = &amp;frac24 = ½
+          </p>
+<div class="mt-space-xs inline-flex items-center gap-2 px-space-md py-1 rounded-full bg-surface-container-highest text-on-surface font-label-lg text-label-lg font-bold">
+<span>🗣️ “One quarter plus one quarter equals one half (two fourths)”</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-md bg-surface-container rounded-lg p-space-md">
+<div class="relative w-32 h-32 flex-shrink-0 flex items-center justify-center">
+<svg aria-label="Visual pizza diagram: two quarters shaded yellow, two quarters empty light cream" class="w-32 h-32 transform -rotate-90" role="img" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="#faf8ff" r="42"></circle>
+<path d="M 50 50 L 50 8 A 42 42 0 0 1 92 50 Z" fill="#fea619"></path>
+<path d="M 50 50 L 92 50 A 42 42 0 0 1 50 92 Z" fill="#ffb95f"></path>
+<path d="M 50 50 L 50 92 A 42 42 0 0 1 8 50 Z" fill="#eaedff"></path>
+<path d="M 50 50 L 8 50 A 42 42 0 0 1 50 8 Z" fill="#eaedff"></path>
+<circle cx="50" cy="50" fill="none" r="42" stroke="#006194" stroke-width="4"></circle>
+<line stroke="#006194" stroke-width="3" x1="50" x2="50" y1="8" y2="92"></line>
+<line stroke="#006194" stroke-width="3" x1="8" x2="92" y1="50" y2="50"></line>
+</svg>
+<span class="absolute font-headline-md text-headline-md font-black text-on-surface pointer-events-none">2/4</span>
+</div>
+<div class="flex flex-col gap-1 text-center sm:text-left">
+<p class="font-label-xl text-label-xl font-extrabold text-on-surface">Visual Shape Description</p>
+<p class="font-body-md text-body-md text-on-surface-variant font-semibold">
+              The circle is cut into 4 equal slices like a pie. 2 slices are colored in bright gold. That makes exactly half the circle!
+            </p>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-end">
+<span class="font-label-md text-label-md text-primary font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+          Matches Student Desk Braille Display
+        </span>
+</div>
+</div>
+</div>
+<section class="mt-space-lg w-full">
+<h2 class="sr-only">Quick Audio &amp; Participation Actions</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<button aria-label="Repeat the math equation aloud" class="group relative flex flex-col items-center justify-center text-center p-space-md rounded-lg bg-primary hover:bg-primary-container text-on-primary shadow-xl transition-all active:translate-y-1 select-none min-h-[120px]" id="btn-action-repeat" type="button">
+<span class="text-4xl leading-none mb-2 transform group-hover:scale-110 transition-transform">🔁</span>
+<span class="font-label-xl text-label-xl font-extrabold tracking-wide">REPEAT EQUATION</span>
+<span class="font-body-md text-body-md opacity-90 font-medium">Read math formula again</span>
+</button>
+<button aria-label="Ask a question to Ms. Sarah" class="group relative flex flex-col items-center justify-center text-center p-space-md rounded-lg bg-secondary-container hover:bg-secondary-fixed-dim text-on-surface shadow-xl transition-all active:translate-y-1 select-none min-h-[120px]" id="btn-action-ask" type="button">
+<span class="text-4xl leading-none mb-2 transform group-hover:scale-110 transition-transform">🙋</span>
+<span class="font-label-xl text-label-xl font-extrabold tracking-wide text-on-surface">ASK A QUESTION</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">Raise hand politely</span>
+</button>
+<button aria-label="Describe what is happening in the room right now" class="group relative flex flex-col items-center justify-center text-center p-space-md rounded-lg bg-tertiary-container hover:bg-tertiary text-on-tertiary-container shadow-xl transition-all active:translate-y-1 select-none min-h-[120px]" id="btn-action-describe" type="button">
+<span class="text-4xl leading-none mb-2 transform group-hover:scale-110 transition-transform">🏫</span>
+<span class="font-label-xl text-label-xl font-extrabold tracking-wide">DESCRIBE ROOM</span>
+<span class="font-body-md text-body-md opacity-90 font-medium">Hear what classmates are doing</span>
+</button>
+<button aria-label="Check classroom sound alerts and chimes" class="group relative flex flex-col items-center justify-center text-center p-space-md rounded-lg bg-error hover:opacity-95 text-on-error shadow-xl transition-all active:translate-y-1 select-none min-h-[120px]" id="btn-action-alerts" type="button">
+<span class="text-4xl leading-none mb-2 transform group-hover:scale-110 transition-transform">🔔</span>
+<span class="font-label-xl text-label-xl font-extrabold tracking-wide">SOUND ALERTS</span>
+<span class="font-body-md text-body-md opacity-90 font-medium">Listen for school chimes</span>
+</button>
+</div>
+</section>
+<div aria-live="polite" class="sr-only" id="audio-announcer">Audio &amp; High-Contrast View ready.</div>
+</div>
+<script>
+  (function () {
+    const announcer = document.getElementById('audio-announcer');
+
+    function speakAnnouncement(text) {
+      if (!announcer) return;
+      announcer.textContent = text;
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.rate = 1.0;
+        utterance.pitch = 1.1;
+        window.speechSynthesis.speak(utterance);
+      }
+    }
+
+    const replayVoice = document.getElementById('voice-replay-btn');
+    if (replayVoice) {
+      replayVoice.addEventListener('click', function () {
+        speakAnnouncement("Ms. Sarah says: If we take one whole pizza and cut it into four equal slices, each slice is one-fourth!");
+      });
+    }
+
+    const btnRepeat = document.getElementById('btn-action-repeat');
+    if (btnRepeat) {
+      btnRepeat.addEventListener('click', function () {
+        speakAnnouncement("Reading equation: One quarter plus one quarter equals two fourths, which simplifies to one half.");
+      });
+    }
+
+    const btnAsk = document.getElementById('btn-action-ask');
+    if (btnAsk) {
+      btnAsk.addEventListener('click', function () {
+        speakAnnouncement("Your digital hand is raised! Ms. Sarah has received your question request.");
+      });
+    }
+
+    const btnDescribe = document.getElementById('btn-action-describe');
+    if (btnDescribe) {
+      btnDescribe.addEventListener('click', function () {
+        speakAnnouncement("Room description: Ms. Sarah is pointing at the magnetic fraction board. Twelve classmates are seated at tables quietly building pizza shapes.");
+      });
+    }
+
+    const btnAlerts = document.getElementById('btn-action-alerts');
+    if (btnAlerts) {
+      btnAlerts.addEventListener('click', function () {
+        speakAnnouncement("Sound alert checked: Classroom chime scheduled in eight minutes for morning recess.");
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low py-space-md"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-sm text-center"><p class="font-body-md text-body-md text-on-surface-variant">Ready to share your voice with ClassBridge</p><p class="font-body-md text-body-md text-on-surface-variant">All Voices Welcome Here</p></div></footer>
+</section>
+<section id="screen-eye" hidden>
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="ClassBridge Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W465o8Gxz-tRdUh3SogUqx9Zu45AYviAQIFJnjyHS6xkz8EmmWRz-iX-YawcJGLKl2kj29GLl_MGaNPPIuj8Sq-YOqur5BHIsmKWzlBvWgg1jTRs8kx246guAAI9Ma5CSnaWQn2RXbpzh5IR-qL-qMNLAf9zsZCML_UDpdf3Fi3pblKhLgvPAGCdXmI1G7tQiZ4awvkZVV-riV47zhnY-rS5RG6qkGNJs4JKy21I0eXEGFMu7G_LEotFf0"/><span class="font-headline-md text-headline-md text-primary font-bold tracking-tight select-none">ClassBridge</span></div><nav class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded-xl" data-active-classes="bg-primary-container text-on-primary-container"><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="talk-space" href="#">Talk Space</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="stories-and-play" href="#">Stories & Play</a><a aria-current="page" class="px-space-md py-space-xs rounded-lg font-label-lg transition-colors select-none bg-primary-container text-on-primary-container" data-path="my-feelings" href="#">My Feelings</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="together-time" href="#">Together Time</a></nav><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 px-margin bg-background min-h-screen"><div class="flex flex-col w-full pb-space-lg">
+<div class="w-full mb-space-sm bg-surface-container-lowest rounded-lg p-space-sm shadow-md flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm px-space-xs w-full sm:w-auto">
+<span class="font-body-md text-body-md text-on-surface-variant font-bold uppercase tracking-wider select-none shrink-0">Speaking:</span>
+<div class="font-headline-md text-headline-md text-on-surface font-black tracking-tight select-none truncate" id="sentence-display">
+        I want to say: SLOWER PLEASE 🐢
+      </div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 w-full sm:w-auto justify-end">
+<button class="h-14 px-space-md bg-surface-container rounded-lg font-label-lg text-label-lg text-on-surface font-black shadow-sm active:translate-y-1 transition-all select-none hover:bg-surface-container-high" id="clear-btn" type="button">
+        CLEAR
+      </button>
+<button class="h-14 px-space-lg bg-primary rounded-lg font-label-lg text-label-lg text-on-primary font-black shadow-md active:translate-y-1 transition-all select-none hover:bg-primary-container" id="speak-btn" type="button">
+        READ ALOUD
+      </button>
+</div>
+</div>
+<div class="w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-space-sm">
+<button class="eye-tile h-36 lg:h-40 rounded-lg bg-tertiary-container text-on-tertiary-container shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="YES ✅" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">✅</span>
+<span class="font-label-xl text-label-xl font-black tracking-wide leading-tight text-center">YES</span>
+</button>
+<button class="eye-tile h-36 lg:h-40 rounded-lg bg-error text-on-error shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="NO ❌" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">❌</span>
+<span class="font-label-xl text-label-xl font-black tracking-wide leading-tight text-center">NO</span>
+</button>
+<button class="eye-tile h-36 lg:h-40 rounded-lg bg-secondary-container text-on-secondary-container shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="MAYBE 🤷" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">🤷</span>
+<span class="font-label-xl text-label-xl font-black tracking-wide leading-tight text-center">MAYBE</span>
+</button>
+<button class="eye-tile h-36 lg:h-40 rounded-lg bg-inverse-surface text-inverse-on-surface shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="I DON'T UNDERSTAND 😕" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">😕</span>
+<span class="font-label-md text-label-md font-black tracking-wide leading-tight text-center">I DON'T UNDERSTAND</span>
+</button>
+<button class="eye-tile h-36 lg:h-40 rounded-lg bg-primary-container text-on-primary-container shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="REPEAT THAT 🔁" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">🔁</span>
+<span class="font-label-lg text-label-lg font-black tracking-wide leading-tight text-center">REPEAT THAT</span>
+</button>
+<button class="eye-tile h-36 lg:h-40 rounded-lg bg-tertiary text-on-tertiary shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="SLOWER PLEASE 🐢" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">🐢</span>
+<span class="font-label-lg text-label-lg font-black tracking-wide leading-tight text-center">SLOWER PLEASE</span>
+</button>
+<button class="eye-tile h-36 lg:h-40 rounded-lg bg-secondary text-on-secondary shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="I NEED HELP 🙋" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">🙋</span>
+<span class="font-label-xl text-label-xl font-black tracking-wide leading-tight text-center">I NEED HELP</span>
+</button>
+<button class="eye-tile h-36 lg:h-40 rounded-lg bg-primary-fixed text-on-primary-fixed shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="WATER 💧" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">💧</span>
+<span class="font-label-xl text-label-xl font-black tracking-wide leading-tight text-center">WATER</span>
+</button>
+<button class="eye-tile h-36 lg:h-40 rounded-lg bg-primary text-on-primary shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="BATHROOM 🚻" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">🚻</span>
+<span class="font-label-xl text-label-xl font-black tracking-wide leading-tight text-center">BATHROOM</span>
+</button>
+<button class="eye-tile h-36 lg:h-40 rounded-lg bg-error text-on-error shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="I'M IN PAIN 😣" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">😣</span>
+<span class="font-label-xl text-label-xl font-black tracking-wide leading-tight text-center">I'M IN PAIN</span>
+</button>
+<button class="eye-tile h-36 lg:h-40 rounded-lg bg-surface-variant text-on-surface shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="I'M TIRED 😴" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">😴</span>
+<span class="font-label-xl text-label-xl font-black tracking-wide leading-tight text-center">I'M TIRED</span>
+</button>
+<button class="eye-tile h-36 lg:h-40 rounded-lg bg-on-secondary-fixed-variant text-on-primary shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="I NEED A BREAK ☕" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">☕</span>
+<span class="font-label-md text-label-md font-black tracking-wide leading-tight text-center">I NEED A BREAK</span>
+</button>
+<button class="eye-tile h-36 lg:h-40 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="HAPPY 😊" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">😊</span>
+<span class="font-label-xl text-label-xl font-black tracking-wide leading-tight text-center">HAPPY</span>
+</button>
+<button class="eye-tile h-36 lg:h-40 rounded-lg bg-surface-dim text-on-surface shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="UPSET 😢" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">😢</span>
+<span class="font-label-xl text-label-xl font-black tracking-wide leading-tight text-center">UPSET</span>
+</button>
+<button class="eye-tile h-36 lg:h-40 rounded-lg bg-secondary-fixed text-on-secondary-fixed shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="THANK YOU 🙏" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">🙏</span>
+<span class="font-label-xl text-label-xl font-black tracking-wide leading-tight text-center">THANK YOU</span>
+</button>
+<button class="eye-tile h-36 lg:h-40 rounded-lg bg-surface-container-highest text-primary font-black shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="PLEASE ➕" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">➕</span>
+<span class="font-label-xl text-label-xl font-black tracking-wide leading-tight text-center">PLEASE</span>
+</button>
+<button class="eye-tile col-span-2 sm:col-span-3 lg:col-span-2 h-36 lg:h-40 rounded-lg bg-on-background text-surface shadow-md flex flex-col items-center justify-center gap-1 active:translate-y-1 transition-all select-none p-space-xs" data-phrase="KEYBOARD ⌨️" type="button">
+<span class="text-5xl lg:text-6xl leading-none select-none">⌨️</span>
+<span class="font-label-xl text-label-xl font-black tracking-wide leading-tight text-center">KEYBOARD</span>
+</button>
+</div>
+<div class="w-full mt-space-sm">
+<button class="eye-tile w-full h-24 lg:h-28 rounded-lg bg-error text-on-error shadow-xl flex items-center justify-center gap-space-md active:translate-y-1 transition-all select-none px-space-md" data-phrase="EMERGENCY 🚨" type="button">
+<span class="text-6xl lg:text-7xl leading-none select-none">🚨</span>
+<span class="font-headline-md text-headline-md lg:font-headline-lg lg:text-headline-lg font-black tracking-wider text-center">EMERGENCY</span>
+</button>
+</div>
+</div>
+<script>
+  (function() {
+    const display = document.getElementById('sentence-display');
+    const clearBtn = document.getElementById('clear-btn');
+    const speakBtn = document.getElementById('speak-btn');
+    const tiles = document.querySelectorAll('.eye-tile');
+
+    let currentText = "SLOWER PLEASE 🐢";
+
+    function updateSentence(text) {
+      currentText = text;
+      if (text.trim().length === 0) {
+        display.textContent = "I want to say: ...";
+      } else {
+        display.textContent = "I want to say: " + text;
+      }
+    }
+
+    tiles.forEach(tile => {
+      tile.addEventListener('click', () => {
+        const phrase = tile.getAttribute('data-phrase');
+        if (phrase) {
+          updateSentence(phrase);
+          speak(phrase);
+        }
+      });
+    });
+
+    clearBtn.addEventListener('click', () => {
+      updateSentence("");
+    });
+
+    function speak(textToSpeak) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const cleanText = textToSpeak.replace(/[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/gu, '').trim();
+        if (cleanText) {
+          const utterance = new SpeechSynthesisUtterance(cleanText);
+          utterance.rate = 0.9;
+          window.speechSynthesis.speak(utterance);
+        }
+      }
+    }
+
+    speakBtn.addEventListener('click', () => {
+      if (currentText) {
+        speak(currentText);
+      }
+    });
+  })();
+</script></main><footer class="w-full bg-surface-container-low py-space-md"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-sm text-center"><p class="font-body-md text-body-md text-on-surface-variant">Ready to share your voice with ClassBridge</p><p class="font-body-md text-body-md text-on-surface-variant">All Voices Welcome Here</p></div></footer>
+</section>
+<section id="screen-keyboard" hidden>
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="ClassBridge Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W465o8Gxz-tRdUh3SogUqx9Zu45AYviAQIFJnjyHS6xkz8EmmWRz-iX-YawcJGLKl2kj29GLl_MGaNPPIuj8Sq-YOqur5BHIsmKWzlBvWgg1jTRs8kx246guAAI9Ma5CSnaWQn2RXbpzh5IR-qL-qMNLAf9zsZCML_UDpdf3Fi3pblKhLgvPAGCdXmI1G7tQiZ4awvkZVV-riV47zhnY-rS5RG6qkGNJs4JKy21I0eXEGFMu7G_LEotFf0"/><span class="font-headline-md text-headline-md text-primary font-bold tracking-tight select-none">ClassBridge</span></div><nav class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded-xl" data-active-classes="bg-primary-container text-on-primary-container"><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="talk-space" href="#">Talk Space</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="stories-and-play" href="#">Stories & Play</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="my-feelings" href="#">My Feelings</a><a aria-current="page" class="px-space-md py-space-xs rounded-lg font-label-lg transition-colors select-none bg-primary-container text-on-primary-container" data-path="together-time" href="#">Together Time</a></nav><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 px-margin bg-background min-h-screen"><div class="flex flex-col w-full pb-space-xl select-none">
+<!-- Interactive Audio and Feedback System -->
+<div class="fixed top-24 right-8 z-50 transform translate-y-[-20px] opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-space-sm bg-tertiary text-on-tertiary px-space-md py-space-sm rounded-lg shadow-xl" id="toast-celebration">
+<span class="material-symbols-outlined text-[32px]">volume_up</span>
+<span class="font-headline-md text-headline-md">Speaking out loud!</span>
+</div>
+<!-- Top Communication Display Bar -->
+<section class="w-full mb-space-md">
+<div class="w-full bg-surface-container-lowest rounded-lg p-space-md shadow-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<!-- Back Trigger -->
+<button aria-label="Go back to phrase grid" class="w-full md:w-auto flex items-center justify-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-variant text-primary transition-all duration-150 transform active:scale-95 shadow-sm group" id="btn-back" type="button">
+<span class="material-symbols-outlined text-[32px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+<span class="font-label-xl text-label-xl font-bold">Back to Talk</span>
+</button>
+<!-- Sentence Board / Message Strip -->
+<div class="flex-1 w-full bg-surface-container-low rounded-lg px-space-md py-space-sm flex items-center justify-start overflow-x-auto shadow-inner min-h-[72px]">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-wider">I want to say:</span>
+<span class="font-headline-md text-headline-md text-primary font-extrabold tracking-wide uppercase" id="speech-text">HELLO MS SARAH</span>
+<span class="inline-block w-1.5 h-8 bg-primary rounded-full animate-pulse" id="blinking-cursor"></span>
+</div>
+</div>
+<!-- Clear Strip Trigger -->
+<button aria-label="Clear entire message" class="flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-lg bg-error-container text-on-error-container hover:bg-error hover:text-on-error transition-colors shadow-sm" id="btn-clear-all" type="button">
+<span class="material-symbols-outlined text-[28px]">delete_sweep</span>
+<span class="font-label-md text-label-md">Clear</span>
+</button>
+</div>
+</section>
+<!-- Word Suggestion Bubbles (Assistive Quick-Picks) -->
+<section class="w-full mb-space-md">
+<div class="flex items-center gap-space-sm overflow-x-auto pb-2">
+<span class="flex items-center gap-1 font-label-md text-label-md text-on-surface-variant mr-space-xs">
+<span class="material-symbols-outlined text-[22px] text-secondary-container">auto_awesome</span>
+        Quick words:
+      </span>
+<button class="quick-word px-space-md py-space-xs rounded-full bg-primary-fixed text-on-primary-fixed font-label-lg text-label-lg shadow-sm hover:bg-primary-fixed-dim transition-all active:scale-95 transform" type="button">PLEASE</button>
+<button class="quick-word px-space-md py-space-xs rounded-full bg-primary-fixed text-on-primary-fixed font-label-lg text-label-lg shadow-sm hover:bg-primary-fixed-dim transition-all active:scale-95 transform" type="button">THANK YOU</button>
+<button class="quick-word px-space-md py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-lg text-label-lg shadow-sm hover:bg-secondary-fixed-dim transition-all active:scale-95 transform" type="button">I NEED HELP</button>
+<button class="quick-word px-space-md py-space-xs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-lg text-label-lg shadow-sm hover:bg-tertiary-fixed-dim transition-all active:scale-95 transform" type="button">CAN WE PLAY?</button>
+<button class="quick-word px-space-md py-space-xs rounded-full bg-primary-fixed text-on-primary-fixed font-label-lg text-label-lg shadow-sm hover:bg-primary-fixed-dim transition-all active:scale-95 transform" type="button">YES</button>
+<button class="quick-word px-space-md py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-lg text-label-lg shadow-sm hover:bg-secondary-fixed-dim transition-all active:scale-95 transform" type="button">NO</button>
+</div>
+</section>
+<!-- Keyboard Playground Deck -->
+<section class="w-full bg-surface-container-lowest rounded-lg p-space-md shadow-lg flex flex-col gap-space-sm relative">
+<!-- Visual Living Feedback Ribbon -->
+<div class="w-full flex items-center justify-between px-space-xs mb-1">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="w-3 h-3 rounded-full bg-tertiary-container animate-ping"></span>
+<span>Keyboard Ready • Big Friendly Keys</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px] text-primary">touch_app</span>
+<span>Tap or Look to Type</span>
+</div>
+</div>
+</div>
+<!-- Row 1 (Q to P) -->
+<div class="grid grid-cols-10 gap-space-xs sm:gap-space-sm w-full">
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="Q" type="button">Q</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="W" type="button">W</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="E" type="button">E</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="R" type="button">R</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="T" type="button">T</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="Y" type="button">Y</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="U" type="button">U</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="I" type="button">I</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="O" type="button">O</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="P" type="button">P</button>
+</div>
+<!-- Row 2 (A to L) -->
+<div class="grid grid-cols-9 gap-space-xs sm:gap-space-sm w-full max-w-[96%] mx-auto">
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="A" type="button">A</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="B" type="button">S</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="D" type="button">D</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="F" type="button">F</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="G" type="button">G</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="H" type="button">H</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="J" type="button">J</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="K" type="button">K</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="L" type="button">L</button>
+</div>
+<!-- Row 3 (Z to M + Quick Punctuation) -->
+<div class="grid grid-cols-9 gap-space-xs sm:gap-space-sm w-full max-w-[96%] mx-auto">
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="Z" type="button">Z</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="X" type="button">X</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="C" type="button">C</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="V" type="button">V</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="B" type="button">B</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="N" type="button">N</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container hover:bg-primary-fixed text-on-surface hover:text-on-primary-fixed flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="M" type="button">M</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container-high hover:bg-secondary-fixed text-secondary flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="!" type="button">!</button>
+<button class="key-btn h-20 sm:h-24 rounded-lg bg-surface-container-high hover:bg-secondary-fixed text-secondary flex items-center justify-center font-headline-md text-headline-md font-extrabold shadow-sm transition-all transform active:scale-90 active:translate-y-1" data-key="?" type="button">?</button>
+</div>
+<!-- Row 4 (Space, Delete, and Super Speak Action) -->
+<div class="grid grid-cols-12 gap-space-xs sm:gap-space-sm w-full mt-space-xs">
+<!-- Delete Button (Warm Amber) -->
+<button aria-label="Delete last letter" class="col-span-3 sm:col-span-3 h-20 sm:h-24 rounded-lg bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim flex items-center justify-center gap-space-xs font-label-xl text-label-xl font-extrabold shadow-md transition-all transform active:scale-95 active:translate-y-1" id="btn-delete" type="button">
+<span class="material-symbols-outlined text-[32px]">backspace</span>
+<span class="hidden sm:inline">DELETE</span>
+</button>
+<!-- Space Bar (Soft Sky Blue) -->
+<button aria-label="Add a space" class="col-span-4 sm:col-span-5 h-20 sm:h-24 rounded-lg bg-primary-fixed text-on-primary-fixed hover:bg-primary-fixed-dim flex items-center justify-center gap-space-xs font-label-xl text-label-xl font-extrabold shadow-md transition-all transform active:scale-95 active:translate-y-1" id="btn-space" type="button">
+<span class="material-symbols-outlined text-[32px]">space_bar</span>
+<span class="hidden sm:inline">SPACE</span>
+</button>
+<!-- Speak Out Loud Button (Vibrant Inclusive Green) -->
+<button aria-label="Speak the full message" class="col-span-5 sm:col-span-4 h-20 sm:h-24 rounded-lg bg-tertiary-container text-on-tertiary-container hover:bg-tertiary flex items-center justify-center gap-space-xs font-label-xl text-label-xl font-extrabold shadow-xl transition-all transform active:scale-95 active:translate-y-1" id="btn-speak" type="button">
+<span class="material-symbols-outlined text-[36px] animate-bounce">volume_up</span>
+<span>SPEAK</span>
+</button>
+</div>
+</section>
+<!-- Visual Storyboard / Supportive Helper Card -->
+<section class="w-full mt-space-lg grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Visual 1: Classroom Helper -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-md flex items-center gap-space-md">
+<img class="w-20 h-20 rounded-lg object-cover flex-shrink-0" data-alt="A sunny bright inclusive elementary classroom with children in wheelchairs and diverse students happily communicating with assistive tablets and large colorful buttons. The atmosphere is warm, celebratory, and filled with vibrant blues, sunny yellows, and soft wood textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkg0iaWY8JBQNwNsXWX4dszVo87T2c9MQ83vkHcvrAZa4e22vRw0p9vD8YkKvMo5Aa7Z3Wifz4JecI7yLoqZ5KKTgG6N5fOS1nN2OfdeQ7vThh3pZperKz1JpmvOXSyMlYtvapFIS3v6VEF8v7RJJsHitRiBRg5UNqSvs4icwIwaZBSjcVEya3cABulyy-oTfxm8q0eyq0qEpAHg1UAKhWFsEVJvsV9KmeEfBq_DaTPsTG9p3EvAeFLw"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary font-bold">Ms. Sarah is Listening</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Your message is showing clearly on the smartboard for all friends.</span>
+</div>
+</div>
+<!-- Visual 2: Companion Peer -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-md flex items-center gap-space-md">
+<img class="w-20 h-20 rounded-lg object-cover flex-shrink-0" data-alt="Two cheerful elementary students sitting at a low sensory play table, laughing and pointing toward an interactive digital screen displaying cheerful visual pictograms. Natural soft lighting, soft pastel hues, and warm joyful expressions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkkcyrvZPTJ7M_oDOWXHbpbTKi_E0EpnDu1H7Cg0_EwPS029dICO_89ImhxmziEQ3blZLxXEIAOvUgH98YxZyziHEkGhXet3OpvKHNaBgdYbyy5V6bBv4FmSfMrXkBV3BpKtQ6dV-uUwmKIow7VUvcMMjdR8eyWkKnllsjgLUuL3xDascxwVJdop6bsiS67mkVofSlq0Ufs90xIUAISt8y0DCSxTbzOykNv4mPExGp6wChx6mmUQqVfA"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-secondary font-bold">Partner Chat</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Leo and Maya are ready to hear what you are typing today.</span>
+</div>
+</div>
+<!-- Visual 3: Playful Encouragement -->
+<div class="bg-surface-container-high rounded-lg p-space-md shadow-md flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-background font-bold">Take Your Time!</span>
+<span class="font-body-md text-body-md text-on-surface-variant">There is no rush. Every word you share matters here.</span>
+</div>
+<div class="w-14 h-14 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[32px]">sentiment_very_satisfied</span>
+</div>
+</div>
+</section>
+<!-- Audio Context and Keyboard Logic -->
+<script>
+    (function() {
+      const speechTextElem = document.getElementById('speech-text');
+      const toast = document.getElementById('toast-celebration');
+      let currentSentence = "HELLO MS SARAH";
+
+      function updateDisplay() {
+        speechTextElem.textContent = currentSentence.length > 0 ? currentSentence : "";
+      }
+
+      function playPopSound() {
+        try {
+          const ctx = new (window.AudioContext || window.webkitAudioContext)();
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(540, ctx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(840, ctx.currentTime + 0.08);
+          gain.gain.setValueAtTime(0.2, ctx.currentTime);
+          gain.gain.linearRampToValueAtTime(0.01, ctx.currentTime + 0.08);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start();
+          osc.stop(ctx.currentTime + 0.08);
+        } catch (e) {
+          // Audio unsupported or restricted
+        }
+      }
+
+      function speakSentence() {
+        if (!currentSentence.trim()) return;
+
+        // Visual Celebration Toast
+        toast.classList.remove('opacity-0', 'translate-y-[-20px]');
+        toast.classList.add('opacity-100', 'translate-y-0');
+        setTimeout(() => {
+          toast.classList.add('opacity-0', 'translate-y-[-20px]');
+          toast.classList.remove('opacity-100', 'translate-y-0');
+        }, 2200);
+
+        // Native Speech Synthesis
+        if ('speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+          const utterance = new SpeechSynthesisUtterance(currentSentence.toLowerCase());
+          utterance.rate = 0.9;
+          utterance.pitch = 1.1;
+          window.speechSynthesis.speak(utterance);
+        }
+      }
+
+      // Letter Buttons
+      document.querySelectorAll('.key-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const char = btn.getAttribute('data-key');
+          if (char) {
+            currentSentence += char;
+            updateDisplay();
+            playPopSound();
+          }
+        });
+      });
+
+      // Quick Words
+      document.querySelectorAll('.quick-word').forEach(qw => {
+        qw.addEventListener('click', () => {
+          const word = qw.textContent.trim();
+          if (currentSentence.length > 0 && !currentSentence.endsWith(' ')) {
+            currentSentence += ' ';
+          }
+          currentSentence += word + ' ';
+          updateDisplay();
+          playPopSound();
+        });
+      });
+
+      // Space Button
+      document.getElementById('btn-space').addEventListener('click', () => {
+        currentSentence += " ";
+        updateDisplay();
+        playPopSound();
+      });
+
+      // Delete Button
+      document.getElementById('btn-delete').addEventListener('click', () => {
+        if (currentSentence.length > 0) {
+          currentSentence = currentSentence.slice(0, -1);
+          updateDisplay();
+          playPopSound();
+        }
+      });
+
+      // Clear All Button
+      document.getElementById('btn-clear-all').addEventListener('click', () => {
+        currentSentence = "";
+        updateDisplay();
+        playPopSound();
+      });
+
+      // Speak Button
+      document.getElementById('btn-speak').addEventListener('click', () => {
+        speakSentence();
+      });
+
+      // Back Button
+      document.getElementById('btn-back').addEventListener('click', () => {
+        playPopSound();
+        const talkLink = document.querySelector('nav a[data-path="talk-space"]');
+        if (talkLink) {
+          talkLink.click();
+        } else {
+          window.history.back();
+        }
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-md"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-sm text-center"><p class="font-body-md text-body-md text-on-surface-variant">Ready to share your voice with ClassBridge</p><p class="font-body-md text-body-md text-on-surface-variant">All Voices Welcome Here</p></div></footer>
+</section>
+<section id="screen-voicebank" hidden>
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="ClassBridge Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W465o8Gxz-tRdUh3SogUqx9Zu45AYviAQIFJnjyHS6xkz8EmmWRz-iX-YawcJGLKl2kj29GLl_MGaNPPIuj8Sq-YOqur5BHIsmKWzlBvWgg1jTRs8kx246guAAI9Ma5CSnaWQn2RXbpzh5IR-qL-qMNLAf9zsZCML_UDpdf3Fi3pblKhLgvPAGCdXmI1G7tQiZ4awvkZVV-riV47zhnY-rS5RG6qkGNJs4JKy21I0eXEGFMu7G_LEotFf0"/><span class="font-headline-md text-headline-md text-primary font-bold tracking-tight select-none">ClassBridge</span></div><nav class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded-xl" data-active-classes="bg-primary-container text-on-primary-container"><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="talk-space" href="#">Talk Space</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="stories-and-play" href="#">Stories &amp; Play</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="my-feelings" href="#">My Feelings</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="together-time" href="#">Together Time</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors select-none" data-path="learning-tools" href="#">Learning Tools</a></nav><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 px-margin bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-space-lg pb-space-xl">
+<!-- Top Status Badges Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high text-on-surface select-none shadow-sm">
+<span class="text-label-xl">🧠</span>
+<span class="font-label-lg text-label-lg text-primary tracking-tight">Voice Bank &amp; Brain Waves</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-tertiary-container/15 text-tertiary select-none">
+<span class="inline-block w-3.5 h-3.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-md text-label-md font-bold text-tertiary tracking-wide">Headband Connected &amp; Ready • Gentle Signal Active</span>
+</div>
+</div>
+<!-- Section 1: Your Own Voice Card -->
+<section class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-md lg:p-space-lg flex flex-col gap-space-lg relative overflow-hidden">
+<!-- Ambient gentle glow -->
+<div class="absolute -right-24 -top-24 w-80 h-80 rounded-full bg-primary/5 pointer-events-none blur-3xl"></div>
+<!-- Voice Header & Action Triggers -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md relative z-10">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs">
+<span class="text-headline-md">🗣️</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Your Own Voice</h1>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant">ClassBridge speaks using your recorded voice phrases so your friends always hear you!</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-lg bg-error text-on-error font-label-xl text-label-xl shadow-md active:translate-y-1 transition-all select-none hover:brightness-105" id="record-btn" onclick="toggleRecordState()">
+<span class="material-symbols-outlined text-[32px] text-on-error" style="font-variation-settings: 'FILL' 1;">mic</span>
+<span id="record-label">Record New Phrase</span>
+</button>
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high text-primary font-label-xl text-label-xl active:translate-y-1 transition-all select-none hover:bg-surface-variant" onclick="previewVoiceGreeting()">
+<span class="material-symbols-outlined text-[32px]">volume_up</span>
+<span>Test My Voice</span>
+</button>
+</div>
+</div>
+<!-- Live Voice Feedback Notification (Hidden by default) -->
+<div class="hidden items-center justify-between gap-space-sm p-space-sm px-space-md rounded-lg bg-secondary-fixed text-on-secondary-fixed transition-all" id="voice-toast">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">graphic_eq</span>
+<span class="font-label-lg text-label-lg" id="toast-text">Playing your voice note clearly for your class!</span>
+</div>
+<button class="font-label-md text-label-md text-secondary underline hover:opacity-80" onclick="dismissToast()">Close</button>
+</div>
+<!-- Saved Phrases Carousel / Grid -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h2 class="font-label-xl text-label-xl text-on-surface">Saved Speech Cards</h2>
+<span class="font-label-md text-label-md text-on-surface-variant">4 Ready to Play</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm pt-space-xs">
+<!-- Card 1 -->
+<div class="flex flex-col justify-between p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-all shadow-sm group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-label-xl">💬</span>
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-tertiary-container/15 text-tertiary font-label-md text-label-md">Natural Voice</span>
+</div>
+<p class="font-body-xl text-body-xl text-on-surface font-bold pt-space-xs">"Good morning everyone!"</p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<button aria-label="Play Good Morning" class="w-14 h-14 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md active:translate-y-1 transition-all group-hover:scale-105" onclick="playPhrase('Good morning everyone!')">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant">Ready</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col justify-between p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-all shadow-sm group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-label-xl">💬</span>
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-primary-fixed text-primary font-label-md text-label-md">Hand Raised</span>
+</div>
+<p class="font-body-xl text-body-xl text-on-surface font-bold pt-space-xs">"I'd like to share my answer!"</p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<button aria-label="Play Share Answer" class="w-14 h-14 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md active:translate-y-1 transition-all group-hover:scale-105" onclick="playPhrase('I\'d like to share my answer!')">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant">Ready</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col justify-between p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-all shadow-sm group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-label-xl">💬</span>
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-secondary-fixed text-secondary font-label-md text-label-md">Friend Time</span>
+</div>
+<p class="font-body-xl text-body-xl text-on-surface font-bold pt-space-xs">"Can we work on this together?"</p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<button aria-label="Play Work Together" class="w-14 h-14 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md active:translate-y-1 transition-all group-hover:scale-105" onclick="playPhrase('Can we work on this together?')">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant">Ready</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col justify-between p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-all shadow-sm group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-label-xl">💬</span>
+<span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-md text-label-md">Playground</span>
+</div>
+<p class="font-body-xl text-body-xl text-on-surface font-bold pt-space-xs">"See you at recess!"</p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<button aria-label="Play Recess" class="w-14 h-14 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md active:translate-y-1 transition-all group-hover:scale-105" onclick="playPhrase('See you at recess!')">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant">Ready</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Think Yes or No (EEG Panel) -->
+<section class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-md lg:p-space-lg flex flex-col items-center text-center gap-space-lg relative overflow-hidden">
+<!-- Calming ambient circles -->
+<div class="absolute left-1/2 -top-32 -translate-x-1/2 w-96 h-96 rounded-full bg-tertiary/5 pointer-events-none blur-3xl"></div>
+<!-- EEG Header Area -->
+<div class="flex flex-col items-center gap-space-xs max-w-3xl relative z-10">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-primary font-label-lg text-label-lg mb-space-xs">
+<span>✨ Mind Bridge Active</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Think Yes or No</h2>
+<p class="font-body-xl text-body-xl text-on-surface-variant max-w-2xl">
+          Relax and just focus your mind on your answer. No hands or speaking needed!
+        </p>
+</div>
+<!-- Peaceful Brain Wave Graphic (Soft Animated SVG) -->
+<div class="w-full max-w-3xl bg-surface-container-low rounded-lg p-space-md flex flex-col items-center justify-center relative overflow-hidden shadow-inner">
+<div class="w-full flex items-center justify-between px-space-sm pb-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">spa</span>
+            Peaceful Mind Wave
+          </span>
+<span class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+            Listening Gently
+          </span>
+</div>
+<div class="w-full h-24 sm:h-28 flex items-center justify-center relative">
+<!-- Animated gentle sine wave -->
+<svg class="w-full h-full text-primary" fill="none" preserveaspectratio="none" viewbox="0 0 800 120">
+<path class="opacity-80 transition-all duration-700" d="M 0 60 C 100 20, 150 100, 250 60 C 350 20, 400 100, 500 60 C 600 20, 650 100, 750 60 L 800 60" id="brain-path" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path>
+<path class="opacity-40" d="M 0 60 C 80 40, 180 80, 280 60 C 380 40, 480 80, 580 60 C 680 40, 750 70, 800 60" stroke="currentColor" stroke-dasharray="6 6" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+<!-- Soft glowing particles -->
+<div class="absolute inset-0 flex items-center justify-around pointer-events-none opacity-70">
+<span class="text-tertiary text-label-xl animate-pulse">✦</span>
+<span class="text-primary text-body-lg animate-bounce">✨</span>
+<span class="text-secondary text-label-xl animate-pulse">✦</span>
+</div>
+</div>
+<div class="w-full flex items-center justify-center gap-space-xs pt-space-xs">
+<span class="font-body-md text-body-md text-on-surface-variant">Calm, clear rhythm detected from forehead sensors</span>
+</div>
+</div>
+<!-- Giant Interactive Choice Tiles -->
+<div class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-space-md relative z-10">
+<!-- YES Tile -->
+<button class="relative flex flex-col items-center justify-center gap-space-sm p-space-lg rounded-xl bg-tertiary text-on-tertiary shadow-xl hover:scale-[1.02] active:translate-y-2 transition-all group select-none min-h-[220px]" id="btn-yes" onclick="chooseThought('YES')">
+<div class="w-24 h-24 rounded-full bg-on-tertiary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[64px] text-on-tertiary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<span class="font-headline-xl text-headline-xl tracking-wide text-on-tertiary font-extrabold">YES</span>
+<span class="font-label-lg text-label-lg text-tertiary-fixed opacity-90">Focus on "YES" to choose</span>
+<!-- Gaze / Thought Loading Ring Container -->
+<div class="hidden absolute inset-0 rounded-xl bg-white/10 pointer-events-none items-center justify-center" id="ring-yes">
+<span class="font-label-xl text-label-xl text-on-tertiary animate-bounce">Confirming...</span>
+</div>
+</button>
+<!-- NO Tile -->
+<button class="relative flex flex-col items-center justify-center gap-space-sm p-space-lg rounded-xl bg-primary text-on-primary shadow-xl hover:scale-[1.02] active:translate-y-2 transition-all group select-none min-h-[220px]" id="btn-no" onclick="chooseThought('NO')">
+<div class="w-24 h-24 rounded-full bg-on-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[64px] text-on-primary" style="font-variation-settings: 'FILL' 1;">cancel</span>
+</div>
+<span class="font-headline-xl text-headline-xl tracking-wide text-on-primary font-extrabold">NO</span>
+<span class="font-label-lg text-label-lg text-primary-fixed opacity-90">Focus on "NO" to choose</span>
+<!-- Gaze / Thought Loading Ring Container -->
+<div class="hidden absolute inset-0 rounded-xl bg-white/10 pointer-events-none items-center justify-center" id="ring-no">
+<span class="font-label-xl text-label-xl text-on-primary animate-bounce">Confirming...</span>
+</div>
+</button>
+</div>
+<!-- Human-friendly Status Feedback -->
+<div class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-surface-container-high text-on-surface shadow-sm">
+<span class="text-label-lg">💡</span>
+<p class="font-body-lg text-body-lg font-bold text-on-surface" id="thought-status">
+          Current detected thought: <span class="text-primary">Feeling ready to choose! Take your time.</span>
+</p>
+</div>
+</section>
+</div>
+</div>
+<script>
+  let isRecording = false;
+
+  function toggleRecordState() {
+    const btn = document.getElementById('record-btn');
+    const label = document.getElementById('record-label');
+    const toast = document.getElementById('voice-toast');
+    const toastText = document.getElementById('toast-text');
+
+    isRecording = !isRecording;
+
+    if (isRecording) {
+      label.innerText = 'Listening to You...';
+      btn.classList.add('animate-pulse');
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+      toastText.innerText = 'Recording your sweet voice now! Speak whenever you are ready.';
+    } else {
+      label.innerText = 'Record New Phrase';
+      btn.classList.remove('animate-pulse');
+      toastText.innerText = 'Phrase saved into your voice bank!';
+      setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('flex');
+      }, 3500);
+    }
+  }
+
+  function playPhrase(phrase) {
+    const toast = document.getElementById('voice-toast');
+    const toastText = document.getElementById('toast-text');
+    toast.classList.remove('hidden');
+    toast.classList.add('flex');
+    toastText.innerText = 'Playing out loud: ' + phrase;
+    
+    // Wave animation reactive bump
+    waveJiggle();
+
+    setTimeout(() => {
+      toast.classList.add('hidden');
+      toast.classList.remove('flex');
+    }, 3000);
+  }
+
+  function previewVoiceGreeting() {
+    playPhrase('Hello friends, this is my ClassBridge voice!');
+  }
+
+  function dismissToast() {
+    const toast = document.getElementById('voice-toast');
+    toast.classList.add('hidden');
+    toast.classList.remove('flex');
+  }
+
+  function chooseThought(decision) {
+    const statusText = document.getElementById('thought-status');
+    const ringYes = document.getElementById('ring-yes');
+    const ringNo = document.getElementById('ring-no');
+
+    if (decision === 'YES') {
+      ringYes.classList.remove('hidden');
+      ringYes.classList.add('flex');
+      statusText.innerHTML = 'Chosen with your mind: <span class="text-tertiary">YES! That sounds great! 🎉</span>';
+      setTimeout(() => {
+        ringYes.classList.add('hidden');
+        ringYes.classList.remove('flex');
+      }, 1200);
+    } else {
+      ringNo.classList.remove('hidden');
+      ringNo.classList.add('flex');
+      statusText.innerHTML = 'Chosen with your mind: <span class="text-primary">NO, not right now. 👍</span>';
+      setTimeout(() => {
+        ringNo.classList.add('hidden');
+        ringNo.classList.remove('flex');
+      }, 1200);
+    }
+
+    waveJiggle();
+  }
+
+  function waveJiggle() {
+    const path = document.getElementById('brain-path');
+    if (!path) return;
+    path.setAttribute('d', 'M 0 60 C 100 10, 150 110, 250 60 C 350 10, 400 110, 500 60 C 600 10, 650 110, 750 60 L 800 60');
+    setTimeout(() => {
+      path.setAttribute('d', 'M 0 60 C 100 20, 150 100, 250 60 C 350 20, 400 100, 500 60 C 600 20, 650 100, 750 60 L 800 60');
+    }, 450);
+  }
+</script></main><footer class="w-full bg-surface-container-low py-space-md"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-sm text-center"><p class="font-body-md text-body-md text-on-surface-variant">Ready to share your voice with ClassBridge</p><p class="font-body-md text-body-md text-on-surface-variant">All Voices Welcome Here</p></div></footer>
+</section>
+<script src="assets/demo.js"></script>
+</body></html>
