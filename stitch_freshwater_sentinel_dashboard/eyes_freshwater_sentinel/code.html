@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-error-container":"#ffdad6","tertiary-container":"#b48b16","surface-container-low":"#0b1f1a","outline":"#88938e","outline-variant":"#3f4945","on-tertiary":"#3f2e00","on-tertiary-container":"#372700","tertiary-fixed":"#ffdf9b","primary-fixed-dim":"#86d6be","on-secondary-fixed":"#321200","secondary-container":"#883d00","surface":"#031712","primary-container":"#4f9f89","on-tertiary-fixed":"#251a00","surface-container":"#0f231e","on-secondary-fixed-variant":"#763400","on-primary-fixed":"#002019","on-secondary":"#532200","error-container":"#93000a","secondary-fixed-dim":"#ffb68d","inverse-on-surface":"#20342e","surface-dim":"#031712","primary-fixed":"#a2f2d9","surface-container-high":"#1a2e28","error":"#ffb4ab","on-background":"#d0e8de","surface-tint":"#86d6be","surface-container-lowest":"#00110c","on-primary":"#00382c","on-error":"#690005","surface-bright":"#293d37","on-tertiary-fixed-variant":"#5a4300","inverse-surface":"#d0e8de","on-primary-fixed-variant":"#005141","primary":"#86d6be","background":"#031712","on-primary-container":"#003026","on-surface":"#d0e8de","inverse-primary":"#0f6b57","on-secondary-container":"#ffb68c","tertiary":"#efc04c","tertiary-fixed-dim":"#efc04c","secondary-fixed":"#ffdbc9","surface-container-highest":"#243932","on-surface-variant":"#bec9c4","surface-variant":"#243932","secondary":"#ffb68d"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-2xl":"2rem","space-lg":"1rem","gutter":"1rem","space-xs":"0.25rem","space-md":"0.75rem","space-xl":"1.5rem","margin-mobile":"0.75rem","gutter-mobile":"0.5rem","space-sm":"0.5rem","margin":"1.5rem","space-2xs":"0.125rem"},"fontFamily":{"mono-data":["JetBrains Mono"],"body-md":["IBM Plex Sans"],"headline-lg":["Newsreader"],"headline-xl":["Newsreader"],"headline-sm":["Newsreader"],"body-lg":["IBM Plex Sans"],"mono-label":["JetBrains Mono"],"headline-md":["Newsreader"],"mono-micro":["JetBrains Mono"],"telemetry-display":["Newsreader"],"body-sm":["IBM Plex Sans"]},"fontSize":{"mono-data":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.375rem","fontWeight":"400"}],"headline-lg":["1.875rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"500"}],"headline-xl":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"mono-label":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.08em","fontWeight":"500"}],"headline-md":["1.375rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"500"}],"mono-micro":["0.625rem",{"lineHeight":"0.75rem","letterSpacing":"0.06em","fontWeight":"400"}],"telemetry-display":["2.25rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"400"}],"body-sm":["0.75rem",{"lineHeight":"1.125rem","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 h-[72px] bg-surface border-b border-outline-variant/60 px-6 flex items-center justify-between"><div class="flex items-center gap-4"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant/60" src="https://lh3.googleusercontent.com/aida/AEtjO1UyTjobrh6jRadKptk7Ri5MbrOCg0ATNiOI-lkAgGfLhNlP7BgSSmJwn7g0wWwHjnTo6qVUAum8IKh1ktzo-SN6N4n2qh3TYJl6DysClyO84ffTtq_ebxos7fVo-1bjGADrDPxxtp4sTEekt0Va6kpklVDiX-kiwM1LE9YfXDSNFsyw6tRf6PFd9HG-l3yBlhAXG_-D7Ru7qtqNIC-SXlMPNn4YlJN2OkRInT7og1K3sNAEQN1dkaQKWw"/><div class="flex items-baseline gap-3"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Freshwater Sentinel</span><span class="text-outline-variant">|</span><span class="font-mono-micro text-mono-micro text-outline tracking-wider uppercase">IEEE OneAquaHealth / Track 6: Resilience Informatics</span></div></div><div class="flex items-center gap-3"><div class="hidden md:flex items-center gap-2 border border-outline-variant/60 px-2.5 py-1 rounded bg-surface-container font-mono-micro text-mono-micro text-outline"><span class="material-symbols-outlined text-[13px] text-outline">explore</span><span>13°46'S 34°18'E • L. MALAWI BASIN</span></div><div class="flex items-center gap-2 bg-surface-container border border-outline-variant/60 px-3 py-1 rounded font-mono-micro text-mono-micro text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="tracking-wider uppercase text-on-surface">LIVE TELEMETRY / IN-SITU BUOY LINK</span></div><button class="border border-outline-variant/60 px-2.5 py-1 rounded font-mono-micro text-mono-micro text-on-surface hover:border-primary hover:text-on-surface transition-colors bg-surface-container" type="button">EN | SW</button><button aria-label="Documentation &amp; Telemetry Help" class="w-7 h-7 flex items-center justify-center border border-outline-variant/60 rounded bg-surface-container text-outline hover:text-on-surface hover:border-outline transition-colors" type="button"><span class="material-symbols-outlined text-[15px]">help_outline</span></button></div></header><aside class="fixed left-0 top-[72px] bottom-0 w-[230px] bg-surface border-r border-outline-variant/60 z-40 flex flex-col justify-between py-4"><div class="flex flex-col"><div class="px-4 pb-2 mb-2 border-b border-outline-variant/30 flex items-center justify-between"><span class="font-mono-label text-mono-label uppercase text-outline tracking-widest">Mission Modules</span><span class="font-mono-micro text-mono-micro text-primary-fixed-dim">v4.2-R</span></div><nav class="flex flex-col w-full" data-active-classes="border-l-[3px] border-primary bg-surface-container-high text-on-surface font-medium"><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">grid_view</span><span>Overview</span></a><a aria-current="page" class="flex items-center gap-3 px-4 py-2.5 transition-all border-l-[3px] border-primary bg-surface-container-high text-on-surface font-medium" data-path="eyes" href="#"><span class="material-symbols-outlined text-[18px]">satellite_alt</span><span>Eyes</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="brain" href="#"><span class="material-symbols-outlined text-[18px]">neurology</span><span>Brain</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="voice" href="#"><span class="material-symbols-outlined text-[18px]">podcasts</span><span>Voice</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="network" href="#"><span class="material-symbols-outlined text-[18px]">hub</span><span>Network</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="hands" href="#"><span class="material-symbols-outlined text-[18px]">assignment_turned_in</span><span>Hands</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="verify" href="#"><span class="material-symbols-outlined text-[18px]">verified</span><span>Verify</span></a></nav></div><div class="px-4 pt-3 border-t border-outline-variant/40 flex flex-col gap-1.5 font-mono-micro text-mono-micro text-outline"><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">SENSORS:</span><span class="text-on-surface-variant">S2-MSI / L9</span></div><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">SYNC:</span><span class="text-on-surface-variant">14m ago</span></div><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">COVERAGE:</span><span class="text-primary-fixed-dim font-medium">98.4% Basin</span></div><div class="mt-2 pt-2 border-t border-outline-variant/30 text-[9px] uppercase tracking-widest text-outline-variant">RIFT BASIN HYDRO-LOG</div></div></aside><div class="pl-[230px]"><main class="relative pt-[72px] min-h-screen bg-surface w-full p-8 font-body-md text-body-md text-on-surface"><div class="flex flex-col w-full gap-5">
+<!-- Top Telemetry Subheader & Scientific Metadata Strip -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 bg-surface-container-low p-4 rounded border border-outline-variant/40">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-mono-micro text-mono-micro text-primary-fixed-dim uppercase tracking-widest px-1.5 py-0.5 bg-surface-container-high rounded-xs">
+          OPTICAL RADIOMETRY &amp; WATER MASK ENGINE
+        </span>
+<span class="font-mono-micro text-mono-micro text-outline tracking-wider">• TIER-1 SATELLITE INGEST</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-normal tracking-tight">
+        Sentinel-2 MSI Spectral Surface Telemetry
+      </h1>
+<div class="font-mono-data text-mono-data text-outline flex flex-wrap items-center gap-2">
+<span class="text-on-surface-variant font-mono-micro text-mono-micro uppercase">Granule:</span>
+<span class="bg-surface-container-lowest px-2 py-0.5 rounded text-primary-fixed-dim text-mono-micro font-mono-micro select-all">
+          S2B_MSIL2A_20241024T071819_N0511_R006_T36LXR
+        </span>
+</div>
+</div>
+<!-- Satellite Orbit & Acquisition Metadata -->
+<div class="flex items-center gap-3 self-start lg:self-end">
+<div class="bg-surface-container px-3 py-1.5 rounded border border-outline-variant/30 flex flex-col">
+<span class="font-mono-micro text-mono-micro text-outline uppercase">Pass Geometry</span>
+<span class="font-mono-data text-mono-data text-on-surface">Descending • Rel. Orbit 006</span>
+</div>
+<div class="bg-surface-container px-3 py-1.5 rounded border border-outline-variant/30 flex flex-col">
+<span class="font-mono-micro text-mono-micro text-outline uppercase">Solar Zenith / Azimuth</span>
+<span class="font-mono-data text-mono-data text-on-surface">28.4° / 114.2°</span>
+</div>
+<button class="bg-primary text-on-primary font-mono-data text-mono-data px-3 py-2 rounded flex items-center gap-1.5 hover:bg-primary-container hover:text-on-primary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Re-Mask Run</span>
+</button>
+</div>
+</div>
+<!-- Realistic Multispectral Cartography Viewport Section -->
+<div class="relative w-full h-[520px] rounded overflow-hidden border border-outline-variant/50 bg-surface-container-lowest flex flex-col">
+<!-- Map Canvas (Simulated high-fidelity optical satellite reflectance) -->
+<div class="relative w-full h-full bg-[#0a1a15] select-none overflow-hidden cursor-crosshair group" id="viewport-canvas">
+<!-- Base Bathymetric / Satellite Topographic Vector Raster Layer -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="120" id="grid-latlong" patternunits="userSpaceOnUse" width="120">
+<path d="M 120 0 L 0 0 0 120" fill="none" stroke="#243932" stroke-dasharray="2 6" stroke-width="0.5"></path>
+</pattern>
+<radialgradient cx="45%" cy="58%" id="algal-core" r="35%">
+<stop offset="0%" stop-color="#4f9f89" stop-opacity="0.65"></stop>
+<stop offset="45%" stop-color="#3f8f7a" stop-opacity="0.4"></stop>
+<stop offset="100%" stop-color="#0b1f1a" stop-opacity="0"></stop>
+</radialgradient>
+<lineargradient id="littoral-gradient" x1="0" x2="1" y1="0" y2="1">
+<stop offset="0%" stop-color="#243932"></stop>
+<stop offset="70%" stop-color="#0b1f1a"></stop>
+<stop offset="100%" stop-color="#031712"></stop>
+</lineargradient>
+</defs>
+<!-- Deep Basin Base -->
+<rect fill="url(#littoral-gradient)" height="100%" width="100%"></rect>
+<rect fill="url(#grid-latlong)" height="100%" width="100%"></rect>
+<!-- Shoreline Vector Geometry (Southern Lake Malawi Basin contours) -->
+<path d="M-50,80 Q 220,120 380,40 T 720,160 T 1150,90 L 1250,560 L -50,560 Z" fill="#00110c" opacity="0.9"></path>
+<path d="M-50,110 Q 210,145 375,65 T 715,185 T 1150,115 L 1250,560 L -50,560 Z" fill="#0b1f1a" opacity="0.65"></path>
+<!-- MNDWI > 0.15 & NDCI Bloom Mask Semi-Transparent Classified Water Polygon -->
+<path d="M120,520 C 180,360 290,260 440,240 C 580,220 720,290 850,220 C 980,150 1080,210 1180,180 L 1200,520 Z" fill="#4f9f89" fill-opacity="0.32" stroke="#86d6be" stroke-dasharray="4 4" stroke-width="1.5"></path>
+<!-- High-concentration Microcystin / NDCI Bloom Hotspot Polygons -->
+<path d="M 390,340 Q 480,280 560,330 T 690,380 T 580,450 T 410,410 Z" fill="url(#algal-core)" stroke="#efc04c" stroke-dasharray="2 3" stroke-width="1.2"></path>
+<circle cx="530" cy="360" fill="#efc04c" fill-opacity="0.25" r="18" stroke="#efc04c" stroke-width="1"></circle>
+<circle cx="530" cy="360" fill="#ffb68d" r="3"></circle>
+<circle cx="780" cy="290" fill="#efc04c" fill-opacity="0.2" r="12" stroke="#efc04c" stroke-width="0.8"></circle>
+<circle cx="780" cy="290" fill="#efc04c" r="2.5"></circle>
+<!-- Contour / Bathymetric Depth hairlines -->
+<path d="M 210,480 Q 420,310 680,340 T 1060,250" fill="none" stroke="#3f4945" stroke-width="0.75"></path>
+<path d="M 260,510 Q 460,360 740,390 T 1120,300" fill="none" stroke="#3f4945" stroke-dasharray="3 3" stroke-width="0.5"></path>
+</svg>
+<!-- Center-Screen Targeting Reticle HUD -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="relative w-24 h-24 flex items-center justify-center">
+<div class="absolute w-full h-[1px] bg-outline-variant/60"></div>
+<div class="absolute h-full w-[1px] bg-outline-variant/60"></div>
+<div class="w-8 h-8 rounded-full border border-primary/40 bg-surface/20 flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-primary animate-ping opacity-75"></div>
+</div>
+<span class="absolute -bottom-5 font-mono-micro text-mono-micro text-primary-fixed-dim bg-surface/80 px-1 py-0.2 rounded">
+            TARGET T36LXR
+          </span>
+</div>
+</div>
+<!-- Prominent Epistemic Honesty Label Chip (Overlaid directly Top-Center) -->
+<div class="absolute top-4 left-1/2 -translate-x-1/2 z-20 pointer-events-none">
+<div class="flex items-center gap-2 bg-[#0f1e1a]/95 border border-outline-variant px-3 py-1 rounded-sm shadow-md backdrop-blur-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-mono-data text-mono-micro text-on-surface uppercase tracking-wider">
+            [ OFFLINE SYNTHETIC SCENE — not a live tile fetch ]
+          </span>
+</div>
+</div>
+<!-- Dynamic Interactive Map Overlay Info / HUD Graticules -->
+<div class="absolute top-4 left-4 z-10 flex flex-col gap-2">
+<div class="bg-surface-container-lowest/90 border border-outline-variant/40 px-3 py-2 rounded text-on-surface flex flex-col gap-1 backdrop-blur-sm">
+<div class="flex items-center gap-2 font-mono-micro text-mono-micro text-outline">
+<span class="material-symbols-outlined text-[13px] text-primary">layers</span>
+<span class="text-on-surface font-medium">CLASSIFICATION MASKS ACTIVE</span>
+</div>
+<div class="flex flex-col gap-0.5 text-mono-micro font-mono-micro">
+<span class="text-primary-fixed-dim flex items-center gap-1.5">
+<span class="w-2 h-2 bg-primary/40 border border-primary rounded-xs"></span>
+              MNDWI &gt; 0.15 [Surface Water Boundary]
+            </span>
+<span class="text-tertiary flex items-center gap-1.5">
+<span class="w-2 h-2 bg-tertiary/40 border border-tertiary rounded-xs"></span>
+              NDCI &gt; 0.30 [Cyanobacterial Algal Risk Vector]
+            </span>
+</div>
+</div>
+<div class="bg-surface-container-lowest/90 border border-outline-variant/40 px-2.5 py-1.5 rounded font-mono-micro text-mono-micro text-outline flex items-center gap-2">
+<span>CLOUD COVER:</span>
+<span class="text-on-surface font-medium">1.4% (Cirrus Masked)</span>
+<span class="text-outline-variant">•</span>
+<span>SUN GLINT:</span>
+<span class="text-primary font-medium">LOW (0.02)</span>
+</div>
+</div>
+<!-- Map Controller Dock (Top Right) -->
+<div class="absolute top-4 right-4 z-10 flex flex-col gap-1 bg-surface-container-lowest/90 border border-outline-variant/40 p-1 rounded backdrop-blur-sm">
+<button aria-label="Zoom in" class="w-7 h-7 flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors rounded-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+<div class="h-[1px] w-full bg-outline-variant/40"></div>
+<button aria-label="Zoom out" class="w-7 h-7 flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors rounded-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<div class="h-[1px] w-full bg-outline-variant/40"></div>
+<button aria-label="Reset orientation" class="w-7 h-7 flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors rounded-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">navigation</span>
+</button>
+<div class="h-[1px] w-full bg-outline-variant/40"></div>
+<button aria-label="Full screen map" class="w-7 h-7 flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors rounded-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+</button>
+</div>
+<!-- Bottom HUD: Coordinates, Scale Bar, and GSD Metric Readout -->
+<div class="absolute bottom-3 left-3 right-3 z-10 flex flex-wrap items-center justify-between gap-3 bg-surface-container-lowest/95 border border-outline-variant/50 px-3 py-2 rounded backdrop-blur-md">
+<!-- Lat / Long crosshair data -->
+<div class="flex items-center gap-3 font-mono-data text-mono-data text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="text-outline text-mono-micro font-mono-micro">LAT:</span>
+<span class="text-on-surface font-mono-data">13°45'00"S</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1.5">
+<span class="text-outline text-mono-micro font-mono-micro">LON:</span>
+<span class="text-on-surface font-mono-data">34°20'00"E</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1.5">
+<span class="text-outline text-mono-micro font-mono-micro">DATUM:</span>
+<span class="text-primary font-mono-data">WGS-84 / UTM 36S</span>
+</div>
+</div>
+<!-- Scale Bar & Resolution Display -->
+<div class="flex items-center gap-5">
+<!-- Scale Bar Segment Graphic -->
+<div class="flex items-center gap-2">
+<div class="flex flex-col items-center">
+<div class="flex h-1.5 w-24 border border-outline-variant/70 overflow-hidden">
+<div class="w-1/4 bg-primary"></div>
+<div class="w-1/4 bg-surface-container-highest"></div>
+<div class="w-1/4 bg-primary"></div>
+<div class="w-1/4 bg-surface-container-highest"></div>
+</div>
+<span class="font-mono-micro text-mono-micro text-outline mt-0.5">5 km</span>
+</div>
+</div>
+<!-- GSD Spec Indicator -->
+<div class="bg-surface-container px-2.5 py-1 rounded border border-outline-variant/40 font-mono-micro text-mono-micro text-outline">
+<span class="text-on-surface font-medium">GSD:</span>
+<span class="text-primary-fixed-dim ml-1">10m/px (B02-B04, B08)</span>
+<span class="text-outline-variant mx-1">|</span>
+<span class="text-on-surface-variant">20m/px (B05-B07, B11-B12)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Spectral Radiance Band Cards Strip (5 Bands Grid) -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between px-1">
+<span class="font-mono-label text-mono-label text-outline uppercase tracking-wider">
+        MSI Bottom-Of-Atmosphere (BOA) Reflectance Arrays (ρw)
+      </span>
+<span class="font-mono-micro text-mono-micro text-outline">Sen2Cor Atmospheric Corrected</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+<!-- Band 1: B02 (Blue) -->
+<div class="bg-[#16302a] border border-[#2a453c] p-3 rounded-xs flex flex-col justify-between gap-3 hover:border-primary/60 transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-mono-data text-mono-data text-on-surface font-medium">B02 (Blue)</span>
+<span class="font-mono-micro text-mono-micro px-1.5 py-0.5 rounded-xs bg-[#3f8f7a]/20 border border-[#3f8f7a] text-primary">
+            BASELINE
+          </span>
+</div>
+<div class="flex items-baseline justify-between my-0.5">
+<span class="font-headline-md text-headline-md text-on-surface font-normal">0.042</span>
+<span class="font-mono-micro text-mono-micro text-outline">490 nm</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-xs overflow-hidden">
+<div class="bg-primary h-full" style="width: 28%;"></div>
+</div>
+<div class="flex justify-between items-center font-mono-micro text-mono-micro text-outline">
+<span>Diffuse blue scatter</span>
+<span>±0.002</span>
+</div>
+</div>
+</div>
+<!-- Band 2: B03 (Green) -->
+<div class="bg-[#16302a] border border-[#2a453c] p-3 rounded-xs flex flex-col justify-between gap-3 hover:border-primary/60 transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-mono-data text-mono-data text-on-surface font-medium">B03 (Green)</span>
+<span class="font-mono-micro text-mono-micro px-1.5 py-0.5 rounded-xs bg-[#b48b16]/20 border border-[#efc04c] text-tertiary">
+            ELEVATED
+          </span>
+</div>
+<div class="flex items-baseline justify-between my-0.5">
+<span class="font-headline-md text-headline-md text-tertiary font-normal">0.078</span>
+<span class="font-mono-micro text-mono-micro text-outline">560 nm</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-xs overflow-hidden">
+<div class="bg-tertiary h-full" style="width: 52%;"></div>
+</div>
+<div class="flex justify-between items-center font-mono-micro text-mono-micro text-outline">
+<span>Pigment reflectance peak</span>
+<span>+34% vs norm</span>
+</div>
+</div>
+</div>
+<!-- Band 3: B04 (Red) -->
+<div class="bg-[#16302a] border border-[#2a453c] p-3 rounded-xs flex flex-col justify-between gap-3 hover:border-primary/60 transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-mono-data text-mono-data text-on-surface font-medium">B04 (Red)</span>
+<span class="font-mono-micro text-mono-micro px-1.5 py-0.5 rounded-xs bg-error-container/30 border border-error text-error">
+            HIGH ABSORPTION
+          </span>
+</div>
+<div class="flex items-baseline justify-between my-0.5">
+<span class="font-headline-md text-headline-md text-on-surface font-normal">0.035</span>
+<span class="font-mono-micro text-mono-micro text-outline">665 nm</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-xs overflow-hidden">
+<div class="bg-error h-full" style="width: 23%;"></div>
+</div>
+<div class="flex justify-between items-center font-mono-micro text-mono-micro text-outline">
+<span>Chlorophyll absorption valley</span>
+<span>Chl-a α</span>
+</div>
+</div>
+</div>
+<!-- Band 4: B05 (Red Edge) -->
+<div class="bg-[#16302a] border border-[#2a453c] p-3 rounded-xs flex flex-col justify-between gap-3 hover:border-primary/60 transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-mono-data text-mono-data text-on-surface font-medium">B05 (Red Edge)</span>
+<span class="font-mono-micro text-mono-micro px-1.5 py-0.5 rounded-xs bg-error-container/40 border border-error text-error font-medium">
+            CRITICAL PEAK
+          </span>
+</div>
+<div class="flex items-baseline justify-between my-0.5">
+<span class="font-headline-md text-headline-md text-error font-normal">0.089</span>
+<span class="font-mono-micro text-mono-micro text-outline">705 nm</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-xs overflow-hidden">
+<div class="bg-error h-full" style="width: 61%;"></div>
+</div>
+<div class="flex justify-between items-center font-mono-micro text-mono-micro text-outline">
+<span>Strong algal backscatter</span>
+<span>+112% Anomaly</span>
+</div>
+</div>
+</div>
+<!-- Band 5: B08 (NIR) -->
+<div class="bg-[#16302a] border border-[#2a453c] p-3 rounded-xs flex flex-col justify-between gap-3 hover:border-primary/60 transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-mono-data text-mono-data text-on-surface font-medium">B08 (NIR)</span>
+<span class="font-mono-micro text-mono-micro px-1.5 py-0.5 rounded-xs bg-outline-variant/30 border border-outline text-outline">
+            WATER BOUNDARY
+          </span>
+</div>
+<div class="flex items-baseline justify-between my-0.5">
+<span class="font-headline-md text-headline-md text-on-surface font-normal">0.012</span>
+<span class="font-mono-micro text-mono-micro text-outline">842 nm</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-xs overflow-hidden">
+<div class="bg-outline h-full" style="width: 8%;"></div>
+</div>
+<div class="flex justify-between items-center font-mono-micro text-mono-micro text-outline">
+<span>Total infrared absorption</span>
+<span>MNDWI Cutoff</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Metric Readouts Row (3 Key Hydrological Scientific Indices) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-2">
+<!-- Card 1: NDCI Mean -->
+<div class="bg-surface-container border border-outline-variant/50 p-4 rounded flex flex-col justify-between gap-3 hover:border-error/50 transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-mono-label text-mono-label text-outline uppercase tracking-wider">
+          Normalized Difference Chlorophyll Index
+        </span>
+<span class="w-2 h-2 rounded-full bg-error"></span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-mono-data text-headline-xl text-error font-bold tracking-tight">+0.418</span>
+<span class="font-mono-micro text-mono-micro text-error font-medium uppercase px-1.5 py-0.5 bg-error-container/30 rounded-xs">
+            HIGH BLOOM RISK
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+          Formula: <span class="font-mono-micro text-on-surface">(B05 - B04) / (B05 + B04)</span> • Severe bloom conditions confirmed along southern littoral coves.
+        </p>
+</div>
+<div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between font-mono-micro text-mono-micro text-outline">
+<span>BASELINE DELTA: +0.284</span>
+<span>WHO CYANO TIER: 2</span>
+</div>
+</div>
+<!-- Card 2: Water Coverage Extent -->
+<div class="bg-surface-container border border-outline-variant/50 p-4 rounded flex flex-col justify-between gap-3 hover:border-primary/50 transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-mono-label text-mono-label text-outline uppercase tracking-wider">
+          Classified Water Coverage Extent
+        </span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-mono-data text-headline-xl text-on-surface font-bold tracking-tight">412.6</span>
+<span class="font-mono-data text-body-lg text-outline">km²</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+          Classified basin pixels via Otsu thresholding on MNDWI • Littoral zone shrinkage: <span class="text-secondary font-mono-micro font-medium">-2.3% YoY</span>.
+        </p>
+</div>
+<div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between font-mono-micro text-mono-micro text-outline">
+<span>POLYGON PIXELS: 4,126,400</span>
+<span>CONFIDENCE: 99.1%</span>
+</div>
+</div>
+<!-- Card 3: Radiometric Uncertainty -->
+<div class="bg-surface-container border border-outline-variant/50 p-4 rounded flex flex-col justify-between gap-3 hover:border-tertiary/50 transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-mono-label text-mono-label text-outline uppercase tracking-wider">
+          Radiometric Uncertainty (Atmospheric Residual)
+        </span>
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+</div>
+<div>
+<div class="flex items-baseline gap-2">
+<span class="font-mono-data text-headline-xl text-tertiary font-bold tracking-tight">±6.8%</span>
+<span class="font-mono-micro text-mono-micro text-tertiary uppercase px-1.5 py-0.5 bg-tertiary-container/30 rounded-xs">
+            MARGINAL QA
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
+          Aerosol Optical Thickness (AOT) at 550nm: <span class="text-on-surface font-mono-micro">0.18</span> • Sen2Cor L2A validated against AERONET Lake Malawi ground link.
+        </p>
+</div>
+<div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between font-mono-micro text-mono-micro text-outline">
+<span>WATER VAPOR (WV): 1.62 g/cm²</span>
+<span>CALIBRATION: BOA-CAL</span>
+</div>
+</div>
+</div>
+<!-- Interactive Telemetry Console & Ground Truth Sample Trigger Bar -->
+<div class="bg-surface-container-low border border-outline-variant/40 p-3 rounded flex flex-col sm:flex-row items-center justify-between gap-3 text-mono-micro font-mono-micro">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[18px] text-tertiary">warning</span>
+<span class="text-on-surface">
+        Ground-truth spectrophotometer verification needed for Microcystis bloom cell density quantification.
+      </span>
+</div>
+<div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+<button class="px-2.5 py-1.5 bg-surface-container border border-outline-variant rounded text-on-surface hover:border-primary transition-colors" type="button">
+        Export L2A GeoTIFF
+      </button>
+<button class="px-2.5 py-1.5 bg-tertiary-container text-on-tertiary-fixed font-medium rounded hover:bg-tertiary transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">biotech</span>
+<span>Queue Field Dispatch</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple viewport interactive cursor coordinates tracer
+  const viewport = document.getElementById('viewport-canvas');
+  if (viewport) {
+    viewport.addEventListener('mousemove', (e) => {
+      const rect = viewport.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width * 100).toFixed(1);
+      const y = ((e.clientY - rect.top) / rect.height * 100).toFixed(1);
+      viewport.setAttribute('title', `Crosshair Relative Offset: X ${x}% | Y ${y}%`);
+    });
+  }
+</script></main></div></body></html>

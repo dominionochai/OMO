@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-error-container":"#ffdad6","tertiary-container":"#b48b16","surface-container-low":"#0b1f1a","outline":"#88938e","outline-variant":"#3f4945","on-tertiary":"#3f2e00","on-tertiary-container":"#372700","tertiary-fixed":"#ffdf9b","primary-fixed-dim":"#86d6be","on-secondary-fixed":"#321200","secondary-container":"#883d00","surface":"#031712","primary-container":"#4f9f89","on-tertiary-fixed":"#251a00","surface-container":"#0f231e","on-secondary-fixed-variant":"#763400","on-primary-fixed":"#002019","on-secondary":"#532200","error-container":"#93000a","secondary-fixed-dim":"#ffb68d","inverse-on-surface":"#20342e","surface-dim":"#031712","primary-fixed":"#a2f2d9","surface-container-high":"#1a2e28","error":"#ffb4ab","on-background":"#d0e8de","surface-tint":"#86d6be","surface-container-lowest":"#00110c","on-primary":"#00382c","on-error":"#690005","surface-bright":"#293d37","on-tertiary-fixed-variant":"#5a4300","inverse-surface":"#d0e8de","on-primary-fixed-variant":"#005141","primary":"#86d6be","background":"#031712","on-primary-container":"#003026","on-surface":"#d0e8de","inverse-primary":"#0f6b57","on-secondary-container":"#ffb68c","tertiary":"#efc04c","tertiary-fixed-dim":"#efc04c","secondary-fixed":"#ffdbc9","surface-container-highest":"#243932","on-surface-variant":"#bec9c4","surface-variant":"#243932","secondary":"#ffb68d"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-2xl":"2rem","space-lg":"1rem","gutter":"1rem","space-xs":"0.25rem","space-md":"0.75rem","space-xl":"1.5rem","margin-mobile":"0.75rem","gutter-mobile":"0.5rem","space-sm":"0.5rem","margin":"1.5rem","space-2xs":"0.125rem"},"fontFamily":{"mono-data":["JetBrains Mono"],"body-md":["IBM Plex Sans"],"headline-lg":["Newsreader"],"headline-xl":["Newsreader"],"headline-sm":["Newsreader"],"body-lg":["IBM Plex Sans"],"mono-label":["JetBrains Mono"],"headline-md":["Newsreader"],"mono-micro":["JetBrains Mono"],"telemetry-display":["Newsreader"],"body-sm":["IBM Plex Sans"]},"fontSize":{"mono-data":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.375rem","fontWeight":"400"}],"headline-lg":["1.875rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"500"}],"headline-xl":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"mono-label":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.08em","fontWeight":"500"}],"headline-md":["1.375rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"500"}],"mono-micro":["0.625rem",{"lineHeight":"0.75rem","letterSpacing":"0.06em","fontWeight":"400"}],"telemetry-display":["2.25rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"400"}],"body-sm":["0.75rem",{"lineHeight":"1.125rem","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 h-[72px] bg-surface border-b border-outline-variant/60 px-6 flex items-center justify-between"><div class="flex items-center gap-4"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant/60" src="https://lh3.googleusercontent.com/aida/AEtjO1UyTjobrh6jRadKptk7Ri5MbrOCg0ATNiOI-lkAgGfLhNlP7BgSSmJwn7g0wWwHjnTo6qVUAum8IKh1ktzo-SN6N4n2qh3TYJl6DysClyO84ffTtq_ebxos7fVo-1bjGADrDPxxtp4sTEekt0Va6kpklVDiX-kiwM1LE9YfXDSNFsyw6tRf6PFd9HG-l3yBlhAXG_-D7Ru7qtqNIC-SXlMPNn4YlJN2OkRInT7og1K3sNAEQN1dkaQKWw"/><div class="flex items-baseline gap-3"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Freshwater Sentinel</span><span class="text-outline-variant">|</span><span class="font-mono-micro text-mono-micro text-outline tracking-wider uppercase">IEEE OneAquaHealth / Track 6: Resilience Informatics</span></div></div><div class="flex items-center gap-3"><div class="hidden md:flex items-center gap-2 border border-outline-variant/60 px-2.5 py-1 rounded bg-surface-container font-mono-micro text-mono-micro text-outline"><span class="material-symbols-outlined text-[13px] text-outline">explore</span><span>13°46'S 34°18'E • L. MALAWI BASIN</span></div><div class="flex items-center gap-2 bg-surface-container border border-outline-variant/60 px-3 py-1 rounded font-mono-micro text-mono-micro text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="tracking-wider uppercase text-on-surface">LIVE TELEMETRY / IN-SITU BUOY LINK</span></div><button class="border border-outline-variant/60 px-2.5 py-1 rounded font-mono-micro text-mono-micro text-on-surface hover:border-primary hover:text-on-surface transition-colors bg-surface-container" type="button">EN | SW</button><button aria-label="Documentation &amp; Telemetry Help" class="w-7 h-7 flex items-center justify-center border border-outline-variant/60 rounded bg-surface-container text-outline hover:text-on-surface hover:border-outline transition-colors" type="button"><span class="material-symbols-outlined text-[15px]">help_outline</span></button></div></header><aside class="fixed left-0 top-[72px] bottom-0 w-[230px] bg-surface border-r border-outline-variant/60 z-40 flex flex-col justify-between py-4"><div class="flex flex-col"><div class="px-4 pb-2 mb-2 border-b border-outline-variant/30 flex items-center justify-between"><span class="font-mono-label text-mono-label uppercase text-outline tracking-widest">Mission Modules</span><span class="font-mono-micro text-mono-micro text-primary-fixed-dim">v4.2-R</span></div><nav class="flex flex-col w-full" data-active-classes="border-l-[3px] border-primary bg-surface-container-high text-on-surface font-medium"><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">grid_view</span><span>Overview</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="eyes" href="#"><span class="material-symbols-outlined text-[18px]">satellite_alt</span><span>Eyes</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="brain" href="#"><span class="material-symbols-outlined text-[18px]">neurology</span><span>Brain</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="voice" href="#"><span class="material-symbols-outlined text-[18px]">podcasts</span><span>Voice</span></a><a aria-current="page" class="flex items-center gap-3 px-4 py-2.5 transition-all border-l-[3px] border-primary bg-surface-container-high text-on-surface font-medium" data-path="network" href="#"><span class="material-symbols-outlined text-[18px]">hub</span><span>Network</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="hands" href="#"><span class="material-symbols-outlined text-[18px]">assignment_turned_in</span><span>Hands</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="verify" href="#"><span class="material-symbols-outlined text-[18px]">verified</span><span>Verify</span></a></nav></div><div class="px-4 pt-3 border-t border-outline-variant/40 flex flex-col gap-1.5 font-mono-micro text-mono-micro text-outline"><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">SENSORS:</span><span class="text-on-surface-variant">S2-MSI / L9</span></div><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">SYNC:</span><span class="text-on-surface-variant">14m ago</span></div><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">COVERAGE:</span><span class="text-primary-fixed-dim font-medium">98.4% Basin</span></div><div class="mt-2 pt-2 border-t border-outline-variant/30 text-[9px] uppercase tracking-widest text-outline-variant">RIFT BASIN HYDRO-LOG</div></div></aside><div class="pl-[230px]"><main class="relative pt-[72px] min-h-screen bg-surface w-full p-8 font-body-md text-body-md text-on-surface"><div class="flex flex-col w-full">
+<!-- Console Header & Topographic Metadata -->
+<div class="flex flex-col md:flex-row md:items-end justify-between pb-6 gap-4 border-b border-outline-variant/40">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="font-mono-micro text-mono-micro text-primary-fixed-dim tracking-widest uppercase bg-surface-container-high px-2 py-0.5 rounded">HYD-GRAPH-6</span>
+<span class="font-mono-label text-mono-label text-outline uppercase tracking-wider">Hydrological Topology &amp; Basin Propagation Model</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-medium tracking-tight">Downstream Contamination Network Analysis</h1>
+<p class="font-mono-data text-mono-data text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[15px] text-primary">account_tree</span>
+<span>Graph Engine: NetworkX / Directed Acyclic Basin Flow • Reach: Linthipe Catchment</span>
+</p>
+</div>
+<!-- Live Model Integrity Badges -->
+<div class="flex flex-wrap items-center gap-2 self-start md:self-auto">
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container border border-outline-variant/60 rounded">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-mono-micro text-mono-micro text-on-surface uppercase tracking-wider">HydroSHEDS 15s Mesh</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container border border-outline-variant/60 rounded">
+<span class="font-mono-micro text-mono-micro text-outline">EDGES:</span>
+<span class="font-mono-micro text-mono-micro text-primary font-medium">14 ACTIVE</span>
+</div>
+</div>
+</div>
+<!-- Primary Asymmetric Split Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-6 items-start">
+<!-- LEFT COLUMN: Cartographic Topology Canvas (~60% = 7 cols on large desktop, 7/12) -->
+<div class="lg:col-span-7 flex flex-col gap-3">
+<!-- Main Spatial Frame -->
+<div class="relative w-full h-[620px] bg-surface-container-lowest rounded overflow-hidden border border-outline-variant/60 flex flex-col shadow-xl">
+<!-- Cartographic Canvas Surface (SVG Basin Topology & Shoreline Network) -->
+<div class="relative w-full flex-1 bg-[#0b1b16] overflow-hidden select-none">
+<!-- Deep Basin Grid Pattern -->
+<svg class="absolute inset-0 w-full h-full opacity-20 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="basin-grid" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="#3f4945" stroke-dasharray="1 3" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#basin-grid)" height="100%" width="100%"></rect>
+</svg>
+<!-- Topographic Contours & Shoreline Base Vectors -->
+<svg class="absolute inset-0 w-full h-full" fill="none" viewbox="0 0 720 540" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<!-- Plume & Water Flow Gradients -->
+<lineargradient id="unsafeFlowGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#ffb4ab" stop-opacity="0.9"></stop>
+<stop offset="100%" stop-color="#efc04c" stop-opacity="0.8"></stop>
+</lineargradient>
+<lineargradient id="safeFlowGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#86d6be" stop-opacity="0.4"></stop>
+<stop offset="100%" stop-color="#86d6be" stop-opacity="0.8"></stop>
+</lineargradient>
+<!-- Edge Marker Head (Arrows) -->
+<marker id="arrow-unsafe" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10">
+<path d="M 0 1 L 9 5 L 0 9 z" fill="#efc04c"></path>
+</marker>
+<marker id="arrow-safe" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10">
+<path d="M 0 1 L 9 5 L 0 9 z" fill="#86d6be"></path>
+</marker>
+<!-- Radial Plume Bloom from Unsafe Node -->
+<radialgradient cx="50%" cy="50%" id="plumeBloom" r="50%">
+<stop offset="0%" stop-color="#ffb4ab" stop-opacity="0.4"></stop>
+<stop offset="60%" stop-color="#ffb4ab" stop-opacity="0.12"></stop>
+<stop offset="100%" stop-color="#ffb4ab" stop-opacity="0"></stop>
+</radialgradient>
+</defs>
+<!-- Lake Malawi Shoreline Geometry (East Lake Body) -->
+<path d="M 520 -20 Q 480 140 495 240 T 560 380 T 540 560 L 740 560 L 740 -20 Z" fill="#061f18" stroke="#1a2e28" stroke-width="1.5"></path>
+<path d="M 500 40 Q 470 160 480 250 T 530 400" stroke="#3f4945" stroke-dasharray="3 4" stroke-width="0.75"></path>
+<!-- Catchment Basin Watershed Boundary (Isohyets) -->
+<path d="M 40 80 C 120 40, 260 60, 340 110 S 440 210, 480 340 S 390 480, 240 510 S 60 440, 40 280 Z" fill="#0a1f1a" fill-opacity="0.5" stroke="#243932" stroke-width="1"></path>
+<!-- Drainage Channels (Thin background tributaries) -->
+<path d="M 120 120 Q 210 170 290 220" stroke="#1a2e28" stroke-linecap="round" stroke-width="1"></path>
+<path d="M 190 380 Q 260 340 330 330" stroke="#1a2e28" stroke-linecap="round" stroke-width="1"></path>
+<path d="M 330 330 Q 410 320 460 350" stroke="#1a2e28" stroke-linecap="round" stroke-width="1"></path>
+<!-- CONTAMINATED PROPAGATION VECTOR PATH (Source -> Jct -> Estuary) -->
+<path class="animate-pulse" d="M 230 180 C 270 200, 310 240, 360 270" id="path-source-reach" marker-end="url(#arrow-unsafe)" stroke="url(#unsafeFlowGrad)" stroke-dasharray="8 4" stroke-linecap="round" stroke-width="3"></path>
+<path d="M 360 270 C 410 300, 440 310, 500 315" id="path-reach-estuary" marker-end="url(#arrow-unsafe)" stroke="#efc04c" stroke-dasharray="6 3" stroke-linecap="round" stroke-opacity="0.85" stroke-width="2.5"></path>
+<path d="M 500 315 C 530 320, 550 322, 575 325" id="path-estuary-lake" stroke="#efc04c" stroke-dasharray="2 3" stroke-opacity="0.5" stroke-width="1.5"></path>
+<!-- Plume Dispersion Zone Halo around Demo Lake -->
+<circle cx="230" cy="180" fill="url(#plumeBloom)" r="48"></circle>
+<circle cx="230" cy="180" fill="none" opacity="0.6" r="28" stroke="#ffb4ab" stroke-dasharray="2 2" stroke-width="1"></circle>
+<!-- Alternative Clean Groundwater Aquifer Vectors -->
+<path d="M 230 180 Q 180 250 145 320" opacity="0.5" stroke="#3f4945" stroke-dasharray="4 4" stroke-width="1"></path>
+<path d="M 145 320 Q 130 380 150 420" marker-end="url(#arrow-safe)" stroke="url(#safeFlowGrad)" stroke-dasharray="4 2" stroke-width="1.5"></path>
+<path d="M 145 320 Q 230 360 280 430" marker-end="url(#arrow-safe)" stroke="url(#safeFlowGrad)" stroke-dasharray="4 2" stroke-width="1.5"></path>
+<path d="M 145 320 Q 160 210 175 110" marker-end="url(#arrow-safe)" stroke="url(#safeFlowGrad)" stroke-dasharray="4 2" stroke-width="1.5"></path>
+<!-- Shoreline Shore Text Label -->
+<text fill="#3f4945" font-family="JetBrains Mono" font-size="10" letter-spacing="0.1em" transform="rotate(75, 590, 220)" x="590" y="220">LAKE MALAWI PELAGIC ZONE</text>
+<text fill="#3f4945" font-family="JetBrains Mono" font-size="9" letter-spacing="0.08em" x="140" y="70">UPPER LINTHIPE CATCHMENT</text>
+</svg>
+<!-- Interactive Node Callouts & Overlays (HTML Layer positioned precisely) -->
+<!-- NODE 1: DEMO LAKE (SOURCE: UNSAFE) -->
+<div class="absolute top-[148px] left-[198px] flex flex-col items-center group pointer-events-auto cursor-pointer">
+<span class="relative flex h-8 w-8 items-center justify-center">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-40"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-error border border-surface shadow-md"></span>
+</span>
+<div class="-mt-1 px-2.5 py-1 bg-surface-container-lowest/95 border border-error/80 rounded shadow-md flex items-center gap-1.5 backdrop-blur-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="font-mono-micro text-mono-micro font-medium text-error tracking-wider uppercase whitespace-nowrap">Demo Lake [SOURCE: UNSAFE]</span>
+</div>
+<div class="mt-0.5 font-mono-micro text-[9px] text-error/80 bg-surface-container-lowest px-1.5 rounded">Tox: E. coli 840 CFU • Bloom +3.4σ</div>
+</div>
+<!-- NODE 2: LINTHIPE LOWER REACH (+4h Downstream) -->
+<div class="absolute top-[236px] left-[328px] flex flex-col items-center group pointer-events-auto cursor-pointer">
+<div class="relative flex h-6 w-6 items-center justify-center">
+<div class="w-3 h-3 rounded-full bg-tertiary border border-surface shadow-sm"></div>
+</div>
+<div class="-mt-0.5 px-2 py-0.5 bg-surface-container-lowest/90 border border-tertiary/60 rounded shadow flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-mono-micro text-mono-micro text-tertiary whitespace-nowrap">Linthipe Jct (Downstream +4h)</span>
+</div>
+<div class="mt-0.5 font-mono-micro text-[9px] text-outline">Turbidity: 38 NTU • ISOLATED</div>
+</div>
+<!-- NODE 3: SENGA ESTUARY WETLAND (+9h Downstream) -->
+<div class="absolute top-[282px] left-[468px] flex flex-col items-center group pointer-events-auto cursor-pointer">
+<div class="relative flex h-5 w-5 items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary/80 border border-surface"></div>
+</div>
+<div class="-mt-0.5 px-2 py-0.5 bg-surface-container-lowest/90 border border-outline-variant rounded shadow flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+<span class="font-mono-micro text-mono-micro text-on-surface-variant whitespace-nowrap">Estuary Wetland (+9h)</span>
+</div>
+<div class="mt-0.5 font-mono-micro text-[9px] text-outline">Plume ETA: ~03:40 UTC</div>
+</div>
+<!-- SAFE ALTERNATIVE NODE A (PRIMARY RECOMMENDATION: CHIZUMULU BH-3) -->
+<div class="absolute top-[286px] left-[110px] flex flex-col items-center group pointer-events-auto cursor-pointer z-20">
+<!-- Pulsing Concentric Ring & Target Pin -->
+<div class="relative flex items-center justify-center">
+<span class="animate-ping absolute inline-flex h-9 w-9 rounded-full bg-primary opacity-30"></span>
+<span class="relative flex items-center justify-center w-7 h-7 rounded-full bg-primary/20 border border-primary">
+<span class="w-3.5 h-3.5 rounded-full bg-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[10px] text-on-primary font-bold">star</span>
+</span>
+</span>
+</div>
+<!-- High-Contrast Recommendation Tag -->
+<div class="-mt-1 px-2.5 py-1 bg-surface-container-high border-2 border-primary rounded shadow-xl flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[13px] text-primary">verified</span>
+<span class="font-mono-data text-mono-data font-semibold text-primary tracking-wide whitespace-nowrap">Chizumulu BH-3 • 1.2 km [SAFE ALTERNATIVE]</span>
+</div>
+<!-- Distinct "ACT HERE" Recommendation Badge -->
+<div class="mt-1 px-2 py-0.5 bg-primary text-on-primary font-mono-micro text-mono-micro font-semibold rounded uppercase tracking-widest shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[10px]">my_location</span>
+<span>RECOMMENDED INTERVENTION: ACT HERE</span>
+</div>
+</div>
+<!-- SAFE ALTERNATIVE NODE B: NKHOTAKOTA DEEP WELL -->
+<div class="absolute top-[395px] left-[245px] flex flex-col items-center group pointer-events-auto cursor-pointer">
+<div class="relative flex h-5 w-5 items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-primary border border-surface shadow-sm"></div>
+</div>
+<div class="-mt-0.5 px-2 py-0.5 bg-surface-container-lowest/90 border border-outline-variant rounded shadow flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-mono-micro text-mono-micro text-on-surface whitespace-nowrap">Nkhotakota Well • 4.8 km [SAFE]</span>
+</div>
+<div class="mt-0.5 font-mono-micro text-[9px] text-outline">Cap: 38 L/min • Aquifer 42m</div>
+</div>
+<!-- SAFE ALTERNATIVE NODE C: MVERA GRAVITY SCHEME -->
+<div class="absolute top-[80px] left-[142px] flex flex-col items-center group pointer-events-auto cursor-pointer">
+<div class="relative flex h-5 w-5 items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-primary border border-surface shadow-sm"></div>
+</div>
+<div class="-mt-0.5 px-2 py-0.5 bg-surface-container-lowest/90 border border-outline-variant rounded shadow flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-mono-micro text-mono-micro text-on-surface whitespace-nowrap">Mvera Spring • 7.1 km [SAFE]</span>
+</div>
+<div class="mt-0.5 font-mono-micro text-[9px] text-outline">Cap: 60 L/min • Gravity Feed</div>
+</div>
+<!-- MAP HUD OVERLAYS -->
+<!-- Targeting Reticle at Active Basin Epicenter -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-40">
+<div class="w-10 h-10 border border-outline-variant/80 rounded-full flex items-center justify-center">
+<div class="w-1.5 h-1.5 bg-primary-fixed-dim rounded-full"></div>
+</div>
+</div>
+<!-- Bottom Left Coordinates Graticule -->
+<div class="absolute bottom-3 left-3 flex flex-col gap-1 bg-surface-container-lowest/80 border border-outline-variant/60 p-2 rounded backdrop-blur-sm">
+<div class="flex items-center gap-2 font-mono-micro text-mono-micro text-outline">
+<span class="material-symbols-outlined text-[12px] text-primary">location_on</span>
+<span>13°48'22" S • 34°19'10" E</span>
+</div>
+<div class="flex items-center gap-3 font-mono-micro text-[9px] text-on-surface-variant">
+<span>DATUM: WGS84</span>
+<span>ELEV: 486m MSL</span>
+<span>HYDRO-ROUTING: D8</span>
+</div>
+</div>
+<!-- Bottom Right Scale Bar -->
+<div class="absolute bottom-3 right-3 flex flex-col items-end gap-1 bg-surface-container-lowest/80 border border-outline-variant/60 p-2 rounded backdrop-blur-sm">
+<div class="flex items-center gap-1 font-mono-micro text-[9px] text-outline">
+<span>0</span>
+<span class="mx-3">5</span>
+<span>15 km</span>
+</div>
+<!-- Alternating Nautical / Cartographic Bar -->
+<div class="flex h-1.5 w-28 border border-outline-variant">
+<div class="h-full w-1/3 bg-on-surface"></div>
+<div class="h-full w-1/3 bg-surface-container-highest"></div>
+<div class="h-full w-1/3 bg-primary"></div>
+</div>
+</div>
+<!-- Zoom & Layer Quick Controls -->
+<div class="absolute top-3 right-3 flex flex-col gap-1">
+<button aria-label="Zoom In" class="w-7 h-7 bg-surface-container border border-outline-variant/80 text-on-surface rounded flex items-center justify-center hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+<button aria-label="Zoom Out" class="w-7 h-7 bg-surface-container border border-outline-variant/80 text-on-surface rounded flex items-center justify-center hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<button aria-label="Reset View" class="w-7 h-7 bg-surface-container border border-outline-variant/80 text-on-surface rounded flex items-center justify-center hover:bg-surface-container-high transition-colors mt-1" type="button">
+<span class="material-symbols-outlined text-[15px]">crop_free</span>
+</button>
+</div>
+</div>
+<!-- Integrated Map Legend Footer -->
+<div class="bg-surface-container-low border-t border-outline-variant/60 px-4 py-2.5 flex flex-wrap items-center justify-between gap-y-2 gap-x-4">
+<div class="flex items-center gap-4 flex-wrap">
+<div class="flex items-center gap-1.5 font-mono-micro text-mono-micro text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span>Unsafe Contaminated Source</span>
+</div>
+<div class="flex items-center gap-1.5 font-mono-micro text-mono-micro text-on-surface-variant">
+<span class="w-3 h-0.5 bg-tertiary"></span>
+<span>Downstream Affected Path</span>
+</div>
+<div class="flex items-center gap-1.5 font-mono-micro text-mono-micro text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span>Verified Safe Alternative</span>
+</div>
+<div class="flex items-center gap-1.5 font-mono-micro text-mono-micro text-primary font-medium">
+<span class="material-symbols-outlined text-[14px]">star</span>
+<span>Recommended Intervention ('Act Here')</span>
+</div>
+</div>
+<span class="font-mono-micro text-mono-micro text-outline">TOPOLOGICAL ISO-CHRONES: 1.0 hr INTERVAL</span>
+</div>
+</div>
+<!-- Graph Summary Strip -->
+<div class="grid grid-cols-3 gap-3">
+<div class="bg-surface-container border border-outline-variant/40 p-3 rounded flex flex-col">
+<span class="font-mono-label text-mono-label text-outline uppercase">PLUME CONVERGENCE</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-0.5">3 Reach Nodes</span>
+<span class="font-mono-micro text-mono-micro text-error mt-1">11.4 km basin impact</span>
+</div>
+<div class="bg-surface-container border border-outline-variant/40 p-3 rounded flex flex-col">
+<span class="font-mono-label text-mono-label text-outline uppercase">ROUTING LATENCY</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-0.5">0.38 m/s</span>
+<span class="font-mono-micro text-mono-micro text-tertiary mt-1">Dispersion gradient D8</span>
+</div>
+<div class="bg-surface-container border border-outline-variant/40 p-3 rounded flex flex-col">
+<span class="font-mono-label text-mono-label text-outline uppercase">ALTERNATIVE CAPACITY</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold mt-0.5">143 L/min</span>
+<span class="font-mono-micro text-mono-micro text-primary-fixed-dim mt-1">3 redundant points verified</span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Simulation Controls, Isolation State & Provenance (~40% = 5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-4">
+<!-- 1. "Network Demo" Control Card -->
+<div class="bg-surface-container border border-outline-variant/60 p-5 rounded flex flex-col shadow-lg">
+<!-- Header -->
+<div class="flex items-start justify-between mb-3">
+<div>
+<span class="font-mono-label text-mono-label text-outline uppercase tracking-wider">Topological Dispatch Engine</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-medium mt-0.5">Propagation Simulation &amp; Route Isolation</h2>
+</div>
+<span class="material-symbols-outlined text-outline text-[22px]">alt_route</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+          Execute directed acyclic propagation across the Linthipe watershed to calculate solute travel time, simulate downstream barrier lockouts, and establish priority diversion targets.
+        </p>
+<!-- Prominent Action Button -->
+<button class="w-full bg-primary text-on-primary font-mono-data text-mono-data font-semibold px-4 py-2.5 rounded hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2 mb-4 shadow-md active:scale-[0.99]" id="run-demo-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>▶ Run network demo</span>
+</button>
+<!-- Dynamic State Indicator Header -->
+<div class="border border-outline-variant/60 rounded bg-surface-container-low p-3 mb-4">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-2 mb-2.5">
+<span class="font-mono-label text-mono-label text-outline uppercase">SIMULATION STATUS</span>
+<div class="flex items-center gap-1.5 font-mono-micro text-mono-micro">
+<span class="px-2 py-0.5 text-outline" id="tab-idle">IDLE</span>
+<span class="text-outline-variant">/</span>
+<span class="px-2 py-0.5 text-outline" id="tab-running">RUNNING</span>
+<span class="text-outline-variant">/</span>
+<span class="px-2 py-0.5 bg-primary/20 text-primary border border-primary/50 rounded font-semibold" id="tab-complete">COMPLETE</span>
+</div>
+</div>
+<!-- State Readout Terminal -->
+<div class="flex flex-col gap-2 font-mono-data text-mono-data text-on-surface">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-0.5">terminal</span>
+<p class="font-mono-data text-mono-data text-on-surface-variant leading-relaxed" id="state-readout">
+                Network topology analyzed: <span class="text-on-surface font-medium">14 downstream edges scanned</span>. Plume dispersion velocity: <span class="text-tertiary font-medium">0.38 m/s</span>. <span class="text-error font-medium">2 downstream extraction points isolated</span>. Automated failover rerouted to <span class="text-primary font-medium">Chizumulu Borehole #3</span>.
+              </p>
+</div>
+<div class="mt-2 pt-2 border-t border-outline-variant/20 flex items-center justify-between text-mono-micro text-outline font-mono-micro">
+<span>SOLUTE: Microcystin-LR</span>
+<span>CONVERGENCE: &lt; 0.04s</span>
+<span>FAILOVER: ENGAGED</span>
+</div>
+</div>
+</div>
+<!-- Target Recommendation Summary Card -->
+<div class="bg-surface-container-high border-l-4 border-l-primary border-y border-r border-outline-variant/60 p-3.5 rounded flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-mono-label text-mono-label text-primary uppercase tracking-wider font-semibold">Primary Intervention Point</span>
+<span class="px-1.5 py-0.5 bg-primary/20 text-primary font-mono-micro text-mono-micro rounded">SCORE: 98.4%</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-medium">
+            Chizumulu Borehole #3
+          </div>
+<div class="font-mono-data text-mono-data text-on-surface-variant">
+            Capacity: <span class="text-on-surface font-medium">45 L/min</span> • Static water table: <span class="text-on-surface font-medium">28m</span> • Coliform test: <span class="text-primary font-medium">0 CFU/100mL</span>
+</div>
+<div class="mt-1 flex items-center justify-between text-mono-micro font-mono-micro text-outline pt-2 border-t border-outline-variant/30">
+<span>DISPENSING BUFFER: 72 HOURS</span>
+<span class="text-primary-fixed-dim">COMMUNITY OUTREACH DISPATCHED</span>
+</div>
+</div>
+<!-- Direct Isolation Override Controls -->
+<div class="mt-4 pt-3 border-t border-outline-variant/40 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock</span>
+<span class="font-mono-micro text-mono-micro text-on-surface">Downstream Sluice Gates:</span>
+</div>
+<span class="font-mono-micro text-mono-micro text-error uppercase font-semibold bg-error/15 px-2 py-0.5 rounded border border-error/30">ISOLATION SECURED (2 OF 2)</span>
+</div>
+</div>
+<!-- 2. Provenance & System Status Strip (3 Distinct Inline Telemetry Blocks with Borders) -->
+<div class="flex flex-col gap-2.5">
+<span class="font-mono-label text-mono-label text-outline uppercase tracking-wider px-1">Epistemic Provenance &amp; Telemetry Linkages</span>
+<!-- Block 1: Inline Demo Records Source -->
+<div class="bg-surface-container border border-outline-variant/60 px-4 py-3 rounded flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-[17px] text-outline shrink-0">data_object</span>
+<div class="flex flex-col min-w-0">
+<span class="font-mono-micro text-mono-micro text-outline uppercase">PROVENANCE DATASET</span>
+<span class="font-mono-data text-mono-data text-outline truncate">Source: inline demo records</span>
+</div>
+</div>
+<span class="font-mono-micro text-mono-micro text-outline shrink-0 ml-2">HASH: #8F2A9088</span>
+</div>
+<!-- Block 2: Ground Sample Required Hatched Chip -->
+<div class="bg-surface-container border border-tertiary/70 px-4 py-3 rounded flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-[17px] text-tertiary shrink-0">science</span>
+<div class="flex flex-col min-w-0">
+<span class="font-mono-micro text-mono-micro text-tertiary uppercase">UNCERTAINTY FLAG</span>
+<span class="font-mono-data text-mono-data text-tertiary font-medium truncate">Uncertainty: FIELD SAMPLE REQUIRED (Reach 4B)</span>
+</div>
+</div>
+<span class="font-mono-micro text-mono-micro bg-tertiary/15 text-tertiary px-2 py-0.5 rounded shrink-0 ml-2">VERIFY PENDING</span>
+</div>
+<!-- Block 3: Live API Retry Enabled -->
+<div class="bg-surface-container border border-primary/60 px-4 py-3 rounded flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-[17px] text-primary shrink-0">sync_saved_locally</span>
+<div class="flex flex-col min-w-0">
+<span class="font-mono-micro text-mono-micro text-primary uppercase">INGEST PROTOCOL</span>
+<span class="font-mono-data text-mono-data text-primary font-medium truncate">Retry enabled for live API (DHIS2 &amp; HydroSHEDS)</span>
+</div>
+</div>
+<span class="font-mono-micro text-mono-micro text-primary-fixed-dim shrink-0 ml-2">BACKOFF: EXP 2.4s</span>
+</div>
+</div>
+<!-- Action Verification / Audit Log Footnote -->
+<div class="bg-surface-container-low p-3 rounded border border-outline-variant/40 flex items-center justify-between font-mono-micro text-mono-micro text-outline">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[13px] text-outline">policy</span>
+<span>COMPLIANCE: WHO Guidelines for Drinking-water Quality (4th Ed)</span>
+</div>
+<span class="text-on-surface-variant font-mono-data">NODE-HASH: #LNT-0419</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Micro-Interactions Script -->
+<script>
+  (function() {
+    const btn = document.getElementById('run-demo-btn');
+    const readout = document.getElementById('state-readout');
+    const tabIdle = document.getElementById('tab-idle');
+    const tabRunning = document.getElementById('tab-running');
+    const tabComplete = document.getElementById('tab-complete');
+
+    if (!btn || !readout) return;
+
+    let isSimulating = false;
+
+    btn.addEventListener('click', function() {
+      if (isSimulating) return;
+      isSimulating = true;
+
+      // Switch to RUNNING state
+      tabIdle.className = "px-2 py-0.5 text-outline";
+      tabRunning.className = "px-2 py-0.5 bg-tertiary/20 text-tertiary border border-tertiary/50 rounded font-semibold animate-pulse";
+      tabComplete.className = "px-2 py-0.5 text-outline";
+
+      btn.disabled = true;
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Computing D8 propagation vectors...</span>';
+      
+      readout.innerHTML = '<span class="text-tertiary">Running DAG cycle check on 14 catchment reaches... Traversing downstream solute velocity (0.38 m/s)...</span>';
+
+      setTimeout(function() {
+        readout.innerHTML = '<span class="text-tertiary">Locking extraction valves at Linthipe Jct & Estuary Wetland... Calibrating static capacity on alternative aquifers...</span>';
+      }, 1000);
+
+      setTimeout(function() {
+        // Complete
+        tabRunning.className = "px-2 py-0.5 text-outline";
+        tabComplete.className = "px-2 py-0.5 bg-primary/20 text-primary border border-primary/50 rounded font-semibold";
+        
+        readout.innerHTML = 'Network topology analyzed: <span class="text-on-surface font-medium">14 downstream edges scanned</span>. Plume dispersion velocity: <span class="text-tertiary font-medium">0.38 m/s</span>. <span class="text-error font-medium">2 downstream extraction points isolated</span>. Automated failover rerouted to <span class="text-primary font-medium">Chizumulu Borehole #3</span>.';
+        
+        btn.disabled = false;
+        btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">play_arrow</span><span>▶ Re-run network demo</span>';
+        isSimulating = false;
+      }, 2200);
+    });
+  })();
+</script></main></div></body></html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-error-container":"#ffdad6","tertiary-container":"#b48b16","surface-container-low":"#0b1f1a","outline":"#88938e","outline-variant":"#3f4945","on-tertiary":"#3f2e00","on-tertiary-container":"#372700","tertiary-fixed":"#ffdf9b","primary-fixed-dim":"#86d6be","on-secondary-fixed":"#321200","secondary-container":"#883d00","surface":"#031712","primary-container":"#4f9f89","on-tertiary-fixed":"#251a00","surface-container":"#0f231e","on-secondary-fixed-variant":"#763400","on-primary-fixed":"#002019","on-secondary":"#532200","error-container":"#93000a","secondary-fixed-dim":"#ffb68d","inverse-on-surface":"#20342e","surface-dim":"#031712","primary-fixed":"#a2f2d9","surface-container-high":"#1a2e28","error":"#ffb4ab","on-background":"#d0e8de","surface-tint":"#86d6be","surface-container-lowest":"#00110c","on-primary":"#00382c","on-error":"#690005","surface-bright":"#293d37","on-tertiary-fixed-variant":"#5a4300","inverse-surface":"#d0e8de","on-primary-fixed-variant":"#005141","primary":"#86d6be","background":"#031712","on-primary-container":"#003026","on-surface":"#d0e8de","inverse-primary":"#0f6b57","on-secondary-container":"#ffb68c","tertiary":"#efc04c","tertiary-fixed-dim":"#efc04c","secondary-fixed":"#ffdbc9","surface-container-highest":"#243932","on-surface-variant":"#bec9c4","surface-variant":"#243932","secondary":"#ffb68d"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-2xl":"2rem","space-lg":"1rem","gutter":"1rem","space-xs":"0.25rem","space-md":"0.75rem","space-xl":"1.5rem","margin-mobile":"0.75rem","gutter-mobile":"0.5rem","space-sm":"0.5rem","margin":"1.5rem","space-2xs":"0.125rem"},"fontFamily":{"mono-data":["JetBrains Mono"],"body-md":["IBM Plex Sans"],"headline-lg":["Newsreader"],"headline-xl":["Newsreader"],"headline-sm":["Newsreader"],"body-lg":["IBM Plex Sans"],"mono-label":["JetBrains Mono"],"headline-md":["Newsreader"],"mono-micro":["JetBrains Mono"],"telemetry-display":["Newsreader"],"body-sm":["IBM Plex Sans"]},"fontSize":{"mono-data":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.375rem","fontWeight":"400"}],"headline-lg":["1.875rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"500"}],"headline-xl":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"mono-label":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.08em","fontWeight":"500"}],"headline-md":["1.375rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"500"}],"mono-micro":["0.625rem",{"lineHeight":"0.75rem","letterSpacing":"0.06em","fontWeight":"400"}],"telemetry-display":["2.25rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"400"}],"body-sm":["0.75rem",{"lineHeight":"1.125rem","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 h-[72px] bg-surface border-b border-outline-variant/60 px-6 flex items-center justify-between"><div class="flex items-center gap-4"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant/60" src="https://lh3.googleusercontent.com/aida/AEtjO1UyTjobrh6jRadKptk7Ri5MbrOCg0ATNiOI-lkAgGfLhNlP7BgSSmJwn7g0wWwHjnTo6qVUAum8IKh1ktzo-SN6N4n2qh3TYJl6DysClyO84ffTtq_ebxos7fVo-1bjGADrDPxxtp4sTEekt0Va6kpklVDiX-kiwM1LE9YfXDSNFsyw6tRf6PFd9HG-l3yBlhAXG_-D7Ru7qtqNIC-SXlMPNn4YlJN2OkRInT7og1K3sNAEQN1dkaQKWw"/><div class="flex items-baseline gap-3"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Freshwater Sentinel</span><span class="text-outline-variant">|</span><span class="font-mono-micro text-mono-micro text-outline tracking-wider uppercase">IEEE OneAquaHealth / Track 6: Resilience Informatics</span></div></div><div class="flex items-center gap-3"><div class="hidden md:flex items-center gap-2 border border-outline-variant/60 px-2.5 py-1 rounded bg-surface-container font-mono-micro text-mono-micro text-outline"><span class="material-symbols-outlined text-[13px] text-outline">explore</span><span>13°46'S 34°18'E • L. MALAWI BASIN</span></div><div class="flex items-center gap-2 bg-surface-container border border-outline-variant/60 px-3 py-1 rounded font-mono-micro text-mono-micro text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="tracking-wider uppercase text-on-surface">LIVE TELEMETRY / IN-SITU BUOY LINK</span></div><button class="border border-outline-variant/60 px-2.5 py-1 rounded font-mono-micro text-mono-micro text-on-surface hover:border-primary hover:text-on-surface transition-colors bg-surface-container" type="button">EN | SW</button><button aria-label="Documentation &amp; Telemetry Help" class="w-7 h-7 flex items-center justify-center border border-outline-variant/60 rounded bg-surface-container text-outline hover:text-on-surface hover:border-outline transition-colors" type="button"><span class="material-symbols-outlined text-[15px]">help_outline</span></button></div></header><aside class="fixed left-0 top-[72px] bottom-0 w-[230px] bg-surface border-r border-outline-variant/60 z-40 flex flex-col justify-between py-4"><div class="flex flex-col"><div class="px-4 pb-2 mb-2 border-b border-outline-variant/30 flex items-center justify-between"><span class="font-mono-label text-mono-label uppercase text-outline tracking-widest">Mission Modules</span><span class="font-mono-micro text-mono-micro text-primary-fixed-dim">v4.2-R</span></div><nav class="flex flex-col w-full" data-active-classes="border-l-[3px] border-primary bg-surface-container-high text-on-surface font-medium"><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">grid_view</span><span>Overview</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="eyes" href="#"><span class="material-symbols-outlined text-[18px]">satellite_alt</span><span>Eyes</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="brain" href="#"><span class="material-symbols-outlined text-[18px]">neurology</span><span>Brain</span></a><a aria-current="page" class="flex items-center gap-3 px-4 py-2.5 transition-all border-l-[3px] border-primary bg-surface-container-high text-on-surface font-medium" data-path="voice" href="#"><span class="material-symbols-outlined text-[18px]">podcasts</span><span>Voice</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="network" href="#"><span class="material-symbols-outlined text-[18px]">hub</span><span>Network</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="hands" href="#"><span class="material-symbols-outlined text-[18px]">assignment_turned_in</span><span>Hands</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="verify" href="#"><span class="material-symbols-outlined text-[18px]">verified</span><span>Verify</span></a></nav></div><div class="px-4 pt-3 border-t border-outline-variant/40 flex flex-col gap-1.5 font-mono-micro text-mono-micro text-outline"><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">SENSORS:</span><span class="text-on-surface-variant">S2-MSI / L9</span></div><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">SYNC:</span><span class="text-on-surface-variant">14m ago</span></div><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">COVERAGE:</span><span class="text-primary-fixed-dim font-medium">98.4% Basin</span></div><div class="mt-2 pt-2 border-t border-outline-variant/30 text-[9px] uppercase tracking-widest text-outline-variant">RIFT BASIN HYDRO-LOG</div></div></aside><div class="pl-[230px]"><main class="relative pt-[72px] min-h-screen bg-surface w-full p-8 font-body-md text-body-md text-on-surface"><div class="flex flex-col w-full">
+<div class="max-w-4xl mx-auto w-full flex flex-col gap-6">
+<!-- Header Section -->
+<header class="flex flex-col gap-1.5 pb-2">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<p class="font-mono-micro text-mono-micro text-outline uppercase tracking-widest">
+          MULTILINGUAL RESILIENCE BROADCAST &amp; FIELD DISPATCH
+        </p>
+</div>
+<div class="flex items-center justify-between flex-wrap gap-4">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-medium tracking-tight">
+          Community Alert Dispatch &amp; SMS Verification
+        </h1>
+<div class="flex items-center gap-2 bg-surface-container-high px-3 py-1 rounded">
+<span class="material-symbols-outlined text-primary text-[15px]">campaign</span>
+<span class="font-mono-label text-mono-label text-primary-fixed-dim uppercase tracking-wider">PROTOCOL: CAP-EAC v1.4</span>
+</div>
+</div>
+</header>
+<!-- Top Metadata Strip -->
+<section class="bg-surface-container rounded-lg p-4 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-col sm:flex-row sm:items-center gap-4 text-on-surface-variant divide-y sm:divide-y-0 sm:divide-x divide-outline-variant/30">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary">groups</span>
+<div class="flex flex-col">
+<span class="font-mono-micro text-mono-micro text-outline uppercase">Target Recipient Group</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">Salima Central Water Committee (340 village health leaders &amp; boreholes)</span>
+</div>
+</div>
+<div class="flex items-center gap-2.5 pt-2 sm:pt-0 sm:pl-4">
+<span class="material-symbols-outlined text-[18px] text-tertiary">cell_tower</span>
+<div class="flex flex-col">
+<span class="font-mono-micro text-mono-micro text-outline uppercase">Transmission Channels</span>
+<span class="font-body-sm text-body-sm text-on-surface">Cell Broadcast / SMS / FrontlineSMS IVR</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-highest px-3 py-1.5 rounded self-start md:self-auto">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-mono-data text-mono-data text-tertiary uppercase tracking-wider font-semibold">STATUS: PENDING VALIDATION</span>
+</div>
+</section>
+<!-- Center Section: Multilingual SMS Cards -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<!-- Left Card: English Primary Broadcast -->
+<article class="bg-surface-container rounded-lg p-5 flex flex-col justify-between shadow-sm">
+<div>
+<!-- Header info -->
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="font-mono-data text-mono-data text-on-surface font-semibold">EN (English Broadcast)</span>
+<span class="font-mono-micro text-mono-micro text-primary-fixed-dim bg-surface-container-highest px-2 py-0.5 rounded uppercase font-medium">
+                EN • PRIMARY LOCALE
+              </span>
+</div>
+<span class="material-symbols-outlined text-[17px] text-primary" title="Automated System Generation">check_circle</span>
+</div>
+<!-- Device preview shell -->
+<div class="bg-surface-container-low rounded p-3 mb-3">
+<div class="flex items-center justify-between mb-2 pb-1.5 border-b border-outline-variant/20 font-mono-micro text-mono-micro text-outline">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[13px] text-outline">sms</span>
+<span>TO: +265 88 123 4567 (Group Lead)</span>
+</div>
+<span class="text-primary-fixed-dim">PRIORITY 1 / EMERGENCY</span>
+</div>
+<!-- SMS Bubble -->
+<div class="bg-surface-container-high rounded p-3.5 font-body-sm text-body-sm text-on-surface leading-relaxed shadow-sm">
+<p class="font-semibold text-primary mb-1">URGENT HEALTH ADVISORY [Freshwater Sentinel / Malawi MoH]:</p>
+              High cyanobacteria bloom detected at Demo Lake (Nkhotakota North sector). DO NOT use lake water directly for drinking or cooking without rolling boil and filtration. Safe alternative: Chizumulu Borehole #3 (1.2 km south). Boil water advisory active for 72 hours.
+            </div>
+</div>
+</div>
+<!-- Footer / Payload specs -->
+<div class="pt-2 flex items-center justify-between font-mono-micro text-mono-micro text-outline border-t border-outline-variant/30">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">pin</span>
+<span>294 / 320 chars (2 SMS segments)</span>
+</div>
+<div class="flex items-center gap-1.5 text-primary-fixed-dim">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>GSM-7 ENCODING OK</span>
+</div>
+</div>
+</article>
+<!-- Right Card: Swahili Regional Translation -->
+<article class="bg-surface-container rounded-lg p-5 flex flex-col justify-between shadow-sm">
+<div>
+<!-- Header info -->
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="font-mono-data text-mono-data text-on-surface font-semibold">SW (Swahili Translation)</span>
+<span class="font-mono-micro text-mono-micro text-on-surface-variant bg-surface-container-highest px-2 py-0.5 rounded uppercase font-medium">
+                SW • KISWAHILI CORRIDOR
+              </span>
+</div>
+<span class="material-symbols-outlined text-[17px] text-tertiary" title="Cross-Border Sector Sync">translate</span>
+</div>
+<!-- Device preview shell -->
+<div class="bg-surface-container-low rounded p-3 mb-3">
+<div class="flex items-center justify-between mb-2 pb-1.5 border-b border-outline-variant/20 font-mono-micro text-mono-micro text-outline">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[13px] text-outline">sms</span>
+<span>TO: Lake Shore Health Coordinators</span>
+</div>
+<span class="text-tertiary">SECTOR CROSS-BORDER</span>
+</div>
+<!-- SMS Bubble -->
+<div class="bg-surface-container-high rounded p-3.5 font-body-sm text-body-sm text-on-surface leading-relaxed shadow-sm">
+<p class="font-semibold text-secondary mb-1">TAHADHARI YA AFYA [Freshwater Sentinel / MoH]:</p>
+              Mlipuko wa mwani hatari umegunduliwa katika Ziwa Demo. USITUMIE maji ya ziwa moja kwa moja kwa kunywa au kupikia bila kuchemsha vizuri na kuchuja. Njia mbadala salama: Kisima cha Chizumulu Nambari 3 (km 1.2 kusini). Tahadhari hii inafanya kazi kwa saa 72.
+            </div>
+</div>
+</div>
+<!-- Footer / Semantic Verification -->
+<div class="pt-2 flex items-center justify-between font-mono-micro text-mono-micro text-outline border-t border-outline-variant/30">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px] text-primary">verified</span>
+<span>Verified by Regional Health Translator</span>
+</div>
+<span class="text-primary font-semibold">99.1% MATCH</span>
+</div>
+</article>
+</section>
+<!-- Bottom Section: DISTINCT PRERECORDED VOICE SCRIPT CARD -->
+<section class="bg-surface-container-high rounded-xl p-6 shadow-md relative overflow-hidden">
+<!-- Top Ochre Accent Stripe -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div class="flex flex-col gap-4">
+<!-- Top Badges and Title -->
+<div class="flex items-start justify-between flex-wrap gap-2">
+<div>
+<span class="font-mono-micro text-mono-micro font-bold text-secondary bg-surface-container-lowest px-3 py-1 rounded tracking-wider uppercase inline-block mb-2">
+              [ DEMO — PRERECORDED VOICE SCRIPT ]
+            </span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-medium">
+              CHICHEWA PRERECORDED VOICE DEMO: Dial-in IVR 4040 Audio Track (Duration: 38s)
+            </h2>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container px-2.5 py-1 rounded text-on-surface-variant font-mono-micro text-mono-micro">
+<span class="material-symbols-outlined text-[14px] text-secondary">mic</span>
+<span>CODEC: AMR-NB 8kHz (Cellular)</span>
+</div>
+</div>
+<!-- Chichewa Field Script Container -->
+<div class="bg-surface-container-lowest rounded-lg p-4">
+<div class="flex items-center gap-2 mb-1.5 text-secondary font-mono-label text-mono-label uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">record_voice_over</span>
+<span>Chichewa Local Catchment Dialect Audio Script</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+            “CHENJEZO LA MADZI: Madzi a m'nyanja ya Demo Lake ali ndi vuto la ndere zowononga (algal bloom). Musamwe kapena kuphikira madzi awa popanda kuwiritsa bwino kwambiri ndi kusefa. Gwiritsani ntchito chitsime cha Chizumulu Borehole #3 chomwe chili pamtunda wa kilomita 1.2 kumwera. Pitani ku chipatala chapafupi ngati mukumva kutsegula m'mimba kapena kufooka m'thupi.”
+          </p>
+</div>
+<!-- Interactive Audio Player Bar -->
+<div class="bg-surface-container rounded-lg p-4 flex flex-col gap-3 shadow-inner">
+<div class="flex items-center gap-4">
+<!-- Play/Pause Toggle -->
+<button aria-label="Play or Pause Audio" class="w-10 h-10 rounded-full bg-secondary hover:bg-secondary-fixed flex items-center justify-center text-on-secondary shrink-0 transition-transform active:scale-95 shadow" id="audio-play-btn" type="button">
+<span class="material-symbols-outlined text-[24px]" id="play-icon">play_arrow</span>
+</button>
+<!-- Dynamic Waveform & Progress Tracker -->
+<div class="flex-1 flex flex-col gap-1.5">
+<div class="relative w-full h-8 flex items-center gap-1 cursor-pointer select-none" id="waveform-track" title="Click to seek">
+<!-- SVG Waveform -->
+<svg class="w-full h-8 overflow-visible" preserveaspectratio="none" viewbox="0 0 380 32">
+<!-- Inactive waveform bars in the background -->
+<g class="text-outline-variant" fill="currentColor">
+<rect height="12" rx="1" width="3" x="0" y="10"></rect>
+<rect height="20" rx="1" width="3" x="8" y="6"></rect>
+<rect height="16" rx="1" width="3" x="16" y="8"></rect>
+<rect height="24" rx="1" width="3" x="24" y="4"></rect>
+<rect height="18" rx="1" width="3" x="32" y="7"></rect>
+<rect height="28" rx="1" width="3" x="40" y="2"></rect>
+<rect height="22" rx="1" width="3" x="48" y="5"></rect>
+<rect height="14" rx="1" width="3" x="56" y="9"></rect>
+<rect height="26" rx="1" width="3" x="64" y="3"></rect>
+<rect height="16" rx="1" width="3" x="72" y="8"></rect>
+<rect height="24" rx="1" width="3" x="80" y="4"></rect>
+<rect height="12" rx="1" width="3" x="88" y="10"></rect>
+<rect height="22" rx="1" width="3" x="96" y="5"></rect>
+<rect height="30" rx="1" width="3" x="104" y="1"></rect>
+<rect height="18" rx="1" width="3" x="112" y="7"></rect>
+<rect height="10" rx="1" width="3" x="120" y="11"></rect>
+<rect height="20" rx="1" width="3" x="128" y="6"></rect>
+<rect height="26" rx="1" width="3" x="136" y="3"></rect>
+<rect height="16" rx="1" width="3" x="144" y="8"></rect>
+<rect height="28" rx="1" width="3" x="152" y="2"></rect>
+<rect height="14" rx="1" width="3" x="160" y="9"></rect>
+<rect height="24" rx="1" width="3" x="168" y="4"></rect>
+<rect height="18" rx="1" width="3" x="176" y="7"></rect>
+<rect height="12" rx="1" width="3" x="184" y="10"></rect>
+<rect height="22" rx="1" width="3" x="192" y="5"></rect>
+<rect height="26" rx="1" width="3" x="200" y="3"></rect>
+<rect height="18" rx="1" width="3" x="208" y="7"></rect>
+<rect height="8" rx="1" width="3" x="216" y="12"></rect>
+<rect height="24" rx="1" width="3" x="224" y="4"></rect>
+<rect height="30" rx="1" width="3" x="232" y="1"></rect>
+<rect height="20" rx="1" width="3" x="240" y="6"></rect>
+<rect height="14" rx="1" width="3" x="248" y="9"></rect>
+<rect height="24" rx="1" width="3" x="256" y="4"></rect>
+<rect height="16" rx="1" width="3" x="264" y="8"></rect>
+<rect height="28" rx="1" width="3" x="272" y="2"></rect>
+<rect height="10" rx="1" width="3" x="280" y="11"></rect>
+<rect height="22" rx="1" width="3" x="288" y="5"></rect>
+<rect height="18" rx="1" width="3" x="296" y="7"></rect>
+<rect height="26" rx="1" width="3" x="304" y="3"></rect>
+<rect height="16" rx="1" width="3" x="312" y="8"></rect>
+<rect height="12" rx="1" width="3" x="320" y="10"></rect>
+<rect height="20" rx="1" width="3" x="328" y="6"></rect>
+<rect height="24" rx="1" width="3" x="336" y="4"></rect>
+<rect height="14" rx="1" width="3" x="344" y="9"></rect>
+<rect height="28" rx="1" width="3" x="352" y="2"></rect>
+<rect height="20" rx="1" width="3" x="360" y="6"></rect>
+<rect height="10" rx="1" width="3" x="368" y="11"></rect>
+<rect height="6" rx="1" width="3" x="376" y="13"></rect>
+</g>
+<!-- Active scrub progress mask/clip -->
+<g class="text-secondary" fill="currentColor">
+<rect height="12" rx="1" width="3" x="0" y="10"></rect>
+<rect height="20" rx="1" width="3" x="8" y="6"></rect>
+<rect height="16" rx="1" width="3" x="16" y="8"></rect>
+<rect height="24" rx="1" width="3" x="24" y="4"></rect>
+<rect height="18" rx="1" width="3" x="32" y="7"></rect>
+<rect height="28" rx="1" width="3" x="40" y="2"></rect>
+<rect height="22" rx="1" width="3" x="48" y="5"></rect>
+<rect height="14" rx="1" width="3" x="56" y="9"></rect>
+<rect height="26" rx="1" width="3" x="64" y="3"></rect>
+<rect height="16" rx="1" width="3" x="72" y="8"></rect>
+<rect height="24" rx="1" width="3" x="80" y="4"></rect>
+<rect height="12" rx="1" width="3" x="88" y="10"></rect>
+<rect height="22" rx="1" width="3" x="96" y="5"></rect>
+<rect height="30" rx="1" width="3" x="104" y="1"></rect>
+<rect height="18" rx="1" width="3" x="112" y="7"></rect>
+<rect height="10" rx="1" width="3" x="120" y="11"></rect>
+<rect height="20" rx="1" width="3" x="128" y="6"></rect>
+<rect height="26" rx="1" width="3" x="136" y="3"></rect>
+</g>
+</svg>
+</div>
+<!-- Time display and Speaker attribution -->
+<div class="flex items-center justify-between font-mono-micro text-mono-micro text-outline">
+<span class="text-on-surface font-mono-data" id="audio-timer">00:14 / 00:38</span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px] text-secondary">verified_user</span>
+                  Recorded by Sister Grace Phiri, Salima District Health Mission
+                </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Buttons Footer -->
+<div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-3 border-t border-outline-variant/30">
+<div class="flex items-center gap-2 text-outline font-mono-micro text-mono-micro">
+<span class="material-symbols-outlined text-[15px] text-tertiary">lock</span>
+<span>Security: SHA-256 Dual-Key Handshake Active</span>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+<!-- Simulate Test SMS -->
+<button class="bg-surface-container hover:bg-surface-container-highest text-on-surface font-mono-data text-mono-data px-4 py-2 rounded transition-colors flex items-center gap-1.5 active:scale-95" id="btn-test-sms" type="button">
+<span class="material-symbols-outlined text-[15px] text-outline">pixel_7_pro</span>
+<span>Simulate Test SMS to Field Staff (+265)</span>
+</button>
+<!-- Broadcast Primary Action -->
+<button class="bg-primary hover:bg-primary-container text-on-primary font-mono-data text-mono-data px-5 py-2 rounded font-semibold tracking-wide shadow-md transition-colors flex items-center gap-2 active:scale-95" id="btn-broadcast" type="button">
+<span class="material-symbols-outlined text-[16px]">pixel_7_pro</span>
+<span>Broadcast All Alerts (Requires Dual Officer PIN)</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Modal for Dual Officer PIN Verification (Initially Hidden) -->
+<div class="fixed inset-0 z-50 bg-surface/80 backdrop-blur-sm flex items-center justify-center p-4 hidden" id="pin-modal">
+<div class="bg-surface-container-high rounded-xl p-6 max-w-md w-full shadow-2xl flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 text-secondary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined">security</span>
+<span>Emergency Dispatch Authorization</span>
+</div>
+<button class="text-outline hover:text-on-surface" id="close-modal-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Alert will be instantly pushed to 340 village health chiefs across Salima District. Both Duty Officer and Regional Health Director credentials required.
+        </p>
+<div class="flex flex-col gap-3 font-mono-data text-mono-data">
+<div>
+<label class="font-mono-micro text-mono-micro text-outline block mb-1">OFFICER 1 PIN (WATER MONITORING UNIT)</label>
+<input class="w-full bg-surface-container-lowest text-on-surface px-3 py-2 rounded outline-none focus:bg-surface-container" maxlength="4" placeholder="••••" type="password" value="8492"/>
+</div>
+<div>
+<label class="font-mono-micro text-mono-micro text-outline block mb-1">OFFICER 2 PIN (DISTRICT HEALTH OFFICER)</label>
+<input class="w-full bg-surface-container-lowest text-on-surface px-3 py-2 rounded outline-none focus:bg-surface-container" maxlength="4" placeholder="••••" type="password"/>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3 pt-2">
+<button class="bg-surface-container text-on-surface font-mono-data text-mono-data px-4 py-2 rounded" id="cancel-pin-btn" type="button">
+            Cancel
+          </button>
+<button class="bg-secondary text-on-secondary font-mono-data text-mono-data px-4 py-2 rounded font-semibold flex items-center gap-1.5" id="confirm-broadcast-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">sensors</span>
+<span>Confirm &amp; Transmit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 bg-primary text-on-primary font-mono-data text-mono-data px-4 py-2.5 rounded shadow-xl flex items-center gap-2 transform translate-y-24 opacity-0 transition-all duration-300" id="toast">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span id="toast-text">Test SMS queued to +265 88 123 4567</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Micro-interactions for Voice Audio Player & Modals
+    const playBtn = document.getElementById('audio-play-btn');
+    const playIcon = document.getElementById('play-icon');
+    const timer = document.getElementById('audio-timer');
+    let isPlaying = false;
+    let seconds = 14;
+    let interval = null;
+
+    if (playBtn) {
+      playBtn.addEventListener('click', function() {
+        isPlaying = !isPlaying;
+        if (isPlaying) {
+          playIcon.textContent = 'pause';
+          interval = setInterval(function() {
+            seconds++;
+            if (seconds > 38) seconds = 0;
+            const strSec = seconds < 10 ? '0' + seconds : seconds;
+            timer.textContent = '00:' + strSec + ' / 00:38';
+          }, 1000);
+        } else {
+          playIcon.textContent = 'play_arrow';
+          clearInterval(interval);
+        }
+      });
+    }
+
+    // Modal logic
+    const broadcastBtn = document.getElementById('btn-broadcast');
+    const pinModal = document.getElementById('pin-modal');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const cancelPinBtn = document.getElementById('cancel-pin-btn');
+    const confirmBtn = document.getElementById('confirm-broadcast-btn');
+    const testSmsBtn = document.getElementById('btn-test-sms');
+    const toast = document.getElementById('toast');
+    const toastText = document.getElementById('toast-text');
+
+    function showToast(msg) {
+      if (!toast || !toastText) return;
+      toastText.textContent = msg;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(function() {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3500);
+    }
+
+    if (broadcastBtn && pinModal) {
+      broadcastBtn.addEventListener('click', function() {
+        pinModal.classList.remove('hidden');
+      });
+    }
+
+    function closeModal() {
+      if (pinModal) pinModal.classList.add('hidden');
+    }
+
+    if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+    if (cancelPinBtn) cancelPinBtn.addEventListener('click', closeModal);
+
+    if (confirmBtn) {
+      confirmBtn.addEventListener('click', function() {
+        closeModal();
+        showToast('BROADCAST TRANSMITTED: 340 Health Leaders Pinged');
+      });
+    }
+
+    if (testSmsBtn) {
+      testSmsBtn.addEventListener('click', function() {
+        showToast('Simulated SMS sent to Field Coordinator: +265 88 123 4567');
+      });
+    }
+  })();
+</script></main></div></body></html>

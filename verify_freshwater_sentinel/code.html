@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-error-container":"#ffdad6","tertiary-container":"#b48b16","surface-container-low":"#0b1f1a","outline":"#88938e","outline-variant":"#3f4945","on-tertiary":"#3f2e00","on-tertiary-container":"#372700","tertiary-fixed":"#ffdf9b","primary-fixed-dim":"#86d6be","on-secondary-fixed":"#321200","secondary-container":"#883d00","surface":"#031712","primary-container":"#4f9f89","on-tertiary-fixed":"#251a00","surface-container":"#0f231e","on-secondary-fixed-variant":"#763400","on-primary-fixed":"#002019","on-secondary":"#532200","error-container":"#93000a","secondary-fixed-dim":"#ffb68d","inverse-on-surface":"#20342e","surface-dim":"#031712","primary-fixed":"#a2f2d9","surface-container-high":"#1a2e28","error":"#ffb4ab","on-background":"#d0e8de","surface-tint":"#86d6be","surface-container-lowest":"#00110c","on-primary":"#00382c","on-error":"#690005","surface-bright":"#293d37","on-tertiary-fixed-variant":"#5a4300","inverse-surface":"#d0e8de","on-primary-fixed-variant":"#005141","primary":"#86d6be","background":"#031712","on-primary-container":"#003026","on-surface":"#d0e8de","inverse-primary":"#0f6b57","on-secondary-container":"#ffb68c","tertiary":"#efc04c","tertiary-fixed-dim":"#efc04c","secondary-fixed":"#ffdbc9","surface-container-highest":"#243932","on-surface-variant":"#bec9c4","surface-variant":"#243932","secondary":"#ffb68d"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-2xl":"2rem","space-lg":"1rem","gutter":"1rem","space-xs":"0.25rem","space-md":"0.75rem","space-xl":"1.5rem","margin-mobile":"0.75rem","gutter-mobile":"0.5rem","space-sm":"0.5rem","margin":"1.5rem","space-2xs":"0.125rem"},"fontFamily":{"mono-data":["JetBrains Mono"],"body-md":["IBM Plex Sans"],"headline-lg":["Newsreader"],"headline-xl":["Newsreader"],"headline-sm":["Newsreader"],"body-lg":["IBM Plex Sans"],"mono-label":["JetBrains Mono"],"headline-md":["Newsreader"],"mono-micro":["JetBrains Mono"],"telemetry-display":["Newsreader"],"body-sm":["IBM Plex Sans"]},"fontSize":{"mono-data":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.375rem","fontWeight":"400"}],"headline-lg":["1.875rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"500"}],"headline-xl":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"mono-label":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.08em","fontWeight":"500"}],"headline-md":["1.375rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"500"}],"mono-micro":["0.625rem",{"lineHeight":"0.75rem","letterSpacing":"0.06em","fontWeight":"400"}],"telemetry-display":["2.25rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"400"}],"body-sm":["0.75rem",{"lineHeight":"1.125rem","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 h-[72px] bg-surface border-b border-outline-variant/60 px-6 flex items-center justify-between"><div class="flex items-center gap-4"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant/60" src="https://lh3.googleusercontent.com/aida/AEtjO1UyTjobrh6jRadKptk7Ri5MbrOCg0ATNiOI-lkAgGfLhNlP7BgSSmJwn7g0wWwHjnTo6qVUAum8IKh1ktzo-SN6N4n2qh3TYJl6DysClyO84ffTtq_ebxos7fVo-1bjGADrDPxxtp4sTEekt0Va6kpklVDiX-kiwM1LE9YfXDSNFsyw6tRf6PFd9HG-l3yBlhAXG_-D7Ru7qtqNIC-SXlMPNn4YlJN2OkRInT7og1K3sNAEQN1dkaQKWw"/><div class="flex items-baseline gap-3"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Freshwater Sentinel</span><span class="text-outline-variant">|</span><span class="font-mono-micro text-mono-micro text-outline tracking-wider uppercase">IEEE OneAquaHealth / Track 6: Resilience Informatics</span></div></div><div class="flex items-center gap-3"><div class="hidden md:flex items-center gap-2 border border-outline-variant/60 px-2.5 py-1 rounded bg-surface-container font-mono-micro text-mono-micro text-outline"><span class="material-symbols-outlined text-[13px] text-outline">explore</span><span>13°46'S 34°18'E • L. MALAWI BASIN</span></div><div class="flex items-center gap-2 bg-surface-container border border-outline-variant/60 px-3 py-1 rounded font-mono-micro text-mono-micro text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="tracking-wider uppercase text-on-surface">LIVE TELEMETRY / IN-SITU BUOY LINK</span></div><button class="border border-outline-variant/60 px-2.5 py-1 rounded font-mono-micro text-mono-micro text-on-surface hover:border-primary hover:text-on-surface transition-colors bg-surface-container" type="button">EN | SW</button><button aria-label="Documentation &amp; Telemetry Help" class="w-7 h-7 flex items-center justify-center border border-outline-variant/60 rounded bg-surface-container text-outline hover:text-on-surface hover:border-outline transition-colors" type="button"><span class="material-symbols-outlined text-[15px]">help_outline</span></button></div></header><aside class="fixed left-0 top-[72px] bottom-0 w-[230px] bg-surface border-r border-outline-variant/60 z-40 flex flex-col justify-between py-4"><div class="flex flex-col"><div class="px-4 pb-2 mb-2 border-b border-outline-variant/30 flex items-center justify-between"><span class="font-mono-label text-mono-label uppercase text-outline tracking-widest">Mission Modules</span><span class="font-mono-micro text-mono-micro text-primary-fixed-dim">v4.2-R</span></div><nav class="flex flex-col w-full" data-active-classes="border-l-[3px] border-primary bg-surface-container-high text-on-surface font-medium"><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">grid_view</span><span>Overview</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="eyes" href="#"><span class="material-symbols-outlined text-[18px]">satellite_alt</span><span>Eyes</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="brain" href="#"><span class="material-symbols-outlined text-[18px]">neurology</span><span>Brain</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="voice" href="#"><span class="material-symbols-outlined text-[18px]">podcasts</span><span>Voice</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="network" href="#"><span class="material-symbols-outlined text-[18px]">hub</span><span>Network</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="hands" href="#"><span class="material-symbols-outlined text-[18px]">assignment_turned_in</span><span>Hands</span></a><a aria-current="page" class="flex items-center gap-3 px-4 py-2.5 transition-all border-l-[3px] border-primary bg-surface-container-high text-on-surface font-medium" data-path="verify" href="#"><span class="material-symbols-outlined text-[18px]">verified</span><span>Verify</span></a></nav></div><div class="px-4 pt-3 border-t border-outline-variant/40 flex flex-col gap-1.5 font-mono-micro text-mono-micro text-outline"><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">SENSORS:</span><span class="text-on-surface-variant">S2-MSI / L9</span></div><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">SYNC:</span><span class="text-on-surface-variant">14m ago</span></div><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">COVERAGE:</span><span class="text-primary-fixed-dim font-medium">98.4% Basin</span></div><div class="mt-2 pt-2 border-t border-outline-variant/30 text-[9px] uppercase tracking-widest text-outline-variant">RIFT BASIN HYDRO-LOG</div></div></aside><div class="pl-[230px]"><main class="relative pt-[72px] min-h-screen bg-surface w-full p-8 font-body-md text-body-md text-on-surface"><div class="flex flex-col w-full">
+<!-- SECTION HEADER: Clinical, matter-of-fact archival tone -->
+<div class="mb-8">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-mono-micro text-mono-micro text-outline tracking-widest uppercase">
+        EMPIRICAL MODEL EVALUATION &amp; GROUND-TRUTH AUDIT
+      </span>
+<span class="font-mono-micro text-mono-micro text-outline-variant px-1.5 py-0.5 rounded bg-surface-container">
+        ISO-14044 / QA-PROTO-9
+      </span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-medium tracking-tight">
+          Historical Verification &amp; Validation Track Record
+        </h1>
+<p class="font-mono-micro text-mono-micro text-outline mt-1 tracking-wide">
+          Audit Period: Nov 2023 – Oct 2024 • Validation Standard: WHO Guidelines for Safe Recreational &amp; Drinking Water
+        </p>
+</div>
+<div class="flex items-center gap-2 font-mono-micro text-mono-micro self-start lg:self-auto">
+<div class="bg-surface-container-high px-3 py-1.5 rounded text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[14px] text-primary">verified</span>
+<span>EPIDEMIOLOGY AUDIT STATUS: <strong class="text-on-surface font-medium">RECONCILED</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- TOP SECTION: Horizontal Lead-Time & Empirical Sequence Timeline -->
+<section class="bg-surface-container p-6 rounded-lg mb-6 shadow-sm">
+<div class="flex items-center justify-between mb-8">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-medium">
+          Alert Verification Sequence &amp; Lead-Time Log
+        </h2>
+<p class="font-mono-micro text-mono-micro text-outline mt-0.5">
+          Chronological sequence of S2-MSI spectral triggers matched to wet-lab spectrometry and field dip test outcomes
+        </p>
+</div>
+<div class="hidden sm:flex items-center gap-2 font-mono-micro text-mono-micro text-outline">
+<span>WINDOW:</span>
+<span class="text-on-surface bg-surface-container-lowest px-2 py-0.5 rounded">365 DAYS</span>
+</div>
+</div>
+<!-- Timeline Scroll Container -->
+<div class="w-full overflow-x-auto pb-4">
+<div class="min-w-[920px] relative px-6 pt-10 pb-8">
+<!-- Connecting Hairline Axis -->
+<div class="absolute left-6 right-6 top-[51px] h-[1px] bg-outline-variant"></div>
+<!-- Timeline Node Track -->
+<div class="relative flex justify-between items-start">
+<!-- Node 1: Nov 12 -->
+<div class="flex flex-col items-center group relative cursor-pointer" onclick="filterAuditTable('EVT-1001')">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<div class="w-3.5 h-3.5 rounded-full bg-primary group-hover:scale-125 transition-transform"></div>
+</div>
+<span class="font-mono-data text-mono-data text-on-surface font-medium">Nov 12</span>
+<span class="font-mono-micro text-mono-micro text-primary-fixed-dim mt-0.5">4d lead</span>
+<span class="font-mono-micro text-mono-micro text-outline tracking-tight">S2-094</span>
+</div>
+<!-- Node 2: Dec 04 -->
+<div class="flex flex-col items-center group relative cursor-pointer" onclick="filterAuditTable('EVT-1002')">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<div class="w-3.5 h-3.5 rounded-full bg-primary group-hover:scale-125 transition-transform"></div>
+</div>
+<span class="font-mono-data text-mono-data text-on-surface font-medium">Dec 04</span>
+<span class="font-mono-micro text-mono-micro text-primary-fixed-dim mt-0.5">6d lead</span>
+<span class="font-mono-micro text-mono-micro text-outline tracking-tight">S2-118</span>
+</div>
+<!-- Node 3: Jan 19 (False Positive) -->
+<div class="flex flex-col items-center group relative cursor-pointer" onclick="filterAuditTable('EVT-1003')">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<div class="w-3.5 h-3.5 rounded-full bg-error group-hover:scale-125 transition-transform"></div>
+</div>
+<span class="font-mono-data text-mono-data text-error font-medium">Jan 19</span>
+<span class="font-mono-micro text-mono-micro text-error mt-0.5">2d lead</span>
+<span class="font-mono-micro text-mono-micro text-error/80 tracking-tight">False Pos</span>
+</div>
+<!-- Node 4: Feb 08 -->
+<div class="flex flex-col items-center group relative cursor-pointer" onclick="filterAuditTable('EVT-1004')">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<div class="w-3.5 h-3.5 rounded-full bg-primary group-hover:scale-125 transition-transform"></div>
+</div>
+<span class="font-mono-data text-mono-data text-on-surface font-medium">Feb 08</span>
+<span class="font-mono-micro text-mono-micro text-primary-fixed-dim mt-0.5">5d lead</span>
+<span class="font-mono-micro text-mono-micro text-outline tracking-tight">S2-182</span>
+</div>
+<!-- Node 5: Mar 22 -->
+<div class="flex flex-col items-center group relative cursor-pointer" onclick="filterAuditTable('EVT-1005')">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<div class="w-3.5 h-3.5 rounded-full bg-primary group-hover:scale-125 transition-transform"></div>
+</div>
+<span class="font-mono-data text-mono-data text-on-surface font-medium">Mar 22</span>
+<span class="font-mono-micro text-mono-micro text-primary-fixed-dim mt-0.5">3d lead</span>
+<span class="font-mono-micro text-mono-micro text-outline tracking-tight">S2-205</span>
+</div>
+<!-- Node 6: Apr 11 (Unverifiable) -->
+<div class="flex flex-col items-center group relative cursor-pointer" onclick="filterAuditTable('EVT-1006')">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<div class="w-3.5 h-3.5 rounded-full bg-outline group-hover:scale-125 transition-transform"></div>
+</div>
+<span class="font-mono-data text-mono-data text-outline font-medium">Apr 11</span>
+<span class="font-mono-micro text-mono-micro text-outline mt-0.5">Unverifiable</span>
+<span class="font-mono-micro text-mono-micro text-outline-variant tracking-tight">Cloud &gt;75%</span>
+</div>
+<!-- Node 7: Jun 02 -->
+<div class="flex flex-col items-center group relative cursor-pointer" onclick="filterAuditTable('EVT-1007')">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<div class="w-3.5 h-3.5 rounded-full bg-primary group-hover:scale-125 transition-transform"></div>
+</div>
+<span class="font-mono-data text-mono-data text-on-surface font-medium">Jun 02</span>
+<span class="font-mono-micro text-mono-micro text-primary-fixed-dim mt-0.5">7d lead</span>
+<span class="font-mono-micro text-mono-micro text-outline tracking-tight">S2-261</span>
+</div>
+<!-- Node 8: Jul 18 -->
+<div class="flex flex-col items-center group relative cursor-pointer" onclick="filterAuditTable('EVT-1008')">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<div class="w-3.5 h-3.5 rounded-full bg-primary group-hover:scale-125 transition-transform"></div>
+</div>
+<span class="font-mono-data text-mono-data text-on-surface font-medium">Jul 18</span>
+<span class="font-mono-micro text-mono-micro text-primary-fixed-dim mt-0.5">4d lead</span>
+<span class="font-mono-micro text-mono-micro text-outline tracking-tight">S2-302</span>
+</div>
+<!-- Node 9: Sep 09 (Unverifiable) -->
+<div class="flex flex-col items-center group relative cursor-pointer" onclick="filterAuditTable('EVT-1009')">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<div class="w-3.5 h-3.5 rounded-full bg-outline group-hover:scale-125 transition-transform"></div>
+</div>
+<span class="font-mono-data text-mono-data text-outline font-medium">Sep 09</span>
+<span class="font-mono-micro text-mono-micro text-outline mt-0.5">Unverifiable</span>
+<span class="font-mono-micro text-mono-micro text-outline-variant tracking-tight">Sensor Stale</span>
+</div>
+<!-- Node 10: Oct 24 (Active / Pending) -->
+<div class="flex flex-col items-center group relative cursor-pointer" onclick="filterAuditTable('EVT-1010')">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<div class="w-3.5 h-3.5 rounded-full bg-tertiary animate-pulse group-hover:scale-125 transition-transform"></div>
+</div>
+<span class="font-mono-data text-mono-data text-tertiary-fixed font-medium">Oct 24</span>
+<span class="font-mono-micro text-mono-micro text-tertiary-fixed mt-0.5">Active Alert</span>
+<span class="font-mono-micro text-mono-micro text-outline tracking-tight">Pending Lab</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Timeline Legend & Metadata Footnote -->
+<div class="flex flex-wrap items-center justify-between gap-4 pt-4 mt-2 bg-surface-container-low px-4 py-3 rounded">
+<div class="flex flex-wrap items-center gap-6 font-mono-micro text-mono-micro">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary inline-block"></span>
+<span class="text-on-surface">Supported (n=6)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error inline-block"></span>
+<span class="text-on-surface">Not-supported / False Positive (n=1)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline inline-block"></span>
+<span class="text-on-surface">Unverifiable / Data Gap (n=2)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary inline-block"></span>
+<span class="text-on-surface">Pending Verification (n=1)</span>
+</div>
+</div>
+<button class="font-mono-micro text-mono-micro text-primary hover:text-on-surface transition-colors flex items-center gap-1" onclick="resetAuditFilter()" type="button">
+<span class="material-symbols-outlined text-[13px]">refresh</span>
+<span>RESET FILTER</span>
+</button>
+</div>
+</section>
+<!-- MIDDLE SECTION: 3-Stat Precision & Track Record Cards -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+<!-- Stat 1: Total Alerts Graded -->
+<div class="bg-surface-container p-6 rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-mono-label text-mono-label uppercase text-outline tracking-wider">TOTAL ALERTS GRADED</span>
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">10</span>
+<span class="font-headline-sm text-headline-sm text-outline font-normal">Alerts Evaluated</span>
+</div>
+</div>
+<div class="pt-4 mt-2 bg-surface-container-low p-3 rounded">
+<p class="font-body-sm text-body-sm text-outline">
+          12-month rolling catchment screening window spanning Mangochi, Nkhata Bay, and Salima in-shore sites.
+        </p>
+</div>
+</div>
+<!-- Stat 2: Empirically Supported Count -->
+<div class="bg-surface-container p-6 rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-mono-label text-mono-label uppercase text-outline tracking-wider">EMPIRICALLY SUPPORTED COUNT</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-headline-xl text-headline-xl text-primary font-semibold tracking-tight">6</span>
+<span class="font-headline-sm text-headline-sm text-primary font-normal">Confirmed</span>
+</div>
+</div>
+<div class="pt-4 mt-2 bg-surface-container-low p-3 rounded">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Lab confirmed microcystin &gt;1.0 µg/L or Secchi disk &lt;0.5m via spectrophotometric assay (WHO Alert Level 1+).
+        </p>
+</div>
+</div>
+<!-- Stat 3: Screening Precision (PPV) -->
+<div class="bg-surface-container p-6 rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="font-mono-label text-mono-label uppercase text-outline tracking-wider">SCREENING PRECISION (PPV)</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">85.7%</span>
+<span class="font-mono-data text-mono-data text-outline font-normal">PPV (6 of 7)</span>
+</div>
+</div>
+<div class="pt-4 mt-2 bg-surface-container-low p-3 rounded">
+<p class="font-body-sm text-body-sm text-outline">
+          Excluding unverifiable events (6 of 7 testable). <strong class="text-tertiary font-normal">Clinical note:</strong> Small sample size (N=10); statistical power constrained by field sampling cadence.
+        </p>
+</div>
+</div>
+</section>
+<!-- ASYMMETRIC SUPPLEMENT: Lead-Time Distribution & Analytical Rigor -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
+<!-- Mini Lead-Time Frequency Bar Chart (Visual Richness Inline SVG) -->
+<div class="lg:col-span-8 bg-surface-container p-6 rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">Early Warning Window Distribution</h3>
+<p class="font-mono-micro text-mono-micro text-outline">Lead-time in days between satellite risk detection and verified in-situ community health exposure threshold</p>
+</div>
+<div class="font-mono-micro text-mono-micro bg-surface-container-high px-2.5 py-1 rounded text-primary-fixed-dim">
+          MEAN LEAD: 4.4 DAYS
+        </div>
+</div>
+<!-- Lead-time visual bar metric -->
+<div class="h-44 w-full flex flex-col justify-end pt-4">
+<div class="grid grid-cols-6 gap-3 items-end h-32 px-4 bg-surface-container-low rounded-lg pt-4">
+<div class="flex flex-col items-center gap-2 h-full justify-end">
+<span class="font-mono-micro text-mono-micro text-outline">1 alert</span>
+<div class="w-full bg-surface-container-highest rounded-t h-[20%] transition-all hover:bg-primary-container"></div>
+<span class="font-mono-micro text-mono-micro text-on-surface-variant">2 Days</span>
+</div>
+<div class="flex flex-col items-center gap-2 h-full justify-end">
+<span class="font-mono-micro text-mono-micro text-outline">1 alert</span>
+<div class="w-full bg-primary-container rounded-t h-[20%] transition-all hover:bg-primary"></div>
+<span class="font-mono-micro text-mono-micro text-on-surface-variant">3 Days</span>
+</div>
+<div class="flex flex-col items-center gap-2 h-full justify-end">
+<span class="font-mono-micro text-mono-micro text-primary font-medium">2 alerts</span>
+<div class="w-full bg-primary rounded-t h-[60%] transition-all"></div>
+<span class="font-mono-micro text-mono-micro text-on-surface font-medium">4 Days</span>
+</div>
+<div class="flex flex-col items-center gap-2 h-full justify-end">
+<span class="font-mono-micro text-mono-micro text-outline">1 alert</span>
+<div class="w-full bg-primary-container rounded-t h-[25%] transition-all hover:bg-primary"></div>
+<span class="font-mono-micro text-mono-micro text-on-surface-variant">5 Days</span>
+</div>
+<div class="flex flex-col items-center gap-2 h-full justify-end">
+<span class="font-mono-micro text-mono-micro text-outline">1 alert</span>
+<div class="w-full bg-primary-container rounded-t h-[25%] transition-all hover:bg-primary"></div>
+<span class="font-mono-micro text-mono-micro text-on-surface-variant">6 Days</span>
+</div>
+<div class="flex flex-col items-center gap-2 h-full justify-end">
+<span class="font-mono-micro text-mono-micro text-primary font-medium">1 alert</span>
+<div class="w-full bg-primary rounded-t h-[25%] transition-all"></div>
+<span class="font-mono-micro text-mono-micro text-on-surface-variant">7 Days</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-mono-micro font-mono-micro text-outline px-4 mt-2">
+<span>MIN: 2 DAYS (FALSE ALARM)</span>
+<span>INTERQUARTILE RANGE: 3.5 – 5.5 DAYS</span>
+<span>MAX: 7 DAYS (JUN 02 S2-261)</span>
+</div>
+</div>
+</div>
+<!-- Methodological Rigor & Verification Protocols -->
+<div class="lg:col-span-4 bg-surface-container p-6 rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-[16px] text-tertiary">biotech</span>
+<span class="font-mono-label text-mono-label uppercase text-on-surface tracking-wider">GROUND-TRUTH PROTOCOL</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-medium mb-2">
+          Double-Blind Lab Assay
+        </h4>
+<p class="font-body-sm text-body-sm text-outline leading-relaxed mb-4">
+          All validation points represent actual physical water collections tested by Lilongwe Water Board or Monkey Bay Fisheries Research Center using:
+        </p>
+<ul class="space-y-2 font-mono-micro text-mono-micro text-on-surface-variant">
+<li class="flex items-start gap-2 bg-surface-container-low p-2 rounded">
+<span class="text-primary font-bold">1.</span>
+<span>Microcystin ELISA Photometry (&gt;1.0 µg/L cutoff for drinking threshold breach)</span>
+</li>
+<li class="flex items-start gap-2 bg-surface-container-low p-2 rounded">
+<span class="text-primary font-bold">2.</span>
+<span>Dual-Wavelength Turbidimetric Spectrophotometry (680nm/720nm NDCI match)</span>
+</li>
+<li class="flex items-start gap-2 bg-surface-container-low p-2 rounded">
+<span class="text-primary font-bold">3.</span>
+<span>Standard Secchi Extinction Depth (confirmed &lt;0.5m photic penetration)</span>
+</li>
+</ul>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between font-mono-micro text-mono-micro text-outline">
+<span>ASSAY LATENCY: 24–48h</span>
+<span class="text-primary">CHAIN-OF-CUSTODY VERIFIED</span>
+</div>
+</div>
+</section>
+<!-- BOTTOM SECTION: Detailed Verification Audit Table -->
+<section class="bg-surface-container rounded-lg shadow-sm overflow-hidden mb-6">
+<div class="p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium">Detailed Verification Audit Ledger</h3>
+<span class="hidden font-mono-micro text-mono-micro bg-primary text-on-primary px-2 py-0.5 rounded" id="activeFilterBadge">FILTER APPLIED</span>
+</div>
+<p class="font-mono-micro text-mono-micro text-outline">Complete audit trail of satellite trigger events, predicted bloom vectors, and laboratory assay corroborations</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="relative">
+<input class="bg-surface-container-low text-on-surface font-mono-micro text-mono-micro px-3 py-1.5 pl-8 rounded w-64 focus:outline-none focus:bg-surface-container-high placeholder-outline" id="auditSearchInput" onkeyup="searchAuditTable()" placeholder="Search Target, Granule, or Outcome..." type="text"/>
+<span class="material-symbols-outlined text-[14px] text-outline absolute left-2.5 top-2">search</span>
+</div>
+<button class="bg-surface-container-high hover:bg-surface-bright text-on-surface font-mono-micro text-mono-micro px-3 py-1.5 rounded flex items-center gap-1.5 transition-colors" onclick="exportAuditLedger()" type="button">
+<span class="material-symbols-outlined text-[14px]">file_download</span>
+<span>EXPORT CSV</span>
+</button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse" id="auditTable">
+<thead>
+<tr class="bg-surface-container-low font-mono-label text-mono-label text-outline uppercase tracking-wider">
+<th class="py-3 px-5 font-medium">Event &amp; Granule ID</th>
+<th class="py-3 px-5 font-medium">Water Point Target</th>
+<th class="py-3 px-5 font-medium">Satellite Risk Score</th>
+<th class="py-3 px-5 font-medium">In-Situ Ground Truth Finding</th>
+<th class="py-3 px-5 font-medium">Outcome Grade</th>
+<th class="py-3 px-5 font-medium text-right">Lead-Time</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y-0" id="auditTableBody">
+<!-- Row 1: Supported -->
+<tr class="hover:bg-surface-container-high/60 transition-colors" data-id="EVT-1001">
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-on-surface font-medium">2023-11-12</div>
+<div class="text-outline font-mono-micro text-mono-micro">S2A_L2A_20231112T0741</div>
+</td>
+<td class="py-3.5 px-5">
+<div class="text-on-surface font-medium">Mangochi Southern Embayment</div>
+<div class="font-mono-micro text-mono-micro text-outline">Lat 14.47°S • Lon 35.26°E</div>
+</td>
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-primary font-medium">NDCI +0.284</div>
+<div class="font-mono-micro text-mono-micro text-outline">Chl-a est: 42.6 mg/m³</div>
+</td>
+<td class="py-3.5 px-5 font-mono-micro text-mono-micro">
+<div class="text-on-surface font-mono-data text-mono-data">Microcystin 2.4 µg/L</div>
+<div class="text-outline">ELISA Assay • Secchi 0.38m (Corroborated)</div>
+</td>
+<td class="py-3.5 px-5">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container-high text-primary font-mono-micro text-mono-micro font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Supported
+              </span>
+</td>
+<td class="py-3.5 px-5 text-right font-mono-data text-mono-data text-primary-fixed-dim">
+              +4 Days
+            </td>
+</tr>
+<!-- Row 2: Supported -->
+<tr class="hover:bg-surface-container-high/60 transition-colors" data-id="EVT-1002">
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-on-surface font-medium">2023-12-04</div>
+<div class="text-outline font-mono-micro text-mono-micro">S2B_L2A_20231204T0739</div>
+</td>
+<td class="py-3.5 px-5">
+<div class="text-on-surface font-medium">Monkey Bay Harbor West</div>
+<div class="font-mono-micro text-mono-micro text-outline">Lat 14.08°S • Lon 34.92°E</div>
+</td>
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-primary font-medium">NDCI +0.312</div>
+<div class="font-mono-micro text-mono-micro text-outline">Chl-a est: 51.0 mg/m³</div>
+</td>
+<td class="py-3.5 px-5 font-mono-micro text-mono-micro">
+<div class="text-on-surface font-mono-data text-mono-data">Microcystin 3.1 µg/L</div>
+<div class="text-outline">Microscopy: Microcystis aeruginosa bloom</div>
+</td>
+<td class="py-3.5 px-5">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container-high text-primary font-mono-micro text-mono-micro font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Supported
+              </span>
+</td>
+<td class="py-3.5 px-5 text-right font-mono-data text-mono-data text-primary-fixed-dim">
+              +6 Days
+            </td>
+</tr>
+<!-- Row 3: False Positive -->
+<tr class="hover:bg-surface-container-high/60 transition-colors" data-id="EVT-1003">
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-error font-medium">2024-01-19</div>
+<div class="text-outline font-mono-micro text-mono-micro">S2A_L2A_20240119T0742</div>
+</td>
+<td class="py-3.5 px-5">
+<div class="text-on-surface font-medium">Salima In-shore Intake Zone</div>
+<div class="font-mono-micro text-mono-micro text-outline">Lat 13.78°S • Lon 34.62°E</div>
+</td>
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-secondary font-medium">NDCI +0.198 (Alerted)</div>
+<div class="font-mono-micro text-mono-micro text-outline">Chl-a est: 26.8 mg/m³</div>
+</td>
+<td class="py-3.5 px-5 font-mono-micro text-mono-micro">
+<div class="text-error font-mono-data text-mono-data">Microcystin &lt;0.2 µg/L</div>
+<div class="text-outline">High inorganic suspended sediment (mineral runoff)</div>
+</td>
+<td class="py-3.5 px-5">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container-high text-error font-mono-micro text-mono-micro font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                False Positive
+              </span>
+</td>
+<td class="py-3.5 px-5 text-right font-mono-data text-mono-data text-error">
+              +2 Days
+            </td>
+</tr>
+<!-- Row 4: Supported -->
+<tr class="hover:bg-surface-container-high/60 transition-colors" data-id="EVT-1004">
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-on-surface font-medium">2024-02-08</div>
+<div class="text-outline font-mono-micro text-mono-micro">S2B_L2A_20240208T0740</div>
+</td>
+<td class="py-3.5 px-5">
+<div class="text-on-surface font-medium">Chia Lagoon Outlet Estuary</div>
+<div class="font-mono-micro text-mono-micro text-outline">Lat 13.01°S • Lon 34.33°E</div>
+</td>
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-primary font-medium">NDCI +0.345</div>
+<div class="font-mono-micro text-mono-micro text-outline">Chl-a est: 62.4 mg/m³</div>
+</td>
+<td class="py-3.5 px-5 font-mono-micro text-mono-micro">
+<div class="text-on-surface font-mono-data text-mono-data">Microcystin 4.8 µg/L</div>
+<div class="text-outline">Anabaena flos-aquae predominant; Secchi 0.25m</div>
+</td>
+<td class="py-3.5 px-5">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container-high text-primary font-mono-micro text-mono-micro font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Supported
+              </span>
+</td>
+<td class="py-3.5 px-5 text-right font-mono-data text-mono-data text-primary-fixed-dim">
+              +5 Days
+            </td>
+</tr>
+<!-- Row 5: Supported -->
+<tr class="hover:bg-surface-container-high/60 transition-colors" data-id="EVT-1005">
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-on-surface font-medium">2024-03-22</div>
+<div class="text-outline font-mono-micro text-mono-micro">S2A_L2A_20240322T0741</div>
+</td>
+<td class="py-3.5 px-5">
+<div class="text-on-surface font-medium">Linthipe River Delta Plume</div>
+<div class="font-mono-micro text-mono-micro text-outline">Lat 13.92°S • Lon 34.58°E</div>
+</td>
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-primary font-medium">NDCI +0.229</div>
+<div class="font-mono-micro text-mono-micro text-outline">Chl-a est: 34.1 mg/m³</div>
+</td>
+<td class="py-3.5 px-5 font-mono-micro text-mono-micro">
+<div class="text-on-surface font-mono-data text-mono-data">Microcystin 1.8 µg/L</div>
+<div class="text-outline">In-situ turbidity 44 NTU; verified bloom envelope</div>
+</td>
+<td class="py-3.5 px-5">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container-high text-primary font-mono-micro text-mono-micro font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Supported
+              </span>
+</td>
+<td class="py-3.5 px-5 text-right font-mono-data text-mono-data text-primary-fixed-dim">
+              +3 Days
+            </td>
+</tr>
+<!-- Row 6: Unverifiable -->
+<tr class="hover:bg-surface-container-high/60 transition-colors" data-id="EVT-1006">
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-outline font-medium">2024-04-11</div>
+<div class="text-outline-variant font-mono-micro text-mono-micro">S2B_L2A_20240411T0738</div>
+</td>
+<td class="py-3.5 px-5">
+<div class="text-on-surface-variant font-medium">Nkhotakota Northern Reach</div>
+<div class="font-mono-micro text-mono-micro text-outline">Lat 12.91°S • Lon 34.30°E</div>
+</td>
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-outline font-medium">NDCI [SYNTHETIC]</div>
+<div class="font-mono-micro text-mono-micro text-outline-variant">Interpolated cloud-fill model</div>
+</td>
+<td class="py-3.5 px-5 font-mono-micro text-mono-micro">
+<div class="text-outline font-mono-data text-mono-data">No Field Sample Available</div>
+<div class="text-outline-variant">Persistent tropical convective cloud &gt;75%; pass rejected</div>
+</td>
+<td class="py-3.5 px-5">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container-high text-outline font-mono-micro text-mono-micro font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                Unverifiable
+              </span>
+</td>
+<td class="py-3.5 px-5 text-right font-mono-data text-mono-data text-outline">
+              —
+            </td>
+</tr>
+<!-- Row 7: Supported -->
+<tr class="hover:bg-surface-container-high/60 transition-colors" data-id="EVT-1007">
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-on-surface font-medium">2024-06-02</div>
+<div class="text-outline font-mono-micro text-mono-micro">S2A_L2A_20240602T0743</div>
+</td>
+<td class="py-3.5 px-5">
+<div class="text-on-surface font-medium">Nkhata Bay Urban Landing</div>
+<div class="font-mono-micro text-mono-micro text-outline">Lat 11.60°S • Lon 34.30°E</div>
+</td>
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-primary font-medium">NDCI +0.271</div>
+<div class="font-mono-micro text-mono-micro text-outline">Chl-a est: 39.5 mg/m³</div>
+</td>
+<td class="py-3.5 px-5 font-mono-micro text-mono-micro">
+<div class="text-on-surface font-mono-data text-mono-data">Microcystin 2.1 µg/L</div>
+<div class="text-outline">Ministry Health Advisory issued 5 days post-alert</div>
+</td>
+<td class="py-3.5 px-5">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container-high text-primary font-mono-micro text-mono-micro font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Supported
+              </span>
+</td>
+<td class="py-3.5 px-5 text-right font-mono-data text-mono-data text-primary-fixed-dim">
+              +7 Days
+            </td>
+</tr>
+<!-- Row 8: Supported -->
+<tr class="hover:bg-surface-container-high/60 transition-colors" data-id="EVT-1008">
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-on-surface font-medium">2024-07-18</div>
+<div class="text-outline font-mono-micro text-mono-micro">S2B_L2A_20240718T0739</div>
+</td>
+<td class="py-3.5 px-5">
+<div class="text-on-surface font-medium">Cape Maclear Marine Reserve Fringe</div>
+<div class="font-mono-micro text-mono-micro text-outline">Lat 14.02°S • Lon 34.84°E</div>
+</td>
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-primary font-medium">NDCI +0.211</div>
+<div class="font-mono-micro text-mono-micro text-outline">Chl-a est: 31.2 mg/m³</div>
+</td>
+<td class="py-3.5 px-5 font-mono-micro text-mono-micro">
+<div class="text-on-surface font-mono-data text-mono-data">Microcystin 1.4 µg/L</div>
+<div class="text-outline">Spectrophotometer 680nm abs verified bloom boundary</div>
+</td>
+<td class="py-3.5 px-5">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container-high text-primary font-mono-micro text-mono-micro font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Supported
+              </span>
+</td>
+<td class="py-3.5 px-5 text-right font-mono-data text-mono-data text-primary-fixed-dim">
+              +4 Days
+            </td>
+</tr>
+<!-- Row 9: Unverifiable -->
+<tr class="hover:bg-surface-container-high/60 transition-colors" data-id="EVT-1009">
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-outline font-medium">2024-09-09</div>
+<div class="text-outline-variant font-mono-micro text-mono-micro">S2A_L2A_20240909T0741</div>
+</td>
+<td class="py-3.5 px-5">
+<div class="text-on-surface-variant font-medium">Likoma Island Western Channel</div>
+<div class="font-mono-micro text-mono-micro text-outline">Lat 12.05°S • Lon 34.73°E</div>
+</td>
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-outline font-medium">NDCI +0.240 (Uncalibrated)</div>
+<div class="font-mono-micro text-mono-micro text-outline-variant">L9 cross-calibration unavailable</div>
+</td>
+<td class="py-3.5 px-5 font-mono-micro text-mono-micro">
+<div class="text-outline font-mono-data text-mono-data">Buoy Sensor Node Offline</div>
+<div class="text-outline-variant">Power subsystem failure; lab boat couriering delayed</div>
+</td>
+<td class="py-3.5 px-5">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container-high text-outline font-mono-micro text-mono-micro font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                Unverifiable
+              </span>
+</td>
+<td class="py-3.5 px-5 text-right font-mono-data text-mono-data text-outline">
+              —
+            </td>
+</tr>
+<!-- Row 10: Active / Pending -->
+<tr class="hover:bg-surface-container-high/60 transition-colors" data-id="EVT-1010">
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-tertiary-fixed font-medium">2024-10-24</div>
+<div class="text-outline font-mono-micro text-mono-micro">S2B_L2A_20241024T0740</div>
+</td>
+<td class="py-3.5 px-5">
+<div class="text-on-surface font-medium">Southeast Arm (Kachulu Landing)</div>
+<div class="font-mono-micro text-mono-micro text-outline">Lat 14.16°S • Lon 35.12°E</div>
+</td>
+<td class="py-3.5 px-5 font-mono-data text-mono-data">
+<div class="text-tertiary font-medium">NDCI +0.334 (Active)</div>
+<div class="font-mono-micro text-mono-micro text-outline">Chl-a est: 48.7 mg/m³</div>
+</td>
+<td class="py-3.5 px-5 font-mono-micro text-mono-micro">
+<div class="text-tertiary font-mono-data text-mono-data">Field Sample Collected (10-25)</div>
+<div class="text-outline">Assay processing at Monkey Bay Lab; ETA +18 hrs</div>
+</td>
+<td class="py-3.5 px-5">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-surface-container-high text-tertiary font-mono-micro text-mono-micro font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+                Pending Verification
+              </span>
+</td>
+<td class="py-3.5 px-5 text-right font-mono-data text-mono-data text-tertiary-fixed">
+              In Progress
+            </td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- FOOTER HONESTY DISCLAIMER CARD -->
+<footer class="bg-surface-container-low p-5 rounded-lg border-l-[3px] border-tertiary flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[20px] text-tertiary mt-0.5">policy</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-medium">Epistemic Transparency Commitment</h4>
+<p class="font-body-sm text-body-sm text-outline mt-0.5 max-w-4xl">
+          Freshwater Sentinel enforces epistemic transparency. When field validation data is missing, ambiguous, or clouded by atmospheric interference, events are flagged as <strong class="text-on-surface font-medium">"Unverifiable"</strong> rather than assumed correct. Predictive algorithms are never retroactively curve-fitted without recorded ground-truth soil or spectrophotometric water samples.
+        </p>
+</div>
+</div>
+<div class="font-mono-micro text-mono-micro text-outline self-end md:self-center shrink-0">
+      SYSTEM INTEGRITY: 100% AUDITABLE
+    </div>
+</footer>
+<!-- CLIENT-SIDE INTERACTIVITY SCRIPT -->
+<script>
+    function filterAuditTable(eventId) {
+      const rows = document.querySelectorAll('#auditTableBody tr');
+      const badge = document.getElementById('activeFilterBadge');
+      
+      rows.forEach(row => {
+        if (row.getAttribute('data-id') === eventId) {
+          row.classList.remove('hidden');
+          row.classList.add('bg-surface-container-high');
+        } else {
+          row.classList.add('hidden');
+          row.classList.remove('bg-surface-container-high');
+        }
+      });
+      
+      if (badge) badge.classList.remove('hidden');
+    }
+
+    function resetAuditFilter() {
+      const rows = document.querySelectorAll('#auditTableBody tr');
+      const search = document.getElementById('auditSearchInput');
+      const badge = document.getElementById('activeFilterBadge');
+      
+      rows.forEach(row => {
+        row.classList.remove('hidden');
+        row.classList.remove('bg-surface-container-high');
+      });
+      
+      if (search) search.value = '';
+      if (badge) badge.classList.add('hidden');
+    }
+
+    function searchAuditTable() {
+      const input = document.getElementById('auditSearchInput').value.toLowerCase();
+      const rows = document.querySelectorAll('#auditTableBody tr');
+      const badge = document.getElementById('activeFilterBadge');
+      
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        if (text.includes(input)) {
+          row.classList.remove('hidden');
+        } else {
+          row.classList.add('hidden');
+        }
+      });
+
+      if (input.length > 0 && badge) {
+        badge.classList.remove('hidden');
+      } else if (badge) {
+        badge.classList.add('hidden');
+      }
+    }
+
+    function exportAuditLedger() {
+      const rows = [
+        ['Event ID', 'Date', 'Water Target', 'Risk Score', 'Ground Truth', 'Outcome', 'Lead Time'],
+        ['EVT-1001', '2023-11-12', 'Mangochi Southern Embayment', 'NDCI +0.284', 'Microcystin 2.4 ug/L', 'Supported', '+4d'],
+        ['EVT-1002', '2023-12-04', 'Monkey Bay Harbor West', 'NDCI +0.312', 'Microcystin 3.1 ug/L', 'Supported', '+6d'],
+        ['EVT-1003', '2024-01-19', 'Salima In-shore Intake Zone', 'NDCI +0.198', 'Microcystin <0.2 ug/L', 'False Positive', '+2d'],
+        ['EVT-1004', '2024-02-08', 'Chia Lagoon Outlet Estuary', 'NDCI +0.345', 'Microcystin 4.8 ug/L', 'Supported', '+5d'],
+        ['EVT-1005', '2024-03-22', 'Linthipe River Delta Plume', 'NDCI +0.229', 'Microcystin 1.8 ug/L', 'Supported', '+3d'],
+        ['EVT-1006', '2024-04-11', 'Nkhotakota Northern Reach', 'NDCI SYNTHETIC', 'Persistent Cloud >75%', 'Unverifiable', 'N/A'],
+        ['EVT-1007', '2024-06-02', 'Nkhata Bay Urban Landing', 'NDCI +0.271', 'Microcystin 2.1 ug/L', 'Supported', '+7d'],
+        ['EVT-1008', '2024-07-18', 'Cape Maclear Marine Reserve Fringe', 'NDCI +0.211', 'Microcystin 1.4 ug/L', 'Supported', '+4d'],
+        ['EVT-1009', '2024-09-09', 'Likoma Island Western Channel', 'NDCI +0.240', 'Buoy Sensor Offline', 'Unverifiable', 'N/A'],
+        ['EVT-1010', '2024-10-24', 'Southeast Arm (Kachulu Landing)', 'NDCI +0.334', 'Assay Processing (10-25)', 'Pending', 'In Progress']
+      ];
+      
+      let csvContent = 'data:text/csv;charset=utf-8,' + rows.map(e => e.join(',')).join('\\n');
+      const encodedUri = encodeURI(csvContent);
+      const link = document.createElement('a');
+      link.setAttribute('href', encodedUri);
+      link.setAttribute('download', 'freshwater_sentinel_audit_ledger_2023_2024.csv');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</div></main></div></body></html>

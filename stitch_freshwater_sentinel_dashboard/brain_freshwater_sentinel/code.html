@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-error-container":"#ffdad6","tertiary-container":"#b48b16","surface-container-low":"#0b1f1a","outline":"#88938e","outline-variant":"#3f4945","on-tertiary":"#3f2e00","on-tertiary-container":"#372700","tertiary-fixed":"#ffdf9b","primary-fixed-dim":"#86d6be","on-secondary-fixed":"#321200","secondary-container":"#883d00","surface":"#031712","primary-container":"#4f9f89","on-tertiary-fixed":"#251a00","surface-container":"#0f231e","on-secondary-fixed-variant":"#763400","on-primary-fixed":"#002019","on-secondary":"#532200","error-container":"#93000a","secondary-fixed-dim":"#ffb68d","inverse-on-surface":"#20342e","surface-dim":"#031712","primary-fixed":"#a2f2d9","surface-container-high":"#1a2e28","error":"#ffb4ab","on-background":"#d0e8de","surface-tint":"#86d6be","surface-container-lowest":"#00110c","on-primary":"#00382c","on-error":"#690005","surface-bright":"#293d37","on-tertiary-fixed-variant":"#5a4300","inverse-surface":"#d0e8de","on-primary-fixed-variant":"#005141","primary":"#86d6be","background":"#031712","on-primary-container":"#003026","on-surface":"#d0e8de","inverse-primary":"#0f6b57","on-secondary-container":"#ffb68c","tertiary":"#efc04c","tertiary-fixed-dim":"#efc04c","secondary-fixed":"#ffdbc9","surface-container-highest":"#243932","on-surface-variant":"#bec9c4","surface-variant":"#243932","secondary":"#ffb68d"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-2xl":"2rem","space-lg":"1rem","gutter":"1rem","space-xs":"0.25rem","space-md":"0.75rem","space-xl":"1.5rem","margin-mobile":"0.75rem","gutter-mobile":"0.5rem","space-sm":"0.5rem","margin":"1.5rem","space-2xs":"0.125rem"},"fontFamily":{"mono-data":["JetBrains Mono"],"body-md":["IBM Plex Sans"],"headline-lg":["Newsreader"],"headline-xl":["Newsreader"],"headline-sm":["Newsreader"],"body-lg":["IBM Plex Sans"],"mono-label":["JetBrains Mono"],"headline-md":["Newsreader"],"mono-micro":["JetBrains Mono"],"telemetry-display":["Newsreader"],"body-sm":["IBM Plex Sans"]},"fontSize":{"mono-data":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.375rem","fontWeight":"400"}],"headline-lg":["1.875rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"500"}],"headline-xl":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"mono-label":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.08em","fontWeight":"500"}],"headline-md":["1.375rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"500"}],"mono-micro":["0.625rem",{"lineHeight":"0.75rem","letterSpacing":"0.06em","fontWeight":"400"}],"telemetry-display":["2.25rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"400"}],"body-sm":["0.75rem",{"lineHeight":"1.125rem","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 h-[72px] bg-surface border-b border-outline-variant/60 px-6 flex items-center justify-between"><div class="flex items-center gap-4"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant/60" src="https://lh3.googleusercontent.com/aida/AEtjO1UyTjobrh6jRadKptk7Ri5MbrOCg0ATNiOI-lkAgGfLhNlP7BgSSmJwn7g0wWwHjnTo6qVUAum8IKh1ktzo-SN6N4n2qh3TYJl6DysClyO84ffTtq_ebxos7fVo-1bjGADrDPxxtp4sTEekt0Va6kpklVDiX-kiwM1LE9YfXDSNFsyw6tRf6PFd9HG-l3yBlhAXG_-D7Ru7qtqNIC-SXlMPNn4YlJN2OkRInT7og1K3sNAEQN1dkaQKWw"/><div class="flex items-baseline gap-3"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Freshwater Sentinel</span><span class="text-outline-variant">|</span><span class="font-mono-micro text-mono-micro text-outline tracking-wider uppercase">IEEE OneAquaHealth / Track 6: Resilience Informatics</span></div></div><div class="flex items-center gap-3"><div class="hidden md:flex items-center gap-2 border border-outline-variant/60 px-2.5 py-1 rounded bg-surface-container font-mono-micro text-mono-micro text-outline"><span class="material-symbols-outlined text-[13px] text-outline">explore</span><span>13°46'S 34°18'E • L. MALAWI BASIN</span></div><div class="flex items-center gap-2 bg-surface-container border border-outline-variant/60 px-3 py-1 rounded font-mono-micro text-mono-micro text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="tracking-wider uppercase text-on-surface">LIVE TELEMETRY / IN-SITU BUOY LINK</span></div><button class="border border-outline-variant/60 px-2.5 py-1 rounded font-mono-micro text-mono-micro text-on-surface hover:border-primary hover:text-on-surface transition-colors bg-surface-container" type="button">EN | SW</button><button aria-label="Documentation &amp; Telemetry Help" class="w-7 h-7 flex items-center justify-center border border-outline-variant/60 rounded bg-surface-container text-outline hover:text-on-surface hover:border-outline transition-colors" type="button"><span class="material-symbols-outlined text-[15px]">help_outline</span></button></div></header><aside class="fixed left-0 top-[72px] bottom-0 w-[230px] bg-surface border-r border-outline-variant/60 z-40 flex flex-col justify-between py-4"><div class="flex flex-col"><div class="px-4 pb-2 mb-2 border-b border-outline-variant/30 flex items-center justify-between"><span class="font-mono-label text-mono-label uppercase text-outline tracking-widest">Mission Modules</span><span class="font-mono-micro text-mono-micro text-primary-fixed-dim">v4.2-R</span></div><nav class="flex flex-col w-full" data-active-classes="border-l-[3px] border-primary bg-surface-container-high text-on-surface font-medium"><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">grid_view</span><span>Overview</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="eyes" href="#"><span class="material-symbols-outlined text-[18px]">satellite_alt</span><span>Eyes</span></a><a aria-current="page" class="flex items-center gap-3 px-4 py-2.5 transition-all border-l-[3px] border-primary bg-surface-container-high text-on-surface font-medium" data-path="brain" href="#"><span class="material-symbols-outlined text-[18px]">neurology</span><span>Brain</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="voice" href="#"><span class="material-symbols-outlined text-[18px]">podcasts</span><span>Voice</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="network" href="#"><span class="material-symbols-outlined text-[18px]">hub</span><span>Network</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="hands" href="#"><span class="material-symbols-outlined text-[18px]">assignment_turned_in</span><span>Hands</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="verify" href="#"><span class="material-symbols-outlined text-[18px]">verified</span><span>Verify</span></a></nav></div><div class="px-4 pt-3 border-t border-outline-variant/40 flex flex-col gap-1.5 font-mono-micro text-mono-micro text-outline"><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">SENSORS:</span><span class="text-on-surface-variant">S2-MSI / L9</span></div><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">SYNC:</span><span class="text-on-surface-variant">14m ago</span></div><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">COVERAGE:</span><span class="text-primary-fixed-dim font-medium">98.4% Basin</span></div><div class="mt-2 pt-2 border-t border-outline-variant/30 text-[9px] uppercase tracking-widest text-outline-variant">RIFT BASIN HYDRO-LOG</div></div></aside><div class="pl-[230px]"><main class="relative pt-[72px] min-h-screen bg-surface w-full p-8 font-body-md text-body-md text-on-surface"><div class="flex flex-col w-full">
+<!-- Operational Sub-Header & Epistemic Diagnostic Ribbon -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 mb-8 border-b border-outline-variant/30">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-mono-micro text-mono-micro uppercase tracking-widest text-outline">Bayesian Field Risk Inference &amp; Probabilistic Screening</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-medium">Basin-Wide Contamination Forecasting</h1>
+<p class="font-mono-data text-mono-data text-outline">
+        Model: <span class="text-on-surface font-semibold">HydroBayes-v2.4</span> • Run cycle: <span class="text-primary-fixed-dim">06:00 UTC</span> • Spatial Resolution: 10m Multi-Spectral Blend
+      </p>
+</div>
+<!-- Active Inference Parameters Metric Pills -->
+<div class="flex items-center gap-2">
+<div class="bg-surface-container-high px-3 py-1.5 rounded-lg flex flex-col items-start">
+<span class="font-mono-micro text-mono-micro text-outline uppercase tracking-wider">Markov Iterations</span>
+<span class="font-mono-data text-mono-data text-primary-fixed-dim font-semibold">120,000 passes</span>
+</div>
+<div class="bg-surface-container-high px-3 py-1.5 rounded-lg flex flex-col items-start">
+<span class="font-mono-micro text-mono-micro text-outline uppercase tracking-wider">Prior Credibility</span>
+<span class="font-mono-data text-mono-data text-tertiary font-semibold">94.8% CI</span>
+</div>
+<div class="bg-surface-container-high px-3 py-1.5 rounded-lg flex flex-col items-start">
+<span class="font-mono-micro text-mono-micro text-outline uppercase tracking-wider">Sensors Active</span>
+<span class="font-mono-data text-mono-data text-on-surface font-semibold">14 Buoys / 2 Sats</span>
+</div>
+</div>
+</div>
+<!-- Primary 2-Column Analytical Instrument Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- LEFT COLUMN: Realistic Vector Choropleth & Basin Risk Cartography (~55% / 7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-4">
+<div class="relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-2xl flex flex-col">
+<!-- Cartographic Top Control Bar & Epistemic Integrity Badge -->
+<div class="flex items-center justify-between px-4 py-2.5 bg-surface-container-low/95 z-20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">public</span>
+<span class="font-mono-label text-mono-label uppercase tracking-widest text-on-surface">Sub-Catchment Vector Mesh • SW Rift Margin</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-mono-micro text-mono-micro text-outline bg-surface-container px-2 py-0.5 rounded uppercase">CRS: EPSG:4326</span>
+<span class="font-mono-micro text-mono-micro text-on-surface-variant font-medium">BATHYMETRY 1:50k</span>
+</div>
+</div>
+<!-- Geospatial Canvas with Custom High-Resolution Vector Hydrology -->
+<div class="relative w-full h-[580px] bg-surface-container-lowest flex items-center justify-center overflow-hidden select-none" id="carto-viewport">
+<!-- Subtle Drafting Grid Texture Overlay -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="cartoGrid" patternunits="userSpaceOnUse" width="40">
+<path class="text-outline-variant" d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+<circle class="text-outline fill-current" cx="0" cy="0" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#cartoGrid)" height="100%" width="100%"></rect>
+</svg>
+<!-- SVG Geographic Catchment Basins & Watershed Polygons -->
+<svg class="w-full h-full object-cover" fill="none" viewbox="0 0 760 580" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<!-- Hatched Pattern for BH-402 Epistemic Uncertainty Marker -->
+<pattern height="6" id="uncertainHatch" patterntransform="rotate(45 0 0)" patternunits="userSpaceOnUse" width="6">
+<line stroke="#88938e" stroke-width="2" x1="0" x2="0" y1="0" y2="6"></line>
+</pattern>
+<!-- Gradient for Demo Lake High-Risk Plume -->
+<radialgradient cx="50%" cy="50%" id="plumeRiskRed" r="50%">
+<stop offset="0%" stop-color="#93000a" stop-opacity="0.8"></stop>
+<stop offset="60%" stop-color="#ffb4ab" stop-opacity="0.2"></stop>
+<stop offset="100%" stop-color="#ffb4ab" stop-opacity="0"></stop>
+</radialgradient>
+<!-- Gradient for Moderate Risk Linthipe Plume -->
+<radialgradient cx="50%" cy="50%" id="plumeRiskAmber" r="50%">
+<stop offset="0%" stop-color="#b48b16" stop-opacity="0.6"></stop>
+<stop offset="70%" stop-color="#efc04c" stop-opacity="0.1"></stop>
+<stop offset="100%" stop-color="#efc04c" stop-opacity="0"></stop>
+</radialgradient>
+</defs>
+<!-- Sub-basin 1: Bua Catchment (Northwest - Low Risk Baseline) -->
+<path d="M40 80 Q120 40 240 70 T420 110 L380 230 Q280 250 160 210 Z" fill="#0b1f1a" fill-opacity="0.7"></path>
+<path d="M40 80 Q120 40 240 70 T420 110 L380 230 Q280 250 160 210 Z" stroke="#1a2e28" stroke-dasharray="4 2" stroke-width="1.5"></path>
+<text class="fill-outline text-[11px] font-mono-micro tracking-widest uppercase" x="140" y="130">Sub-Basin 02 • Bua River North</text>
+<!-- Sub-basin 2: Linthipe Central Catchment (Mid Basin - Elevated Runoff) -->
+<path d="M220 220 Q360 200 480 260 T560 380 L440 470 Q300 450 190 360 Z" fill="#1a2e28" fill-opacity="0.45"></path>
+<text class="fill-outline text-[11px] font-mono-micro tracking-widest uppercase" x="320" y="320">Sub-Basin 07 • Linthipe Drain</text>
+<!-- Sub-basin 3: Southwest Dedza Highland Frontier (Uncertainty Zone) -->
+<path d="M120 370 Q210 350 280 430 T360 540 L180 560 Q90 490 120 370 Z" fill="#0b1f1a" fill-opacity="0.9"></path>
+<path d="M120 370 Q210 350 280 430 T360 540 L180 560 Q90 490 120 370 Z" stroke="#3f4945" stroke-dasharray="2 3" stroke-width="1"></path>
+<text class="fill-outline-variant text-[10px] font-mono-micro tracking-widest uppercase" x="150" y="480">Dedza Upland Frontier</text>
+<!-- Major Lake Malawi Basin Shoreline Contour -->
+<path d="M460 20 Q540 120 570 240 T640 450 L750 490 L750 10 L470 10 Z" fill="#031712" fill-opacity="0.9"></path>
+<path d="M460 20 Q540 120 570 240 T640 450 L750 490" stroke="#4f9f89" stroke-width="2"></path>
+<text class="fill-primary-container text-[12px] font-mono-label tracking-widest uppercase" x="630" y="180">Lake Malawi (Nyasa)</text>
+<!-- Hydrological Drainage Tributaries (Vectors) -->
+<path d="M110 90 Q180 140 260 160 T380 200" fill="none" stroke="#243932" stroke-width="2"></path>
+<path d="M210 390 Q290 380 370 360 T510 340 L570 310" fill="none" stroke="#3f4945" stroke-width="2.5"></path>
+<path d="M370 360 Q420 410 460 440" fill="none" stroke="#243932" stroke-width="1.5"></path>
+<!-- RISK PLUME: Point A (Demo Lake Eutrophication) -->
+<circle cx="495" cy="275" fill="url(#plumeRiskRed)" r="54"></circle>
+<circle cx="380" cy="335" fill="url(#plumeRiskAmber)" r="38"></circle>
+<!-- Dynamic Coordinate Reticle Anchors -->
+<g class="cursor-pointer group" id="marker-point-d">
+<circle class="fill-primary/10 transition-all group-hover:fill-primary/20" cx="280" cy="150" r="14"></circle>
+<circle class="fill-primary" cx="280" cy="150" r="4"></circle>
+<text class="fill-on-surface-variant font-mono-micro text-[11px] font-medium tracking-wide" x="295" y="154">Point D: Bua Estuary [24/100]</text>
+</g>
+<g class="cursor-pointer group" id="marker-point-c">
+<circle class="fill-primary/10 transition-all group-hover:fill-primary/20" cx="560" cy="210" r="14"></circle>
+<circle class="fill-primary" cx="560" cy="210" r="4"></circle>
+<text class="fill-on-surface-variant font-mono-micro text-[11px] font-medium tracking-wide" x="575" y="214">Point C: Senga Shoreline [18/100]</text>
+</g>
+<g class="cursor-pointer group" id="marker-point-b">
+<circle class="fill-tertiary/20 animate-pulse" cx="380" cy="335" r="22"></circle>
+<circle class="fill-tertiary" cx="380" cy="335" r="6"></circle>
+<text class="fill-tertiary-fixed font-mono-micro text-[11px] font-medium tracking-wide" x="395" y="340">Point B: Linthipe Lower [62/100]</text>
+</g>
+<!-- POINT E: Dedza Border BH-402 (DISTINCT GREY HATCHED PATTERN) -->
+<g class="cursor-pointer group" id="marker-point-e">
+<circle class="group-hover:stroke-on-surface" cx="210" cy="450" fill="none" r="18" stroke="#88938e" stroke-dasharray="3 3" stroke-width="1.5"></circle>
+<circle cx="210" cy="450" fill="url(#uncertainHatch)" r="10" stroke="#88938e" stroke-width="1.5"></circle>
+<!-- Callout Pin Line & Text -->
+<line stroke="#88938e" stroke-width="1" x1="210" x2="210" y1="468" y2="495"></line>
+<rect class="fill-surface-container-high" height="24" rx="2" stroke="#88938e" stroke-width="0.5" width="140" x="140" y="495"></rect>
+<text class="fill-on-surface font-mono-micro text-[9px] uppercase tracking-wider font-semibold" x="147" y="511">POINT E: SAMPLE REQUIRED</text>
+</g>
+<!-- POINT A: Demo Lake (ACTIVE SELECTED TARGET, RED #c94f4f, 16px) -->
+<g class="cursor-pointer" id="marker-point-a">
+<!-- Radial ping wave animation -->
+<circle class="animate-ping opacity-30" cx="495" cy="275" fill="none" r="28" stroke="#ffb4ab" stroke-width="1.5"></circle>
+<circle class="fill-error-container/40" cx="495" cy="275" r="18"></circle>
+<circle class="fill-error ring-4 ring-error/20" cx="495" cy="275" r="8"></circle>
+<!-- Inspector Reticle Hairlines -->
+<line stroke="#ffb4ab" stroke-width="1" x1="495" x2="495" y1="235" y2="255"></line>
+<line stroke="#ffb4ab" stroke-width="1" x1="495" x2="495" y1="295" y2="315"></line>
+<line stroke="#ffb4ab" stroke-width="1" x1="455" x2="475" y1="275" y2="275"></line>
+<line stroke="#ffb4ab" stroke-width="1" x1="515" x2="535" y1="275" y2="275"></line>
+<!-- High Contrast Label Tag -->
+<rect class="fill-surface-container-highest" height="28" rx="2" width="175" x="515" y="258"></rect>
+<rect class="fill-error" height="28" rx="1" width="4" x="515" y="258"></rect>
+<text class="fill-on-surface font-mono-data text-[11px] font-semibold" x="526" y="272">Demo Lake MW-DL-01</text>
+<text class="fill-error font-mono-micro text-[9px] font-medium tracking-wider uppercase" x="526" y="282">RISK SCORE: 88 (CRITICAL)</text>
+</g>
+</svg>
+<!-- Interactive Viewport HUD Coordinates (Bottom-Left) -->
+<div class="absolute bottom-4 left-4 bg-surface-container-low/90 backdrop-blur-sm px-3 py-2 rounded flex flex-col gap-0.5 pointer-events-none">
+<span class="font-mono-micro text-mono-micro text-outline tracking-wider uppercase">Reticle Center Focal:</span>
+<div class="flex items-center gap-3 font-mono-data text-mono-data text-on-surface">
+<span>13°52'18"S</span>
+<span class="text-outline-variant">•</span>
+<span>34°22'40"E</span>
+<span class="text-outline-variant">•</span>
+<span class="text-primary-fixed-dim">Alt 472m</span>
+</div>
+</div>
+<!-- Professional Nautical/Cartographic Scale Bar (Bottom-Right) -->
+<div class="absolute bottom-4 right-4 bg-surface-container-low/90 backdrop-blur-sm px-3 py-2 rounded flex flex-col items-end gap-1 pointer-events-none">
+<div class="flex items-center gap-1 font-mono-micro text-mono-micro text-outline">
+<span>0</span>
+<span class="mr-4">10</span>
+<span>20 km</span>
+</div>
+<div class="flex h-1.5 w-32 bg-surface-variant overflow-hidden rounded-xs">
+<div class="w-1/2 h-full bg-on-surface-variant"></div>
+<div class="w-1/2 h-full bg-outline-variant"></div>
+</div>
+</div>
+<!-- Viewport Zoom & Filter Controls -->
+<div class="absolute top-12 right-4 flex flex-col gap-1.5 z-20">
+<button aria-label="Zoom In" class="w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<button aria-label="Zoom Out" class="w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<button aria-label="Reset View" class="w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors mt-2" type="button">
+<span class="material-symbols-outlined text-[18px]">my_location</span>
+</button>
+</div>
+</div>
+<!-- Strict Epistemic Risk Cartography Legend -->
+<div class="bg-surface-container-low px-4 py-3 border-t border-outline-variant/30 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="font-mono-micro text-mono-micro text-on-surface uppercase tracking-wider">High Risk ≥70</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="font-mono-micro text-mono-micro text-on-surface uppercase tracking-wider">Moderate Risk 40-69</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-mono-micro text-mono-micro text-on-surface uppercase tracking-wider">Low Risk &lt;40</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-xs border border-outline bg-[radial-gradient(#88938e_1px,transparent_1px)] [background-size:3px_3px]"></div>
+<span class="font-mono-micro text-mono-micro text-outline uppercase tracking-wider">Hatched: Insufficient In-Situ Data</span>
+</div>
+</div>
+<div class="font-mono-micro text-mono-micro text-outline-variant uppercase">
+            Pass QA: Sentinel-2 MSI @ 98.2%
+          </div>
+</div>
+</div>
+<!-- Quick Catchment Inventory Bar -->
+<div class="grid grid-cols-3 gap-3">
+<div class="bg-surface-container p-3 rounded-lg flex flex-col gap-1">
+<span class="font-mono-micro text-mono-micro text-outline uppercase">Active Monitoring Sites</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">18 Nodes</span>
+<span class="font-mono-micro text-mono-micro text-primary-fixed-dim">17 Online / 1 Blind</span>
+</div>
+<div class="bg-surface-container p-3 rounded-lg flex flex-col gap-1">
+<span class="font-mono-micro text-mono-micro text-outline uppercase">Dominant Contaminant</span>
+<span class="font-headline-sm text-headline-sm text-error font-semibold">Microcystin</span>
+<span class="font-mono-micro text-mono-micro text-outline">Cyanobacterial Toxin</span>
+</div>
+<div class="bg-surface-container p-3 rounded-lg flex flex-col gap-1">
+<span class="font-mono-micro text-mono-micro text-outline uppercase">Rainfall Washout Flux</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-semibold">+42 mm/24h</span>
+<span class="font-mono-micro text-mono-micro text-tertiary-fixed-dim">Runoff Peak Detected</span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Selected Point Detail & Epistemic Verification (~45% / 5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Panel 1: Selected Point Detail Panel ("Demo Lake — MW-DL-01") -->
+<div class="bg-surface-container rounded-xl p-6 shadow-xl flex flex-col gap-5 relative overflow-hidden">
+<!-- Header Row with Diagnostic Badge -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-mono-micro text-mono-micro text-outline uppercase tracking-widest">Active Inspector</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">Demo Lake — MW-DL-01</h2>
+<span class="font-mono-micro text-mono-micro text-outline">Salima Rural Water District • Station 03A</span>
+</div>
+<div class="bg-error-container/40 text-on-error-container px-2.5 py-1 rounded font-mono-micro text-mono-micro uppercase tracking-wider font-semibold">
+            ALERT CRITICAL
+          </div>
+</div>
+<!-- Metric Display: Large Risk Score & Classification -->
+<div class="flex items-baseline gap-4 py-2 border-y border-outline-variant/30">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-xl text-headline-xl text-error font-bold leading-none tracking-tight">88</span>
+<span class="font-mono-data text-mono-data text-outline font-medium">/ 100</span>
+</div>
+<div class="flex flex-col justify-center">
+<span class="font-mono-label text-mono-label text-error uppercase font-semibold tracking-wider">
+              CLASS 1: IMMEDIATE INTERVENTION RECOMMENDED
+            </span>
+<span class="font-mono-micro text-mono-micro text-outline">
+              Model Credibility: p &lt; 0.002 • Empirical Grounding
+            </span>
+</div>
+</div>
+<!-- Risk Rationale Paragraph -->
+<div class="flex flex-col gap-1.5">
+<span class="font-mono-micro text-mono-micro uppercase tracking-widest text-outline">Screening Rationale</span>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            High surface water temperature anomaly (<span class="text-error font-medium">+2.4°C</span>) combined with agricultural runoff flux following <span class="text-on-surface font-medium">42mm precipitation</span> in catchment zone. Spectral bloom indices match toxin-producing microcystin profile with <span class="text-error font-medium">89% probabilistic confidence</span>.
+          </p>
+</div>
+<!-- Telemetry Breakdown Sub-Grid -->
+<div class="grid grid-cols-2 gap-3 pt-2">
+<div class="bg-surface-container-high p-3 rounded">
+<span class="font-mono-micro text-mono-micro text-outline uppercase">Surface Chlorophyll-a</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-mono-data text-mono-data text-on-surface font-semibold">64.2</span>
+<span class="font-mono-micro text-mono-micro text-outline">µg/L</span>
+</div>
+<span class="font-mono-micro text-mono-micro text-error font-medium">↑ +380% vs Baseline</span>
+</div>
+<div class="bg-surface-container-high p-3 rounded">
+<span class="font-mono-micro text-mono-micro text-outline uppercase">Turbidity (NTU)</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-mono-data text-mono-data text-on-surface font-semibold">41.8</span>
+<span class="font-mono-micro text-mono-micro text-outline">NTU</span>
+</div>
+<span class="font-mono-micro text-mono-micro text-tertiary font-medium">↑ +140% Post-Rain</span>
+</div>
+</div>
+<!-- 7-Day Score History Progression Chart -->
+<div class="flex flex-col gap-2 pt-2">
+<div class="flex items-center justify-between">
+<span class="font-mono-micro text-mono-micro uppercase tracking-widest text-outline">7-Day Bayesian Score Progression</span>
+<span class="font-mono-micro text-mono-micro text-outline">Temporal Delta: <span class="text-error">+54 pts</span></span>
+</div>
+<!-- Inline Step/Trajectory Progression Chart with Threshold Markers -->
+<div class="bg-surface-container-lowest p-3 rounded-lg flex flex-col gap-2">
+<svg class="w-full h-24" fill="none" viewbox="0 0 360 90" xmlns="http://www.w3.org/2000/svg">
+<!-- Threshold Guidelines -->
+<line stroke="#93000a" stroke-dasharray="2 2" stroke-opacity="0.4" stroke-width="1" x1="0" x2="360" y1="27" y2="27"></line>
+<text class="fill-error text-[8px] font-mono-micro" x="310" y="23">LIMIT ≥70</text>
+<line stroke="#b48b16" stroke-dasharray="2 2" stroke-opacity="0.3" stroke-width="1" x1="0" x2="360" y1="54" y2="54"></line>
+<text class="fill-tertiary text-[8px] font-mono-micro" x="310" y="50">WATCH ≥40</text>
+<!-- Filled Area Under Sparkline -->
+<path d="M 20 60 L 100 45 L 200 28 L 330 11 L 330 85 L 20 85 Z" fill="url(#sparklineGrad)" opacity="0.3"></path>
+<defs>
+<lineargradient id="sparklineGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#ffb4ab"></stop>
+<stop offset="100%" stop-color="#ffb4ab" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<!-- Step Trajectory Line -->
+<path d="M 20 60 L 100 45 L 200 28 L 330 11" stroke="#ffb4ab" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<!-- Data Nodes -->
+<!-- Day -6: 34 -->
+<circle class="fill-primary" cx="20" cy="60" r="3.5"></circle>
+<text class="fill-outline text-[9px] font-mono-micro" x="14" y="75">34</text>
+<text class="fill-outline-variant text-[8px] font-mono-micro" x="10" y="86">D-6</text>
+<!-- Day -4: 52 -->
+<circle class="fill-tertiary" cx="100" cy="45" r="3.5"></circle>
+<text class="fill-outline text-[9px] font-mono-micro" x="94" y="40">52</text>
+<text class="fill-outline-variant text-[8px] font-mono-micro" x="92" y="86">D-4</text>
+<!-- Day -2: 71 -->
+<circle class="fill-error" cx="200" cy="28" r="3.5"></circle>
+<text class="fill-error text-[9px] font-mono-micro" x="194" y="23">71</text>
+<text class="fill-outline-variant text-[8px] font-mono-micro" x="192" y="86">D-2</text>
+<!-- Today: 88 -->
+<circle class="fill-error ring-2 ring-surface" cx="330" cy="11" r="5"></circle>
+<text class="fill-error font-bold text-[10px] font-mono-micro" x="320" y="8">88</text>
+<text class="fill-error text-[8px] font-mono-micro uppercase font-bold" x="318" y="86">TODAY</text>
+</svg>
+</div>
+</div>
+<!-- Intervention Directive Trigger -->
+<div class="flex items-center justify-between pt-2">
+<button class="bg-primary text-on-primary font-body-md text-body-md font-semibold px-4 py-2.5 rounded hover:bg-primary/90 transition-all flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">notification_important</span>
+<span>Issue Catchment Advisory</span>
+</button>
+<button class="bg-surface-container-high text-on-surface hover:bg-surface-bright px-3.5 py-2.5 rounded font-mono-data text-mono-data transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Export Bayesian Prior</span>
+</button>
+</div>
+</div>
+<!-- Panel 2: DEDICATED FIELD SAMPLE REQUIRED CARD (Deliberately textured, hatched pattern, epistemic modesty) -->
+<div class="relative rounded-xl p-6 overflow-hidden shadow-2xl bg-surface-container-low border-2 border-dashed border-outline/70">
+<!-- Diagonal Hatch Textured Canvas Layer -->
+<div class="absolute inset-0 pointer-events-none opacity-10 bg-[repeating-linear-gradient(45deg,#88938e,#88938e_2px,transparent_2px,transparent_10px)]"></div>
+<div class="relative z-10 flex flex-col gap-4">
+<!-- Epistemic Badge & Scientific Honesty Banner -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<!-- Distinct Hatched Square Flask Badge -->
+<div class="w-10 h-10 rounded bg-surface-container-highest flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">science</span>
+</div>
+<div class="flex flex-col">
+<span class="font-mono-label text-mono-label text-outline uppercase tracking-widest">Epistemic Uncertainty Notice</span>
+<span class="font-mono-data text-mono-data text-on-surface font-semibold tracking-wider">FIELD SAMPLE REQUIRED</span>
+</div>
+</div>
+<div class="bg-surface-container-highest px-2.5 py-1 rounded font-mono-micro text-mono-micro text-outline uppercase tracking-wider font-semibold">
+              NULL_TIER
+            </div>
+</div>
+<!-- Body Copy: Scientific Honesty rather than False Certainty -->
+<div class="bg-surface-container/80 p-3.5 rounded">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              Evidence insufficient for a screening tier. Satellite optical penetration blocked by persistent localized cloud cover; in-situ sensor telemetry has been offline for <span class="text-tertiary font-medium">18 days</span>. Field confirmation required before any community alert is issued.
+            </p>
+</div>
+<!-- Target Point Metadata Specification -->
+<div class="flex flex-col gap-1 bg-surface-container-lowest p-3 rounded">
+<span class="font-mono-micro text-mono-micro text-outline uppercase tracking-wider">Target Coordinate Matrix</span>
+<div class="flex items-baseline justify-between">
+<span class="font-mono-data text-mono-data text-on-surface font-medium">Borehole BH-402 &amp; Linthipe Inflow 3</span>
+<span class="font-mono-data text-mono-data text-primary-fixed-dim">Zone Dedza-B</span>
+</div>
+<div class="font-mono-micro text-mono-micro text-outline-variant mt-0.5">
+              Lat: <span class="text-on-surface-variant font-mono">14°12'S</span> • Lon: <span class="text-on-surface-variant font-mono">34°08'E</span> • Hydrologic Reach: ID-710
+            </div>
+</div>
+<!-- Action Button: Field Dispatch Task -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 text-outline font-mono-micro text-mono-micro">
+<span class="material-symbols-outlined text-[15px]">sensors_off</span>
+<span>Ground Validation Protocol 10-C</span>
+</div>
+<button class="bg-surface-container-high hover:bg-surface-bright text-on-surface font-mono-data text-mono-data px-4 py-2 rounded transition-colors flex items-center gap-2 group" type="button">
+<span>Dispatch Field Collector Task</span>
+<span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1 text-primary">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Lower Auxiliary Instrumentation: Probabilistic Model Convergence Ledger -->
+<div class="mt-8 pt-6 border-t border-outline-variant/30 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-wrap items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">model_training</span>
+<span class="font-mono-micro text-mono-micro text-outline uppercase">Convergence:</span>
+<span class="font-mono-data text-mono-data text-on-surface">Gelman-Rubin R̂ = 1.004</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">cloud_off</span>
+<span class="font-mono-micro text-mono-micro text-outline uppercase">Optical Occlusion:</span>
+<span class="font-mono-data text-mono-data text-tertiary">14.2% Spatial Mask (Dedza Hills)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-outline">verified</span>
+<span class="font-mono-micro text-mono-micro text-outline uppercase">Next Satellite Sync:</span>
+<span class="font-mono-data text-mono-data text-on-surface">Sentinel-2B overpass in 03h 41m</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="font-mono-micro text-mono-micro uppercase text-outline hover:text-on-surface px-2.5 py-1 bg-surface-container rounded transition-colors" type="button">
+        Audit Trace Log
+      </button>
+<button class="font-mono-micro text-mono-micro uppercase text-outline hover:text-on-surface px-2.5 py-1 bg-surface-container rounded transition-colors" type="button">
+        Re-run MCMC Simulation
+      </button>
+</div>
+</div>
+</div></main></div></body></html>

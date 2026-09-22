@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-error-container":"#ffdad6","tertiary-container":"#b48b16","surface-container-low":"#0b1f1a","outline":"#88938e","outline-variant":"#3f4945","on-tertiary":"#3f2e00","on-tertiary-container":"#372700","tertiary-fixed":"#ffdf9b","primary-fixed-dim":"#86d6be","on-secondary-fixed":"#321200","secondary-container":"#883d00","surface":"#031712","primary-container":"#4f9f89","on-tertiary-fixed":"#251a00","surface-container":"#0f231e","on-secondary-fixed-variant":"#763400","on-primary-fixed":"#002019","on-secondary":"#532200","error-container":"#93000a","secondary-fixed-dim":"#ffb68d","inverse-on-surface":"#20342e","surface-dim":"#031712","primary-fixed":"#a2f2d9","surface-container-high":"#1a2e28","error":"#ffb4ab","on-background":"#d0e8de","surface-tint":"#86d6be","surface-container-lowest":"#00110c","on-primary":"#00382c","on-error":"#690005","surface-bright":"#293d37","on-tertiary-fixed-variant":"#5a4300","inverse-surface":"#d0e8de","on-primary-fixed-variant":"#005141","primary":"#86d6be","background":"#031712","on-primary-container":"#003026","on-surface":"#d0e8de","inverse-primary":"#0f6b57","on-secondary-container":"#ffb68c","tertiary":"#efc04c","tertiary-fixed-dim":"#efc04c","secondary-fixed":"#ffdbc9","surface-container-highest":"#243932","on-surface-variant":"#bec9c4","surface-variant":"#243932","secondary":"#ffb68d"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-2xl":"2rem","space-lg":"1rem","gutter":"1rem","space-xs":"0.25rem","space-md":"0.75rem","space-xl":"1.5rem","margin-mobile":"0.75rem","gutter-mobile":"0.5rem","space-sm":"0.5rem","margin":"1.5rem","space-2xs":"0.125rem"},"fontFamily":{"mono-data":["JetBrains Mono"],"body-md":["IBM Plex Sans"],"headline-lg":["Newsreader"],"headline-xl":["Newsreader"],"headline-sm":["Newsreader"],"body-lg":["IBM Plex Sans"],"mono-label":["JetBrains Mono"],"headline-md":["Newsreader"],"mono-micro":["JetBrains Mono"],"telemetry-display":["Newsreader"],"body-sm":["IBM Plex Sans"]},"fontSize":{"mono-data":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["0.875rem",{"lineHeight":"1.375rem","fontWeight":"400"}],"headline-lg":["1.875rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"500"}],"headline-xl":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"mono-label":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.08em","fontWeight":"500"}],"headline-md":["1.375rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"500"}],"mono-micro":["0.625rem",{"lineHeight":"0.75rem","letterSpacing":"0.06em","fontWeight":"400"}],"telemetry-display":["2.25rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"400"}],"body-sm":["0.75rem",{"lineHeight":"1.125rem","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 h-[72px] bg-surface border-b border-outline-variant/60 px-6 flex items-center justify-between"><div class="flex items-center gap-4"><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline-variant/60" src="https://lh3.googleusercontent.com/aida/AEtjO1UyTjobrh6jRadKptk7Ri5MbrOCg0ATNiOI-lkAgGfLhNlP7BgSSmJwn7g0wWwHjnTo6qVUAum8IKh1ktzo-SN6N4n2qh3TYJl6DysClyO84ffTtq_ebxos7fVo-1bjGADrDPxxtp4sTEekt0Va6kpklVDiX-kiwM1LE9YfXDSNFsyw6tRf6PFd9HG-l3yBlhAXG_-D7Ru7qtqNIC-SXlMPNn4YlJN2OkRInT7og1K3sNAEQN1dkaQKWw"/><div class="flex items-baseline gap-3"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Freshwater Sentinel</span><span class="text-outline-variant">|</span><span class="font-mono-micro text-mono-micro text-outline tracking-wider uppercase">IEEE OneAquaHealth / Track 6: Resilience Informatics</span></div></div><div class="flex items-center gap-3"><div class="hidden md:flex items-center gap-2 border border-outline-variant/60 px-2.5 py-1 rounded bg-surface-container font-mono-micro text-mono-micro text-outline"><span class="material-symbols-outlined text-[13px] text-outline">explore</span><span>13°46'S 34°18'E • L. MALAWI BASIN</span></div><div class="flex items-center gap-2 bg-surface-container border border-outline-variant/60 px-3 py-1 rounded font-mono-micro text-mono-micro text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="tracking-wider uppercase text-on-surface">LIVE TELEMETRY / IN-SITU BUOY LINK</span></div><button class="border border-outline-variant/60 px-2.5 py-1 rounded font-mono-micro text-mono-micro text-on-surface hover:border-primary hover:text-on-surface transition-colors bg-surface-container" type="button">EN | SW</button><button aria-label="Documentation &amp; Telemetry Help" class="w-7 h-7 flex items-center justify-center border border-outline-variant/60 rounded bg-surface-container text-outline hover:text-on-surface hover:border-outline transition-colors" type="button"><span class="material-symbols-outlined text-[15px]">help_outline</span></button></div></header><aside class="fixed left-0 top-[72px] bottom-0 w-[230px] bg-surface border-r border-outline-variant/60 z-40 flex flex-col justify-between py-4"><div class="flex flex-col"><div class="px-4 pb-2 mb-2 border-b border-outline-variant/30 flex items-center justify-between"><span class="font-mono-label text-mono-label uppercase text-outline tracking-widest">Mission Modules</span><span class="font-mono-micro text-mono-micro text-primary-fixed-dim">v4.2-R</span></div><nav class="flex flex-col w-full" data-active-classes="border-l-[3px] border-primary bg-surface-container-high text-on-surface font-medium"><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">grid_view</span><span>Overview</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="eyes" href="#"><span class="material-symbols-outlined text-[18px]">satellite_alt</span><span>Eyes</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="brain" href="#"><span class="material-symbols-outlined text-[18px]">neurology</span><span>Brain</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="voice" href="#"><span class="material-symbols-outlined text-[18px]">podcasts</span><span>Voice</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="network" href="#"><span class="material-symbols-outlined text-[18px]">hub</span><span>Network</span></a><a aria-current="page" class="flex items-center gap-3 px-4 py-2.5 transition-all border-l-[3px] border-primary bg-surface-container-high text-on-surface font-medium" data-path="hands" href="#"><span class="material-symbols-outlined text-[18px]">assignment_turned_in</span><span>Hands</span></a><a class="flex items-center gap-3 px-4 py-2.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all border-l-[3px] border-transparent font-mono-data text-mono-data" data-path="verify" href="#"><span class="material-symbols-outlined text-[18px]">verified</span><span>Verify</span></a></nav></div><div class="px-4 pt-3 border-t border-outline-variant/40 flex flex-col gap-1.5 font-mono-micro text-mono-micro text-outline"><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">SENSORS:</span><span class="text-on-surface-variant">S2-MSI / L9</span></div><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">SYNC:</span><span class="text-on-surface-variant">14m ago</span></div><div class="flex items-center justify-between"><span class="uppercase tracking-wider text-outline">COVERAGE:</span><span class="text-primary-fixed-dim font-medium">98.4% Basin</span></div><div class="mt-2 pt-2 border-t border-outline-variant/30 text-[9px] uppercase tracking-widest text-outline-variant">RIFT BASIN HYDRO-LOG</div></div></aside><div class="pl-[230px]"><main class="relative pt-[72px] min-h-screen bg-surface w-full p-8 font-body-md text-body-md text-on-surface"><div class="flex flex-col w-full">
+<!-- Top Dispatch Header Bar -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 pb-6 border-b border-outline-variant/40">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 font-mono-micro text-mono-micro uppercase tracking-widest text-primary px-2 py-0.5 rounded bg-surface-container-high border border-outline-variant/60">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+          Operational Field Action &amp; Dispatch Tracking
+        </span>
+<span class="font-mono-micro text-mono-micro text-outline tracking-wider hidden sm:inline">• CADENCE: SPRINT 28-D • EPIDEMIOLOGY RESPONSE</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-medium">
+        Water Steward Response &amp; Sample Collection
+      </h1>
+<p class="font-mono-data text-mono-data text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[15px] text-tertiary">groups</span>
+<span>Active Teams: <strong class="text-on-surface font-semibold">3 Field Units</strong> (Alpha, Bravo, Kilo-4)</span>
+<span class="text-outline-variant">|</span>
+<span class="material-symbols-outlined text-[15px] text-primary">location_on</span>
+<span>Region: <strong class="text-on-surface font-semibold">Salima &amp; Nkhotakota Districts</strong> (Basin Zone IV)</span>
+</p>
+</div>
+<!-- Right Quick Telemetry Counters -->
+<div class="flex items-center gap-2 self-start lg:self-end">
+<div class="bg-surface-container border border-outline-variant/50 px-3 py-1.5 rounded flex items-center gap-3">
+<div class="flex flex-col">
+<span class="font-mono-micro text-mono-micro uppercase text-outline">Lab Turnaround</span>
+<span class="font-mono-data text-mono-data text-on-surface font-medium">4.2h avg</span>
+</div>
+<div class="h-6 w-px bg-outline-variant/50"></div>
+<div class="flex flex-col">
+<span class="font-mono-micro text-mono-micro uppercase text-outline">Chain of Custody</span>
+<span class="font-mono-data text-mono-data text-primary font-medium">100% Pinned</span>
+</div>
+</div>
+<button class="bg-surface-container-high border border-outline-variant/60 hover:border-primary text-on-surface px-3 py-2 rounded flex items-center gap-2 font-mono-micro text-mono-micro uppercase tracking-wider transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">tune</span>
+<span>Filter Protocols</span>
+</button>
+</div>
+</div>
+<!-- Operational Ribbon Alert: Epistemic Ground Truth Disclosure -->
+<div class="mt-4 mb-6 p-3 rounded bg-surface-container-low border border-tertiary/40 flex flex-col md:flex-row md:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded flex items-center justify-center bg-tertiary/10 text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+</div>
+<div class="flex flex-col">
+<span class="font-mono-data text-mono-data text-on-surface font-semibold flex items-center gap-2">
+          GROUND TRUTH COMPLIANCE PROTOCOL (MAL-MOH-2025/ENV)
+          <span class="font-mono-micro text-mono-micro text-tertiary-fixed bg-tertiary-container/30 px-1.5 py-0.2 rounded border border-tertiary/30">MANDATORY SAMPLING ACTIVE</span>
+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Synthetic Sentinel-2 MSI spectro-radiometric alerts require direct physical bottle collection within 12 hours of threshold breach (&gt;0.40 NDCI).</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-mono-micro text-mono-micro text-outline uppercase tracking-wider">SYNC CADENCE: 5 MIN</span>
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+</div>
+</div>
+<!-- 3-Column Kanban Board -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-5 items-start">
+<!-- COLUMN 1: PENDING -->
+<div class="flex flex-col bg-surface-container rounded border border-outline-variant/60 p-3.5 shadow-sm">
+<div class="font-mono-data text-mono-data uppercase tracking-wider text-outline border-b border-outline-variant/50 pb-2.5 mb-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="text-on-surface font-semibold">PENDING DISPATCH</span>
+<span class="bg-surface-container-high px-1.5 py-0.5 rounded text-[11px] font-mono-data text-outline">3</span>
+</div>
+<span class="font-mono-micro text-mono-micro text-outline-variant">AWAITING ACCEPTANCE</span>
+</div>
+<div class="flex flex-col gap-3" id="col-pending">
+<!-- Card P1: High Priority Microcystin Vial Sample -->
+<div class="bg-surface-container-lowest border border-outline-variant/60 hover:border-primary transition-all p-3.5 rounded relative group cursor-pointer shadow-sm">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded flex items-center justify-center bg-secondary-container/40 text-secondary" title="Task Type: Collect Sample">
+<span class="material-symbols-outlined text-[15px]">science</span>
+</span>
+<span class="font-mono-micro text-mono-micro px-1.5 py-0.5 rounded bg-error-container/40 text-error border border-error/40 font-semibold tracking-wider uppercase">
+                CRITICAL (P0)
+              </span>
+</div>
+<button aria-label="Advance task to In-Progress" class="opacity-70 group-hover:opacity-100 hover:text-primary transition-all text-outline p-0.5" type="button">
+<span class="material-symbols-outlined text-[17px]">arrow_forward</span>
+</button>
+</div>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface mb-1 group-hover:text-primary transition-colors">
+            Collect microcystin vial sample
+          </h3>
+<div class="flex items-center gap-1.5 mb-2 font-mono-data text-mono-data text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-tertiary">pin_drop</span>
+<span class="truncate">Demo Lake — Pier 2 (MW-DL-01)</span>
+</div>
+<!-- Evidence Note Callout -->
+<div class="bg-surface-container-high/60 border border-outline-variant/30 rounded p-2 mb-3">
+<div class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[13px] text-secondary shrink-0 mt-0.5">warning</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+                Satellite NDCI &gt; 0.42. Spectrophotometer tube kit #09 required for optical density calibration.
+              </p>
+</div>
+</div>
+<!-- Micro Coordinate and Assignment Badge -->
+<div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between font-mono-micro text-mono-micro text-outline">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[12px] text-primary">badge</span>
+              Unit Bravo (M. Banda)
+            </span>
+<span class="tracking-widest uppercase text-outline">LAT -13.7842</span>
+</div>
+</div>
+<!-- Card P2: Medium Priority Cattle Trough -->
+<div class="bg-surface-container-lowest border border-outline-variant/60 hover:border-primary transition-all p-3.5 rounded relative group cursor-pointer shadow-sm">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded flex items-center justify-center bg-surface-container-high text-primary" title="Task Type: Verify Source">
+<span class="material-symbols-outlined text-[15px]">search</span>
+</span>
+<span class="font-mono-micro text-mono-micro px-1.5 py-0.5 rounded bg-tertiary-container/30 text-tertiary border border-tertiary/40 font-semibold tracking-wider uppercase">
+                MED (P2)
+              </span>
+</div>
+<button aria-label="Advance task to In-Progress" class="opacity-70 group-hover:opacity-100 hover:text-primary transition-all text-outline p-0.5" type="button">
+<span class="material-symbols-outlined text-[17px]">arrow_forward</span>
+</button>
+</div>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface mb-1 group-hover:text-primary transition-colors">
+            Inspect perimeter cattle watering trough
+          </h3>
+<div class="flex items-center gap-1.5 mb-2 font-mono-data text-mono-data text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-tertiary">pin_drop</span>
+<span class="truncate">Linthipe Inflow 1</span>
+</div>
+<div class="bg-surface-container-high/60 border border-outline-variant/30 rounded p-2 mb-3">
+<div class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[13px] text-outline shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+                Reported agricultural nitrogen runoff following 42mm rain event. Check for fecal coliform seepage.
+              </p>
+</div>
+</div>
+<div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between font-mono-micro text-mono-micro text-outline">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[12px] text-outline">person</span>
+              Unassigned (Queue)
+            </span>
+<span class="tracking-widest uppercase text-outline">EST: 25 MIN</span>
+</div>
+</div>
+<!-- Card P3: Low Priority Borehole Chlorination -->
+<div class="bg-surface-container-lowest border border-outline-variant/60 hover:border-primary transition-all p-3.5 rounded relative group cursor-pointer shadow-sm">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded flex items-center justify-center bg-surface-container-high text-primary-fixed-dim" title="Task Type: Confirm Alternative">
+<span class="material-symbols-outlined text-[15px]">verified_user</span>
+</span>
+<span class="font-mono-micro text-mono-micro px-1.5 py-0.5 rounded bg-surface-container text-outline border border-outline-variant/50 font-semibold tracking-wider uppercase">
+                LOW (P3)
+              </span>
+</div>
+<button aria-label="Advance task to In-Progress" class="opacity-70 group-hover:opacity-100 hover:text-primary transition-all text-outline p-0.5" type="button">
+<span class="material-symbols-outlined text-[17px]">arrow_forward</span>
+</button>
+</div>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface mb-1 group-hover:text-primary transition-colors">
+            Verify chlorination dosing at school borehole
+          </h3>
+<div class="flex items-center gap-1.5 mb-2 font-mono-data text-mono-data text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-tertiary">pin_drop</span>
+<span class="truncate">Senga Community School</span>
+</div>
+<div class="bg-surface-container-high/60 border border-outline-variant/30 rounded p-2 mb-3">
+<div class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[13px] text-outline shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+                Routine secondary inspection. Baseline residual chlorine targets: 0.2 - 0.5 mg/L at tap.
+              </p>
+</div>
+</div>
+<div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between font-mono-micro text-mono-micro text-outline">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[12px] text-primary">badge</span>
+              Unit Alpha (J. Chirwa)
+            </span>
+<span class="tracking-widest uppercase text-outline">AUDIT LOG</span>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 2: IN-PROGRESS -->
+<div class="flex flex-col bg-surface-container rounded border border-outline-variant/60 p-3.5 shadow-sm">
+<div class="font-mono-data text-mono-data uppercase tracking-wider text-tertiary border-b border-outline-variant/50 pb-2.5 mb-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="text-on-surface font-semibold">IN-PROGRESS</span>
+<span class="bg-surface-container-high px-1.5 py-0.5 rounded text-[11px] font-mono-data text-tertiary font-bold">2</span>
+</div>
+<span class="font-mono-micro text-mono-micro text-tertiary-fixed">FIELD COMM LINK ACTIVE</span>
+</div>
+<div class="flex flex-col gap-3" id="col-in-progress">
+<!-- Card IP1: Critical Epistemic Uncertainty Grab Sample -->
+<div class="bg-surface-container-lowest border-2 border-tertiary/60 hover:border-tertiary transition-all p-3.5 rounded relative group cursor-pointer shadow-md">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded flex items-center justify-center bg-secondary-container/50 text-secondary" title="Task Type: Collect Sample">
+<span class="material-symbols-outlined text-[15px]">science</span>
+</span>
+<span class="font-mono-micro text-mono-micro px-1.5 py-0.5 rounded bg-error text-on-error font-semibold tracking-wider uppercase">
+                CRITICAL
+              </span>
+</div>
+<button aria-label="Mark completed" class="opacity-80 group-hover:opacity-100 hover:text-primary transition-all text-outline p-0.5" type="button">
+<span class="material-symbols-outlined text-[17px]">done_all</span>
+</button>
+</div>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface mb-1 group-hover:text-tertiary transition-colors">
+            Emergency grab sample &amp; fluorometry
+          </h3>
+<div class="flex items-center gap-1.5 mb-2 font-mono-data text-mono-data text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-tertiary">pin_drop</span>
+<span class="truncate">Borehole BH-402 (Dedza border)</span>
+</div>
+<!-- Epistemic Honesty Tag -->
+<div class="mb-2.5">
+<span class="inline-flex items-center gap-1 font-mono-micro text-mono-micro px-2 py-0.5 rounded bg-secondary-container/40 text-on-secondary-container border border-secondary/40">
+<span class="material-symbols-outlined text-[12px]">cloud_off</span>
+              [EPISTEMIC UNCERTAINTY SITE]
+            </span>
+</div>
+<div class="bg-surface-container-high/70 border border-outline-variant/40 rounded p-2 mb-3">
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+              Persistent cloud cover prevented satellite pass for 18 days. Physical probe required to rule out cyanotoxin drift.
+            </p>
+</div>
+<!-- Active En Route Banner -->
+<div class="bg-primary/10 border border-primary/30 rounded px-2.5 py-1.5 mb-3 flex items-center justify-between">
+<span class="font-mono-micro text-mono-micro text-primary font-medium flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+              Field Officer En Route
+            </span>
+<span class="font-mono-data text-mono-data text-primary font-bold text-xs">ETA 40m</span>
+</div>
+<!-- Coordinate Micro-card -->
+<div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between font-mono-micro text-mono-micro text-outline">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[12px] text-tertiary">directions_car</span>
+              Unit Kilo-4 (E. Lungu)
+            </span>
+<span class="text-outline font-mono-data">14°12'S 34°19'E</span>
+</div>
+</div>
+<!-- Card IP2: High Priority Alternative Water Source Verification -->
+<div class="bg-surface-container-lowest border border-outline-variant/60 hover:border-primary transition-all p-3.5 rounded relative group cursor-pointer shadow-sm">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded flex items-center justify-center bg-surface-container-high text-primary" title="Task Type: Confirm Alternative">
+<span class="material-symbols-outlined text-[15px]">verified_user</span>
+</span>
+<span class="font-mono-micro text-mono-micro px-1.5 py-0.5 rounded bg-tertiary-container/30 text-tertiary border border-tertiary/40 font-semibold tracking-wider uppercase">
+                HIGH (P1)
+              </span>
+</div>
+<button aria-label="Mark completed" class="opacity-80 group-hover:opacity-100 hover:text-primary transition-all text-outline p-0.5" type="button">
+<span class="material-symbols-outlined text-[17px]">done_all</span>
+</button>
+</div>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface mb-1 group-hover:text-primary transition-colors">
+            Confirm Chizumulu #3 pump operation
+          </h3>
+<div class="flex items-center gap-1.5 mb-2 font-mono-data text-mono-data text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-tertiary">pin_drop</span>
+<span class="truncate">Chizumulu Borehole #3</span>
+</div>
+<div class="bg-surface-container-high/60 border border-outline-variant/30 rounded p-2 mb-3">
+<div class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[13px] text-primary shrink-0 mt-0.5">water_pump</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+                Designated failover point for 6,800 residents. Physical flow rate measurement required (&gt;18 L/min nominal).
+              </p>
+</div>
+</div>
+<!-- Progress sub-metric -->
+<div class="space-y-1 mb-3">
+<div class="flex justify-between font-mono-micro text-mono-micro">
+<span class="text-outline uppercase">Mechanical Valve Check</span>
+<span class="text-primary font-medium">85% Complete</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded overflow-hidden">
+<div class="h-full bg-primary" style="width: 85%"></div>
+</div>
+</div>
+<div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between font-mono-micro text-mono-micro text-outline">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[12px] text-primary">badge</span>
+              Unit Alpha (J. Chirwa)
+            </span>
+<span class="tracking-widest uppercase text-outline">PRESSURE TEST</span>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 3: DONE -->
+<div class="flex flex-col bg-surface-container rounded border border-outline-variant/60 p-3.5 shadow-sm">
+<div class="font-mono-data text-mono-data uppercase tracking-wider text-primary border-b border-outline-variant/50 pb-2.5 mb-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-on-surface font-semibold">DONE (CLOSED)</span>
+<span class="bg-surface-container-high px-1.5 py-0.5 rounded text-[11px] font-mono-data text-primary font-bold">4</span>
+</div>
+<span class="font-mono-micro text-mono-micro text-outline">ARCHIVED / VERIFIED</span>
+</div>
+<div class="flex flex-col gap-3" id="col-done">
+<!-- Card D1: Boil-Water Signage Deployed -->
+<div class="bg-surface-container-lowest/80 border border-outline-variant/40 hover:border-primary/80 transition-all p-3.5 rounded relative group cursor-pointer">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded flex items-center justify-center bg-surface-container-high text-primary" title="Task Type: Confirm Alternative">
+<span class="material-symbols-outlined text-[15px]">verified_user</span>
+</span>
+<span class="font-mono-micro text-mono-micro px-1.5 py-0.5 rounded bg-primary/20 text-primary border border-primary/30 font-semibold tracking-wider uppercase">
+                VERIFIED CLOSED
+              </span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+</div>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface mb-1">
+            Deploy boil-water advisory signage
+          </h3>
+<div class="flex items-center gap-1.5 mb-2 font-mono-data text-mono-data text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-tertiary">pin_drop</span>
+<span class="truncate">Demo Lake Littoral Landing</span>
+</div>
+<div class="bg-surface-container-high/40 border border-outline-variant/20 rounded p-2 mb-3">
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+              6 bilingual placards (EN/Chichewa) mounted at domestic water points. Community leaders briefed.
+            </p>
+</div>
+<!-- Field Photo Asset Verification Chip -->
+<div class="mb-3 flex items-center gap-2">
+<div class="w-12 h-10 rounded overflow-hidden border border-outline-variant/40 shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close up archival documentary photo of a newly installed metal bilingual water advisory warning placard in English and Chichewa on a wooden post at Lake Malawi shoreline, low evening sun, high detail, documentary style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLxSQg7VNNuVZNDMOSKH5YKwpvJnltV1S_aDXYc3BzBwfOqXXupEgG6Z3_Hqt6aMDz_PB7giUPumXCaFbzEumaT52vrHOzWVzmwsDcO18czAYVf2phAVetXOxbVgW3NyH_X0vT7lVazaPINdMWJKJRaiitbbYTXH6XxEuymR0hH4Eu-Sk0pFCAxI5P5JyPssV7OOOhZoXpor4DE_MMGolNhbf3M5FDyvjfd17E87LqrIldwPZXzOvw"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-mono-micro text-mono-micro text-on-surface uppercase font-medium truncate">IMG_MOH_4091.RAW</span>
+<span class="font-mono-micro text-mono-micro text-primary-fixed-dim">Geo-hash: 0x9b32c... OK</span>
+</div>
+</div>
+<div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between font-mono-micro text-mono-micro text-outline">
+<span class="text-on-surface-variant">Today 08:30 UTC</span>
+<span class="text-primary font-medium">Ranger T. Phiri</span>
+</div>
+</div>
+<!-- Card D2: Rapid Strip Test Negative -->
+<div class="bg-surface-container-lowest/80 border border-outline-variant/40 hover:border-primary/80 transition-all p-3.5 rounded relative group cursor-pointer">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded flex items-center justify-center bg-surface-container-high text-primary" title="Task Type: Verify Source">
+<span class="material-symbols-outlined text-[15px]">search</span>
+</span>
+<span class="font-mono-micro text-mono-micro px-1.5 py-0.5 rounded bg-primary/20 text-primary border border-primary/30 font-semibold tracking-wider uppercase">
+                TEST NEGATIVE
+              </span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+</div>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface mb-1">
+            Rapid strip test for microcystins
+          </h3>
+<div class="flex items-center gap-1.5 mb-2 font-mono-data text-mono-data text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-tertiary">pin_drop</span>
+<span class="truncate">Nkhotakota North Intake</span>
+</div>
+<div class="bg-surface-container-high/40 border border-outline-variant/20 rounded p-2 mb-3">
+<div class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[13px] text-primary shrink-0 mt-0.5">health_and_safety</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+                Test strip negative (&lt;1.0 µg/L). Intake safe to operate. Spectrophotometer verification logged.
+              </p>
+</div>
+</div>
+<div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between font-mono-micro text-mono-micro text-outline">
+<span class="text-on-surface-variant">Yesterday 16:15 UTC</span>
+<span class="text-primary font-medium">Dr. F. Msowoya</span>
+</div>
+</div>
+<!-- Additional Completed Card for Context Density -->
+<div class="bg-surface-container-lowest/50 border border-outline-variant/30 hover:border-outline-variant/60 transition-all p-3 rounded text-outline">
+<div class="flex items-center justify-between mb-1">
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-outline">check</span>
+              Turbidity Sensor Re-calibration
+            </span>
+<span class="font-mono-micro text-mono-micro text-outline">2d ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant truncate">
+            Buoy B-04 calibrated to 4.2 NTU baseline standard.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Field Manifest & Integration Dock -->
+<div class="mt-8 bg-surface-container rounded border border-outline-variant/60 p-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex flex-wrap items-center gap-3">
+<button class="bg-primary text-on-primary font-body-md text-body-md font-semibold px-4 py-2 rounded hover:bg-primary-fixed transition-colors flex items-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span>New Field Mission Protocol</span>
+</button>
+<button class="bg-surface-container-high border border-outline-variant/60 text-on-surface hover:border-primary font-mono-data text-mono-data px-3.5 py-2 rounded transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">download</span>
+<span>Export Field Manifest (GeoJSON / CSV)</span>
+</button>
+<button class="bg-surface-container-high border border-outline-variant/60 text-on-surface hover:border-primary font-mono-data text-mono-data px-3.5 py-2 rounded transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">cloud_sync</span>
+<span>Sync with mWater / KoboToolbox</span>
+</button>
+</div>
+<div class="flex items-center gap-3 self-end md:self-center font-mono-micro text-mono-micro text-outline">
+<div class="flex items-center gap-1.5 bg-surface-container-lowest px-2.5 py-1 rounded border border-outline-variant/40">
+<span class="material-symbols-outlined text-[13px] text-primary">sensors</span>
+<span>HF RADIO LINK: ACTIVE (146.520 MHz)</span>
+</div>
+<span>BUFFER: 0 PENDING SYNC</span>
+</div>
+</div>
+<script>
+    // Micro-interactions for operational card click inspection
+    document.querySelectorAll('.group.cursor-pointer').forEach(card => {
+      card.addEventListener('click', function(e) {
+        if (e.target.closest('button')) return;
+        this.classList.toggle('ring-1');
+        this.classList.toggle('ring-primary');
+      });
+    });
+  </script>
+</div></main></div></body></html>
